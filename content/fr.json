@@ -1,0 +1,163 @@
+{
+  "_note": "Brouillon éditorial FR généré à l'initialisation du site. Le manifeste et les textes définitifs existent dans le document V5 (cahier des charges, section 3) — à substituer avant mise en ligne.",
+  "site": {
+    "name": "La Gemmerie",
+    "domain": "lagemmerie.com",
+    "metaTitleSuffix": "La Gemmerie — Labenne-Océan"
+  },
+  "nav": {
+    "home": "Accueil",
+    "house": "La maison",
+    "spaces": "Les 5 espaces de vie",
+    "gallery": "Galerie",
+    "rates": "Tarifs & réservation",
+    "shop": "Côté produits",
+    "contact": "Contact & accès",
+    "bookCta": "Réserver"
+  },
+  "footer": {
+    "tagline": "Une maison, cinq espaces de vie, une seule adresse.",
+    "address": "Labenne-Océan · Landes",
+    "rights": "Tous droits réservés.",
+    "phaseTwoNote": "Collection linge & bougies — bientôt disponible."
+  },
+  "home": {
+    "kicker": "Labenne-Océan · Landes",
+    "title": "Une maison landaise. Une piscine chauffée. Dix vies qui se retrouvent.",
+    "subtitle": "Entre pins et océan, une propriété pensée pour les familles à plusieurs foyers — chacun son espace, tous réunis au même endroit.",
+    "ctaPrimary": "Découvrir la maison",
+    "ctaSecondary": "Vérifier les disponibilités",
+    "manifesto": {
+      "kicker": "Le nom",
+      "title": "La Gemmerie",
+      "paragraphs": [
+        "Ici, gemmer voulait dire inciser le pin pour en recueillir la résine — un geste lent, précis, transmis de génération en génération dans les Landes.",
+        "La Gemmerie en garde le nom, et une autre lecture : celle de la pierre précieuse, gemstone, rare et façonnée avec soin.",
+        "Une maison qui tient des deux — le geste artisanal d'un côté, l'exigence discrète de l'autre."
+      ]
+    },
+    "spacesPreview": {
+      "kicker": "Le différenciateur",
+      "title": "Les 5 espaces de vie",
+      "intro": "170 m² de maison landaise, 40 m² de pool house indépendant, une piscine chauffée — assez d'espace pour que chaque génération trouve le sien.",
+      "cta": "Voir les 5 espaces"
+    },
+    "ctaBand": {
+      "title": "Dix personnes, quatre chambres, une piscine chauffée à l'année.",
+      "cta": "Vérifier les disponibilités"
+    }
+  },
+  "house": {
+    "kicker": "La propriété",
+    "title": "La maison",
+    "intro": "Une maison landaise de 170 m² prolongée par un pool house contemporain de 40 m², pensés comme deux ambiances complémentaires plutôt que comme une extension.",
+    "facts": [
+      { "label": "Capacité", "value": "10 personnes" },
+      { "label": "Chambres", "value": "4" },
+      { "label": "Maison landaise", "value": "≈ 170 m²" },
+      { "label": "Pool house", "value": "≈ 40 m²" }
+    ],
+    "mainHouse": {
+      "title": "La maison landaise",
+      "description": "Charpente et tomettes, larges baies vitrées sur le jardin, poêle à bois pour les ailes de saison — une architecture régionale respectée plutôt que reconstituée."
+    },
+    "poolHouse": {
+      "title": "Le pool house",
+      "description": "Structure à pans de bois ouverte sur la terrasse, pensée comme un lieu de vie à part entière : repas à l'ombre, siestes, prolongement naturel de la piscine."
+    },
+    "note": "Informations en attente de confirmation avant mise en ligne : dimensions exactes de la piscine, statut de la remise en peinture des portes."
+  },
+  "spaces": {
+    "kicker": "Le différenciateur",
+    "title": "Les 5 espaces de vie",
+    "intro": "Le point commun des familles qui choisissent La Gemmerie : plusieurs générations, plusieurs rythmes, un seul toit. Chaque espace a été pensé pour qu'on puisse s'y retrouver — ou s'y retirer.",
+    "items": [
+      {
+        "number": "01",
+        "title": "La piscine et sa terrasse",
+        "description": "Chauffée à l'année, bordée de bois clair et d'un olivier centenaire — le cœur battant de la maison, de jour comme en soirée.",
+        "imageKey": "hero-piscine-jour"
+      },
+      {
+        "number": "02",
+        "title": "Le pool house",
+        "description": "Repas à l'ombre de la charpente, bar donnant sur l'eau — un lieu de vie indépendant, à mi-chemin entre intérieur et jardin.",
+        "imageKey": "pool-house-dejeuner"
+      },
+      {
+        "number": "03",
+        "title": "Séjour et cuisine",
+        "description": "Cuisine ouverte, poêle à bois, grande table commune — le foyer de la maison landaise, pensé pour les repas à dix.",
+        "imageKey": "sejour-cuisine"
+      },
+      {
+        "number": "04",
+        "title": "Le salon",
+        "description": "Un coin plus intime, en retrait du bruit — pour lire, se poser, prolonger la soirée à deux ou trois.",
+        "imageKey": "salon"
+      },
+      {
+        "number": "05",
+        "title": "Les chambres",
+        "description": "Suite parentale, chambres secondaires et dortoir dédié aux enfants — chaque génération a son espace, sans jamais s'éloigner des autres.",
+        "imageKey": "chambre-parentale"
+      }
+    ],
+    "note": "Répartition provisoire des 5 espaces, à confirmer avec les textes définitifs du document V5."
+  },
+  "gallery": {
+    "kicker": "En images",
+    "title": "Galerie",
+    "intro": "La maison et le pool house, tels qu'ils sont.",
+    "note": "Photos d'intérieur et de nuit (piscine illuminée) en cours de production — la galerie sera complétée à leur réception."
+  },
+  "rates": {
+    "kicker": "Séjourner",
+    "title": "Tarifs & réservation",
+    "intro": "La grille tarifaire définitive est en cours de finalisation.",
+    "table": {
+      "headers": ["Période", "Nuit / semaine", "Capacité"],
+      "rows": [
+        ["Basse saison", "À communiquer", "10 personnes"],
+        ["Moyenne saison", "À communiquer", "10 personnes"],
+        ["Haute saison", "À communiquer", "10 personnes"]
+      ]
+    },
+    "note": "Grille tarifaire à produire avant mise en ligne.",
+    "bookingTitle": "Vérifier les disponibilités",
+    "bookingDescription": "Le module de réservation sera connecté à l'outil retenu par la Conciergerie Première Vue (Amenitiz, Smoobu ou équivalent), une fois la réponse obtenue."
+  },
+  "contact": {
+    "kicker": "Nous trouver",
+    "title": "Contact & accès",
+    "location": {
+      "title": "Labenne-Océan, Landes",
+      "description": "À quelques minutes à pied de l'océan, au cœur d'un quartier résidentiel boisé.",
+      "beachDistance": "Distance exacte à la plage — à confirmer"
+    },
+    "access": {
+      "title": "Accès",
+      "description": "Détails d'accès (voiture, gare la plus proche, aéroport) à préciser avant mise en ligne."
+    },
+    "contactTitle": "Une question ?",
+    "contactDescription": "Adresse e-mail et formulaire de contact à connecter.",
+    "note": "Distance exacte à la plage à confirmer avant mise en ligne."
+  },
+  "shop": {
+    "kicker": "Phase 2 — bientôt",
+    "title": "La Gemmerie côté produits",
+    "comingSoon": "Bientôt disponible",
+    "intro": "Une collection d'objets pensés dans le prolongement de la maison — sans blanc, sans écru, sans nom de ville affiché.",
+    "collections": [
+      {
+        "title": "Linge de maison",
+        "description": "Réalisé avec La Serviette Paris : d'un côté des serviettes de plage décoratives, de l'autre un linge de bain minimaliste — deux registres, une même exigence."
+      },
+      {
+        "title": "Bougies",
+        "description": "Collection en développement."
+      }
+    ],
+    "note": "Page teaser — activation complète prévue en phase 2, sans refonte de la navigation."
+  }
+}

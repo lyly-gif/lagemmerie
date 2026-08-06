@@ -1,0 +1,191 @@
+{
+  "_note": "English structure scaffolded automatically — awaiting human translation (per cahier des charges: no automated translation for final copy). Every string below is a placeholder mirroring the French structure.",
+  "site": {
+    "name": "La Gemmerie",
+    "domain": "lagemmerie.com",
+    "metaTitleSuffix": "[EN] La Gemmerie — Labenne-Océan"
+  },
+  "nav": {
+    "home": "[EN] Accueil",
+    "house": "[EN] La maison",
+    "spaces": "[EN] Les 5 espaces de vie",
+    "gallery": "[EN] Galerie",
+    "rates": "[EN] Tarifs & réservation",
+    "shop": "[EN] Côté produits",
+    "contact": "[EN] Contact & accès",
+    "bookCta": "[EN] Réserver"
+  },
+  "footer": {
+    "tagline": "[EN] Une maison, cinq espaces de vie, une seule adresse.",
+    "address": "[EN] Labenne-Océan · Landes",
+    "rights": "[EN] Tous droits réservés.",
+    "phaseTwoNote": "[EN] Collection linge & bougies — bientôt disponible."
+  },
+  "home": {
+    "kicker": "[EN] Labenne-Océan · Landes",
+    "title": "[EN] Une maison landaise. Une piscine chauffée. Dix vies qui s...",
+    "subtitle": "[EN] Entre pins et océan, une propriété pensée pour les famill...",
+    "ctaPrimary": "[EN] Découvrir la maison",
+    "ctaSecondary": "[EN] Vérifier les disponibilités",
+    "manifesto": {
+      "kicker": "[EN] Le nom",
+      "title": "[EN] La Gemmerie",
+      "paragraphs": [
+        "[EN] Ici, gemmer voulait dire inciser le pin pour en recueilli...",
+        "[EN] La Gemmerie en garde le nom, et une autre lecture : celle...",
+        "[EN] Une maison qui tient des deux — le geste artisanal d'un c..."
+      ]
+    },
+    "spacesPreview": {
+      "kicker": "[EN] Le différenciateur",
+      "title": "[EN] Les 5 espaces de vie",
+      "intro": "[EN] 170 m² de maison landaise, 40 m² de pool house indépendan...",
+      "cta": "[EN] Voir les 5 espaces"
+    },
+    "ctaBand": {
+      "title": "[EN] Dix personnes, quatre chambres, une piscine chauffée à l'...",
+      "cta": "[EN] Vérifier les disponibilités"
+    }
+  },
+  "house": {
+    "kicker": "[EN] La propriété",
+    "title": "[EN] La maison",
+    "intro": "[EN] Une maison landaise de 170 m² prolongée par un pool house...",
+    "facts": [
+      {
+        "label": "[EN] Capacité",
+        "value": "[EN] 10 personnes"
+      },
+      {
+        "label": "[EN] Chambres",
+        "value": "[EN] 4"
+      },
+      {
+        "label": "[EN] Maison landaise",
+        "value": "[EN] ≈ 170 m²"
+      },
+      {
+        "label": "[EN] Pool house",
+        "value": "[EN] ≈ 40 m²"
+      }
+    ],
+    "mainHouse": {
+      "title": "[EN] La maison landaise",
+      "description": "[EN] Charpente et tomettes, larges baies vitrées sur le jardin..."
+    },
+    "poolHouse": {
+      "title": "[EN] Le pool house",
+      "description": "[EN] Structure à pans de bois ouverte sur la terrasse, pensée ..."
+    },
+    "note": "[EN] Informations en attente de confirmation avant mise en lig..."
+  },
+  "spaces": {
+    "kicker": "[EN] Le différenciateur",
+    "title": "[EN] Les 5 espaces de vie",
+    "intro": "[EN] Le point commun des familles qui choisissent La Gemmerie ...",
+    "items": [
+      {
+        "number": "01",
+        "title": "[EN] La piscine et sa terrasse",
+        "description": "[EN] Chauffée à l'année, bordée de bois clair et d'un olivier ...",
+        "imageKey": "hero-piscine-jour"
+      },
+      {
+        "number": "02",
+        "title": "[EN] Le pool house",
+        "description": "[EN] Repas à l'ombre de la charpente, bar donnant sur l'eau — ...",
+        "imageKey": "pool-house-dejeuner"
+      },
+      {
+        "number": "03",
+        "title": "[EN] Séjour et cuisine",
+        "description": "[EN] Cuisine ouverte, poêle à bois, grande table commune — le ...",
+        "imageKey": "sejour-cuisine"
+      },
+      {
+        "number": "04",
+        "title": "[EN] Le salon",
+        "description": "[EN] Un coin plus intime, en retrait du bruit — pour lire, se ...",
+        "imageKey": "salon"
+      },
+      {
+        "number": "05",
+        "title": "[EN] Les chambres",
+        "description": "[EN] Suite parentale, chambres secondaires et dortoir dédié au...",
+        "imageKey": "chambre-parentale"
+      }
+    ],
+    "note": "[EN] Répartition provisoire des 5 espaces, à confirmer avec le..."
+  },
+  "gallery": {
+    "kicker": "[EN] En images",
+    "title": "[EN] Galerie",
+    "intro": "[EN] La maison et le pool house, tels qu'ils sont.",
+    "note": "[EN] Photos d'intérieur et de nuit (piscine illuminée) en cour..."
+  },
+  "rates": {
+    "kicker": "[EN] Séjourner",
+    "title": "[EN] Tarifs & réservation",
+    "intro": "[EN] La grille tarifaire définitive est en cours de finalisation.",
+    "table": {
+      "headers": [
+        "[EN] Période",
+        "[EN] Nuit / semaine",
+        "[EN] Capacité"
+      ],
+      "rows": [
+        [
+          "[EN] Basse saison",
+          "[EN] À communiquer",
+          "[EN] 10 personnes"
+        ],
+        [
+          "[EN] Moyenne saison",
+          "[EN] À communiquer",
+          "[EN] 10 personnes"
+        ],
+        [
+          "[EN] Haute saison",
+          "[EN] À communiquer",
+          "[EN] 10 personnes"
+        ]
+      ]
+    },
+    "note": "[EN] Grille tarifaire à produire avant mise en ligne.",
+    "bookingTitle": "[EN] Vérifier les disponibilités",
+    "bookingDescription": "[EN] Le module de réservation sera connecté à l'outil retenu p..."
+  },
+  "contact": {
+    "kicker": "[EN] Nous trouver",
+    "title": "[EN] Contact & accès",
+    "location": {
+      "title": "[EN] Labenne-Océan, Landes",
+      "description": "[EN] À quelques minutes à pied de l'océan, au cœur d'un quarti...",
+      "beachDistance": "[EN] Distance exacte à la plage — à confirmer"
+    },
+    "access": {
+      "title": "[EN] Accès",
+      "description": "[EN] Détails d'accès (voiture, gare la plus proche, aéroport) ..."
+    },
+    "contactTitle": "[EN] Une question ?",
+    "contactDescription": "[EN] Adresse e-mail et formulaire de contact à connecter.",
+    "note": "[EN] Distance exacte à la plage à confirmer avant mise en ligne."
+  },
+  "shop": {
+    "kicker": "[EN] Phase 2 — bientôt",
+    "title": "[EN] La Gemmerie côté produits",
+    "comingSoon": "[EN] Bientôt disponible",
+    "intro": "[EN] Une collection d'objets pensés dans le prolongement de la...",
+    "collections": [
+      {
+        "title": "[EN] Linge de maison",
+        "description": "[EN] Réalisé avec La Serviette Paris : d'un côté des serviette..."
+      },
+      {
+        "title": "[EN] Bougies",
+        "description": "[EN] Collection en développement."
+      }
+    ],
+    "note": "[EN] Page teaser — activation complète prévue en phase 2, sans..."
+  }
+}
