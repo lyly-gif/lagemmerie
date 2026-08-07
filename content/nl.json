@@ -232,38 +232,21 @@
   "gallery": {
     "kicker": "[NL] En images",
     "title": "[NL] Galerie",
-    "intro": "[NL] La maison et le pool house, tels qu'ils sont.",
-    "note": "[NL] Photos d'intérieur et de nuit (piscine illuminée) en cour..."
+    "intro": "[NL] La maison et le pool house, tels qu'ils sont — espace par...",
+    "note": "[NL] Photos d'intérieur et de nuit (piscine illuminée) en cour...",
+    "categories": {
+      "poolHouse": "[NL] Le pool house",
+      "poolGarden": "[NL] La piscine & le jardin",
+      "livingKitchen": "[NL] Séjour & cuisine",
+      "lounge": "[NL] Le salon",
+      "bedrooms": "[NL] Les chambres & la salle de bain"
+    }
   },
   "rates": {
     "kicker": "[NL] Séjourner",
-    "title": "[NL] Les réservations ouvrent bientôt",
-    "intro": "[NL] La grille tarifaire de La Gemmerie est en cours de finali...",
-    "table": {
-      "headers": [
-        "[NL] Période",
-        "[NL] Nuit / semaine",
-        "[NL] Capacité"
-      ],
-      "rows": [
-        [
-          "[NL] Basse saison",
-          "[NL] À communiquer",
-          "[NL] 8 personnes"
-        ],
-        [
-          "[NL] Moyenne saison",
-          "[NL] À communiquer",
-          "[NL] 8 personnes"
-        ],
-        [
-          "[NL] Haute saison",
-          "[NL] À communiquer",
-          "[NL] 8 personnes"
-        ]
-      ]
-    },
-    "note": "[NL] Grille tarifaire à produire avant mise en ligne.",
+    "title": "[NL] Réservez votre séjour",
+    "intro": "[NL] Consultez les disponibilités réelles ci-dessous et réserv...",
+    "calendarIntro": "[NL] Sélectionnez vos dates pour voir le tarif exact du séjour.",
     "whyBookDirect": {
       "kicker": "[NL] Pourquoi réserver en direct",
       "title": "[NL] Réserver directement auprès de La Gemmerie, c'est :",
@@ -273,21 +256,7 @@
         "[NL] le rituel d'accueil La Gemmerie offert à chaque séjour ré..."
       ]
     },
-    "waitlist": {
-      "title": "[NL] Être averti·e à l'ouverture des réservations",
-      "firstName": "[NL] Prénom",
-      "email": "[NL] E-mail",
-      "emailRequiredNote": "[NL] obligatoire",
-      "dates": "[NL] Dates envisagées",
-      "datesPlaceholder": "[NL] ex. « été 2027 », « vacances de la Toussaint »",
-      "guests": "[NL] Nombre de personnes",
-      "guestsPlaceholder": "[NL] Sélectionner",
-      "submit": "[NL] Être averti·e en priorité",
-      "reassurance": "[NL] Vous recevrez un seul e-mail, dès l'ouverture des réserva...",
-      "successTitle": "[NL] C'est noté.",
-      "successMessage": "[NL] Votre messagerie s'est ouverte avec la demande pré-rempli..."
-    },
-    "footerNote": "[NL] Une question sur la maison, sa capacité ou son accès en a...",
+    "footerNote": "[NL] Une question sur la maison, sa capacité ou son accès ?",
     "footerCta": "[NL] Écrivez-nous directement"
   },
   "contact": {

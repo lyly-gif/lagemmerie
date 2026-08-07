@@ -16,10 +16,10 @@ export const featured = {
 
 export type FeaturedKey = keyof typeof featured;
 
-// 25 is the welcome-ritual flat-lay (kraft bag, "Bienvenue" card, Landes
-// towel) — pulled out of the generic grid and featured on /tarifs instead
-// (brief §5: differentiator worth surfacing, not burying in the gallery).
-const GALLERY_EXCLUDE = new Set([25]);
+// Photo 25 (welcome-ritual flat-lay: kraft bag, "Bienvenue" card, Landes
+// towel) is deliberately absent from every group below — it's pulled out of
+// the generic grid and featured on /tarifs instead (brief §5: differentiator
+// worth surfacing, not burying in the gallery).
 
 // Real pixel dimensions (sips), needed for the masonry layout: <Image>
 // without `fill` sizes itself from width/height, which is what lets each
@@ -58,9 +58,15 @@ const GALLERY_DIMENSIONS: Record<string, { width: number; height: number }> = {
   "31": { width: 1820, height: 1365 },
 };
 
-export const galleryImages = Array.from({ length: 31 }, (_, i) => i + 1)
-  .filter((n) => !GALLERY_EXCLUDE.has(n))
-  .map((n) => {
+export type GalleryImage = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
+function buildImages(numbers: number[]): GalleryImage[] {
+  return numbers.map((n) => {
     const num = String(n).padStart(2, "0");
     return {
       src: `/images/gallery/${num}.jpg`,
@@ -68,3 +74,19 @@ export const galleryImages = Array.from({ length: 31 }, (_, i) => i + 1)
       ...GALLERY_DIMENSIONS[num],
     };
   });
+}
+
+// Grouped by space rather than shown as one flat grid, so visitors read the
+// gallery as "these are the distinct rooms" instead of a generic photo dump.
+const GALLERY_GROUPS: { key: string; numbers: number[] }[] = [
+  { key: "poolHouse", numbers: [2, 3, 5, 7, 8, 9, 28] },
+  { key: "poolGarden", numbers: [1, 4, 6, 29, 30, 31] },
+  { key: "livingKitchen", numbers: [10, 14, 18, 19, 20, 26, 27] },
+  { key: "lounge", numbers: [12, 13, 24] },
+  { key: "bedrooms", numbers: [11, 15, 16, 17, 21, 22, 23] },
+];
+
+export const galleryCategories = GALLERY_GROUPS.map((group) => ({
+  key: group.key,
+  images: buildImages(group.numbers),
+}));

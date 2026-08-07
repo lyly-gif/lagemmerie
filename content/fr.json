@@ -163,22 +163,21 @@
   "gallery": {
     "kicker": "En images",
     "title": "Galerie",
-    "intro": "La maison et le pool house, tels qu'ils sont.",
-    "note": "Photos d'intérieur et de nuit (piscine illuminée) en cours de production — la galerie sera complétée à leur réception."
+    "intro": "La maison et le pool house, tels qu'ils sont — espace par espace.",
+    "note": "Photos d'intérieur et de nuit (piscine illuminée) en cours de production — la galerie sera complétée à leur réception.",
+    "categories": {
+      "poolHouse": "Le pool house",
+      "poolGarden": "La piscine & le jardin",
+      "livingKitchen": "Séjour & cuisine",
+      "lounge": "Le salon",
+      "bedrooms": "Les chambres & la salle de bain"
+    }
   },
   "rates": {
     "kicker": "Séjourner",
-    "title": "Les réservations ouvrent bientôt",
-    "intro": "La grille tarifaire de La Gemmerie est en cours de finalisation. Pour vous garantir le meilleur tarif — sans intermédiaire, sans commission — nous ouvrons les réservations directes en priorité aux personnes inscrites ci-dessous.",
-    "table": {
-      "headers": ["Période", "Nuit / semaine", "Capacité"],
-      "rows": [
-        ["Basse saison", "À communiquer", "8 personnes"],
-        ["Moyenne saison", "À communiquer", "8 personnes"],
-        ["Haute saison", "À communiquer", "8 personnes"]
-      ]
-    },
-    "note": "Grille tarifaire à produire avant mise en ligne.",
+    "title": "Réservez votre séjour",
+    "intro": "Consultez les disponibilités réelles ci-dessous et réservez directement auprès de La Gemmerie — sans commission de plateforme, sans intermédiaire.",
+    "calendarIntro": "Sélectionnez vos dates pour voir le tarif exact du séjour.",
     "whyBookDirect": {
       "kicker": "Pourquoi réserver en direct",
       "title": "Réserver directement auprès de La Gemmerie, c'est :",
@@ -188,21 +187,7 @@
         "le rituel d'accueil La Gemmerie offert à chaque séjour réservé en direct — un plateau de bienvenue à votre arrivée, puis une pâtisserie landaise le lendemain matin, accompagnée d'un mot écrit à la main"
       ]
     },
-    "waitlist": {
-      "title": "Être averti·e à l'ouverture des réservations",
-      "firstName": "Prénom",
-      "email": "E-mail",
-      "emailRequiredNote": "obligatoire",
-      "dates": "Dates envisagées",
-      "datesPlaceholder": "ex. « été 2027 », « vacances de la Toussaint »",
-      "guests": "Nombre de personnes",
-      "guestsPlaceholder": "Sélectionner",
-      "submit": "Être averti·e en priorité",
-      "reassurance": "Vous recevrez un seul e-mail, dès l'ouverture des réservations. Aucune sollicitation avant cela.",
-      "successTitle": "C'est noté.",
-      "successMessage": "Votre messagerie s'est ouverte avec la demande pré-remplie — il ne reste qu'à l'envoyer. Nous vous écrirons dès l'ouverture des réservations."
-    },
-    "footerNote": "Une question sur la maison, sa capacité ou son accès en attendant ?",
+    "footerNote": "Une question sur la maison, sa capacité ou son accès ?",
     "footerCta": "Écrivez-nous directement"
   },
   "contact": {

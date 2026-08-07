@@ -4,7 +4,7 @@ import { Kicker } from "@/components/Kicker";
 import { Gallery } from "@/components/Gallery";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
-import { galleryImages } from "@/lib/images";
+import { galleryCategories } from "@/lib/images";
 
 const title = "Galerie photo — La Gemmerie, Labenne-Océan";
 const description =
@@ -36,8 +36,24 @@ export default async function GaleriePage() {
         </p>
       </Reveal>
 
-      <div className="mt-14">
-        <Gallery images={galleryImages} />
+      <div className="mt-14 flex flex-col gap-16">
+        {galleryCategories.map((category, i) => (
+          <div key={category.key}>
+            <Reveal>
+              <div className="flex items-baseline gap-3">
+                <span className="font-display text-sm text-bronze-600 italic">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h2 className="font-display text-2xl text-forest-950 md:text-3xl">
+                  {g.categories[category.key as keyof typeof g.categories]}
+                </h2>
+              </div>
+            </Reveal>
+            <div className="mt-6">
+              <Gallery images={category.images} />
+            </div>
+          </div>
+        ))}
       </div>
 
       <Reveal className="mt-14">

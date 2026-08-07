@@ -3,14 +3,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
-import { WaitlistForm } from "@/components/WaitlistForm";
+import { HostawayCalendarWidget } from "@/components/HostawayCalendarWidget";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
 
 const title = "Réserver à La Gemmerie — Réservation directe à Labenne-Océan";
 const description =
-  "Réservez votre séjour à La Gemmerie en direct, sans commission. Ouverture prochaine des réservations à Labenne-Océan (Landes).";
+  "Réservez votre séjour à La Gemmerie en direct, sans commission. Disponibilités réelles à Labenne-Océan (Landes).";
 
 export const metadata: Metadata = {
   title,
@@ -37,56 +37,11 @@ export default async function TarifsPage() {
         <p className="text-balance mt-6 max-w-xl leading-relaxed text-forest-800/80">{r.intro}</p>
       </Reveal>
 
-      <Reveal delay={280} className="relative mt-14">
-        <div className="overflow-x-auto">
-        <table className="w-full min-w-[480px] border-collapse text-left">
-          <thead>
-            <tr className="border-b border-line">
-              {r.table.headers.map((head) => (
-                <th
-                  key={head}
-                  className="pb-4 text-xs font-medium tracking-[0.14em] text-forest-800/60 uppercase"
-                >
-                  {head}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {r.table.rows.map((row) => (
-              <tr key={row[0]} className="border-b border-line/60">
-                {row.map((cell, i) => (
-                  <td
-                    key={cell}
-                    className={
-                      "py-4 " +
-                      (i === 0
-                        ? "font-display text-lg text-forest-950 italic"
-                        : "text-forest-800/70")
-                    }
-                  >
-                    {cell}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        </div>
-        {/* Scroll affordance: the table exceeds the viewport below md, so a
-            silent horizontal cut would hide the "Capacité" column entirely. */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute top-0 right-0 h-full w-10 bg-gradient-to-l from-sand-100 to-transparent md:hidden"
-        />
-      </Reveal>
-
-      <Reveal delay={310} className="mt-2 text-xs text-forest-800/40 md:hidden">
-        Faites glisser pour voir la capacité →
-      </Reveal>
-
-      <Reveal delay={340} className="mt-4">
-        <p className="text-xs text-bronze-700">{r.note}</p>
+      <Reveal delay={280} className="mt-14">
+        <p className="mb-6 max-w-md text-sm leading-relaxed text-forest-800/80">
+          {r.calendarIntro}
+        </p>
+        <HostawayCalendarWidget />
       </Reveal>
 
       {/* Pourquoi réserver en direct */}
@@ -116,12 +71,7 @@ export default async function TarifsPage() {
         </Reveal>
       </div>
 
-      {/* Formulaire de capture */}
-      <Reveal delay={160} className="mt-20">
-        <WaitlistForm dict={dict} />
-      </Reveal>
-
-      <Reveal className="mt-10">
+      <Reveal className="mt-20">
         <p className="text-sm text-forest-800/70">
           {r.footerNote}{" "}
           <Link
