@@ -7,9 +7,9 @@ import { getDictionary } from "@/lib/content";
 import { featured, type FeaturedKey } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Les 5 espaces de vie",
+  title: "Grande maison pour plusieurs familles dans les Landes",
   description:
-    "Piscine chauffée, pool house, séjour-cuisine, salon et chambres : les 5 espaces de vie de La Gemmerie, pensés pour les familles à plusieurs foyers.",
+    "5 espaces de vie pensés pour recevoir plusieurs familles ou un groupe d'amis en toute intimité, à Labenne-Océan (Landes).",
 };
 
 export default async function EspacesPage() {

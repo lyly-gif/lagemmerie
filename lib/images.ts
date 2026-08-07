@@ -11,14 +11,22 @@ export const featured = {
   "dortoir-enfants": "/images/featured/dortoir-enfants.jpg",
   "salle-de-bain": "/images/featured/salle-de-bain.jpg",
   "detail-cuisine": "/images/featured/detail-cuisine.jpg",
+  "rituel-accueil": "/images/featured/rituel-accueil.jpg",
 } as const;
 
 export type FeaturedKey = keyof typeof featured;
 
-export const galleryImages = Array.from({ length: 31 }, (_, i) => {
-  const num = String(i + 1).padStart(2, "0");
-  return {
-    src: `/images/gallery/${num}.jpg`,
-    alt: `La Gemmerie — maison landaise de Labenne-Océan, photo ${num}`,
-  };
-});
+// 25 is the welcome-ritual flat-lay (kraft bag, "Bienvenue" card, Landes
+// towel) — pulled out of the generic grid and featured on /tarifs instead
+// (brief §5: differentiator worth surfacing, not burying in the gallery).
+const GALLERY_EXCLUDE = new Set([25]);
+
+export const galleryImages = Array.from({ length: 31 }, (_, i) => i + 1)
+  .filter((n) => !GALLERY_EXCLUDE.has(n))
+  .map((n) => {
+    const num = String(n).padStart(2, "0");
+    return {
+      src: `/images/gallery/${num}.jpg`,
+      alt: `La Gemmerie — maison landaise de Labenne-Océan, photo ${num}`,
+    };
+  });

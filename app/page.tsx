@@ -9,9 +9,11 @@ import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Maison landaise & piscine chauffée à Labenne-Océan",
+  // Absolute: bypasses the "%s — La Gemmerie" template so the brand name
+  // leads on the homepage specifically (SEO mapping, tarifs-et-seo-la-gemmerie.md §2).
+  title: { absolute: "La Gemmerie — Maison de vacances avec piscine chauffée à Labenne-Océan" },
   description:
-    "La Gemmerie : maison landaise de 170 m², pool house indépendant et piscine chauffée à l'année, pour 10 personnes à Labenne-Océan, Landes.",
+    "Maison landaise 10 personnes avec piscine chauffée à Labenne-Océan (Landes). Quiet luxury, 5 espaces de vie, réservation en direct.",
 };
 
 export default async function HomePage() {

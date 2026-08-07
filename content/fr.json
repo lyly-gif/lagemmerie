@@ -113,8 +113,8 @@
   },
   "rates": {
     "kicker": "Séjourner",
-    "title": "Tarifs & réservation",
-    "intro": "La grille tarifaire définitive est en cours de finalisation.",
+    "title": "Les réservations ouvrent bientôt",
+    "intro": "La grille tarifaire de La Gemmerie est en cours de finalisation. Pour vous garantir le meilleur tarif — sans intermédiaire, sans commission — nous ouvrons les réservations directes en priorité aux personnes inscrites ci-dessous.",
     "table": {
       "headers": ["Période", "Nuit / semaine", "Capacité"],
       "rows": [
@@ -124,8 +124,31 @@
       ]
     },
     "note": "Grille tarifaire à produire avant mise en ligne.",
-    "bookingTitle": "Vérifier les disponibilités",
-    "bookingDescription": "Le module de réservation sera connecté à l'outil retenu par la Conciergerie Première Vue (Amenitiz, Smoobu ou équivalent), une fois la réponse obtenue."
+    "whyBookDirect": {
+      "kicker": "Pourquoi réserver en direct",
+      "title": "Réserver directement auprès de La Gemmerie, c'est :",
+      "items": [
+        "un tarif sans commission de plateforme, donc le meilleur prix possible pour le même séjour",
+        "un contact direct avec la conciergerie pour organiser votre arrivée",
+        "le rituel d'accueil La Gemmerie offert à chaque séjour réservé en direct — un plateau de bienvenue à votre arrivée, puis une pâtisserie landaise le lendemain matin, accompagnée d'un mot écrit à la main"
+      ]
+    },
+    "waitlist": {
+      "title": "Être averti·e à l'ouverture des réservations",
+      "firstName": "Prénom",
+      "email": "E-mail",
+      "emailRequiredNote": "obligatoire",
+      "dates": "Dates envisagées",
+      "datesPlaceholder": "ex. « été 2027 », « vacances de la Toussaint »",
+      "guests": "Nombre de personnes",
+      "guestsPlaceholder": "Sélectionner",
+      "submit": "Être averti·e en priorité",
+      "reassurance": "Vous recevrez un seul e-mail, dès l'ouverture des réservations. Aucune sollicitation avant cela.",
+      "successTitle": "C'est noté.",
+      "successMessage": "Votre messagerie s'est ouverte avec la demande pré-remplie — il ne reste qu'à l'envoyer. Nous vous écrirons dès l'ouverture des réservations."
+    },
+    "footerNote": "Une question sur la maison, sa capacité ou son accès en attendant ?",
+    "footerCta": "Écrivez-nous directement"
   },
   "contact": {
     "kicker": "Nous trouver",

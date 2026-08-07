@@ -7,9 +7,9 @@ import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "La maison — maison landaise & pool house à Labenne-Océan",
+  title: "Maison landaise 170 m² avec pool house à Labenne-Océan",
   description:
-    "Maison landaise de 170 m² prolongée par un pool house contemporain de 40 m², pour 10 personnes réparties en 4 chambres, à Labenne-Océan.",
+    "Maison landaise de 170 m² et pool house contemporain de 40 m², 4 chambres, jusqu'à 10 personnes, à Labenne-Océan (Landes).",
 };
 
 export default async function LaMaisonPage() {

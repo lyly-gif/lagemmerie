@@ -125,8 +125,8 @@
   },
   "rates": {
     "kicker": "[EN] Séjourner",
-    "title": "[EN] Tarifs & réservation",
-    "intro": "[EN] La grille tarifaire définitive est en cours de finalisation.",
+    "title": "[EN] Les réservations ouvrent bientôt",
+    "intro": "[EN] La grille tarifaire de La Gemmerie est en cours de finali...",
     "table": {
       "headers": [
         "[EN] Période",
@@ -152,8 +152,31 @@
       ]
     },
     "note": "[EN] Grille tarifaire à produire avant mise en ligne.",
-    "bookingTitle": "[EN] Vérifier les disponibilités",
-    "bookingDescription": "[EN] Le module de réservation sera connecté à l'outil retenu p..."
+    "whyBookDirect": {
+      "kicker": "[EN] Pourquoi réserver en direct",
+      "title": "[EN] Réserver directement auprès de La Gemmerie, c'est :",
+      "items": [
+        "[EN] un tarif sans commission de plateforme, donc le meilleur ...",
+        "[EN] un contact direct avec la conciergerie pour organiser vot...",
+        "[EN] le rituel d'accueil La Gemmerie offert à chaque séjour ré..."
+      ]
+    },
+    "waitlist": {
+      "title": "[EN] Être averti·e à l'ouverture des réservations",
+      "firstName": "[EN] Prénom",
+      "email": "[EN] E-mail",
+      "emailRequiredNote": "[EN] obligatoire",
+      "dates": "[EN] Dates envisagées",
+      "datesPlaceholder": "[EN] ex. « été 2027 », « vacances de la Toussaint »",
+      "guests": "[EN] Nombre de personnes",
+      "guestsPlaceholder": "[EN] Sélectionner",
+      "submit": "[EN] Être averti·e en priorité",
+      "reassurance": "[EN] Vous recevrez un seul e-mail, dès l'ouverture des réserva...",
+      "successTitle": "[EN] C'est noté.",
+      "successMessage": "[EN] Votre messagerie s'est ouverte avec la demande pré-rempli..."
+    },
+    "footerNote": "[EN] Une question sur la maison, sa capacité ou son accès en a...",
+    "footerCta": "[EN] Écrivez-nous directement"
   },
   "contact": {
     "kicker": "[EN] Nous trouver",

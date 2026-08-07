@@ -27,10 +27,10 @@
   --font-display: var(--font-fraunces), "Iowan Old Style", serif;
   --font-body: var(--font-karla), "Helvetica Neue", sans-serif;
 
-  --animate-reveal: reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
-  --animate-reveal-delay-1: reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
-  --animate-reveal-delay-2: reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
-  --animate-reveal-delay-3: reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.36s both;
+  --animate-reveal: reveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-reveal-delay-1: reveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.06s both;
+  --animate-reveal-delay-2: reveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+  --animate-reveal-delay-3: reveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
 
   @keyframes reveal {
     from {

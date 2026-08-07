@@ -1,17 +1,20 @@
-import type { Content } from "@/lib/content";
-
 /**
  * Deliberately decoupled from any availability/payment logic (cahier des
  * charges §6): once the Conciergerie Première Vue confirms its channel
  * manager (Amenitiz, Smoobu, …), swap the placeholder below for that
  * provider's embed/iframe or a server-side API integration.
+ *
+ * Not currently rendered on /tarifs — replaced there by <WaitlistForm />
+ * as a stopgap capture flow (brief priority 1). Drop this back in once the
+ * real booking module is ready to connect.
  */
-export function BookingWidget({ dict }: { dict: Content }) {
+export function BookingWidget() {
   return (
     <div className="grain border border-line bg-forest-950 p-8 text-sand-100 md:p-12">
-      <p className="font-display text-2xl italic md:text-3xl">{dict.rates.bookingTitle}</p>
+      <p className="font-display text-2xl italic md:text-3xl">Vérifier les disponibilités</p>
       <p className="mt-4 max-w-xl text-sm leading-relaxed text-sand-100/70">
-        {dict.rates.bookingDescription}
+        Le module de réservation sera connecté à l&rsquo;outil retenu par la Conciergerie
+        Première Vue (Amenitiz, Smoobu ou équivalent), une fois la réponse obtenue.
       </p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
