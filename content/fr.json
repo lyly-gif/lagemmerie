@@ -23,7 +23,7 @@
   },
   "home": {
     "kicker": "Labenne-Océan · Landes",
-    "title": "Une maison landaise. Une piscine chauffée. Dix vies qui se retrouvent.",
+    "title": "Une maison landaise, un pool house, une piscine chauffée à l'année.",
     "subtitle": "Entre pins et océan, une propriété pensée pour les familles à plusieurs foyers — chacun son espace, tous réunis au même endroit.",
     "ctaPrimary": "Découvrir la maison",
     "ctaSecondary": "Vérifier les disponibilités",
@@ -36,25 +36,86 @@
         "Une maison qui tient des deux — le geste artisanal d'un côté, l'exigence discrète de l'autre."
       ]
     },
+    "amenities": {
+      "title": "Ce qui vous attend sur place",
+      "items": [
+        { "icon": "pool", "label": "Piscine chauffée avril–octobre" },
+        { "icon": "wifi", "label": "Wifi dans toute la maison" },
+        { "icon": "kitchen", "label": "Pool house et cuisine d'été" },
+        { "icon": "linens", "label": "Linge de lit et ménage inclus" },
+        { "icon": "families", "label": "Idéal familles à plusieurs foyers" },
+        { "icon": "home", "label": "Parking privé sur la propriété" }
+      ]
+    },
     "spacesPreview": {
       "kicker": "Le différenciateur",
       "title": "Les 5 espaces de vie",
-      "intro": "170 m² de maison landaise, 40 m² de pool house indépendant, une piscine chauffée — assez d'espace pour que chaque génération trouve le sien.",
-      "cta": "Voir les 5 espaces"
+      "intro": "150 m² de maison landaise, 40 m² de pool house indépendant, une piscine chauffée — assez d'espace pour que chaque génération trouve le sien.",
+      "cta": "Voir les 5 espaces",
+      "differentiatorTag": "Le différenciateur"
     },
     "ctaBand": {
-      "title": "Dix personnes, quatre chambres, une piscine chauffée à l'année.",
+      "title": "Huit personnes, quatre chambres, une piscine chauffée à l'année.",
+      "cta": "Vérifier les disponibilités"
+    }
+  },
+  "practical": {
+    "kicker": "Bon à savoir",
+    "title": "Informations pratiques",
+    "tabs": {
+      "equip": "Équipements",
+      "loc": "Localisation",
+      "cal": "Disponibilités"
+    },
+    "equipment": {
+      "items": [
+        { "icon": "pool", "label": "Piscine chauffée (27°C, avril–octobre)" },
+        { "icon": "wifi", "label": "Wifi dans toute la maison" },
+        { "icon": "kitchen", "label": "Cuisine équipée + cuisine d'été" },
+        { "icon": "laundry", "label": "Lave-linge & sèche-linge" },
+        { "icon": "linens", "label": "Linge de lit & serviettes fournis" },
+        { "icon": "cleaning", "label": "Ménage inclus avant l'arrivée" },
+        { "icon": "home", "label": "Parking privé sur la propriété" },
+        { "icon": "tv", "label": "Salon TV sous combles" },
+        { "icon": "smokeDetector", "label": "Détecteurs fumée & monoxyde installés" },
+        { "icon": "poolSafety", "label": "Volet de sécurité piscine" },
+        { "icon": "families", "label": "Idéal familles à plusieurs foyers" },
+        { "icon": "garden", "label": "Terrain clos et arboré, 1 330 m²" }
+      ],
+      "moreCta": "Voir tous les équipements"
+    },
+    "location": {
+      "mapQuery": "Allée+de+Normandie%2C+40530+Labenne%2C+France",
+      "mapLabel": "Allée de Normandie, Labenne-Océan",
+      "facts": [
+        {
+          "title": "Allée de Normandie",
+          "description": "Labenne-Océan, Landes — le numéro exact n'est pas affiché publiquement, il est communiqué après confirmation de réservation."
+        },
+        { "title": "400 m", "description": "Distance à pied jusqu'à la plage" },
+        {
+          "title": "Terrain clos, 1 330 m²",
+          "description": "Quartier résidentiel calme de Labenne-Océan"
+        }
+      ],
+      "note": "La carte indique la rue ; le numéro de la propriété reste privé jusqu'à la confirmation de réservation."
+    },
+    "availability": {
+      "monthLabel": "Juillet 2027 — exemple d'affichage",
+      "legendAvailable": "Disponible",
+      "legendUnavailable": "Déjà réservé",
+      "sideText": "Le calendrier réel se connectera directement à l'outil de gestion des disponibilités une fois la conciergerie confirmée (Amenitiz ou Smoobu). Cet écran illustre la mise en page cible.",
       "cta": "Vérifier les disponibilités"
     }
   },
   "house": {
     "kicker": "La propriété",
     "title": "La maison",
-    "intro": "Une maison landaise de 170 m² prolongée par un pool house contemporain de 40 m², pensés comme deux ambiances complémentaires plutôt que comme une extension.",
+    "intro": "Une maison landaise de 150 m² prolongée par un pool house contemporain de 40 m², pensés comme deux ambiances complémentaires plutôt que comme une extension.",
     "facts": [
-      { "label": "Capacité", "value": "10 personnes" },
+      { "label": "Capacité", "value": "8 personnes" },
       { "label": "Chambres", "value": "4" },
-      { "label": "Maison landaise", "value": "≈ 170 m²" },
+      { "label": "Maison landaise", "value": "≈ 150 m²" },
       { "label": "Pool house", "value": "≈ 40 m²" }
     ],
     "mainHouse": {
@@ -63,9 +124,8 @@
     },
     "poolHouse": {
       "title": "Le pool house",
-      "description": "Structure à pans de bois ouverte sur la terrasse, pensée comme un lieu de vie à part entière : repas à l'ombre, siestes, prolongement naturel de la piscine."
-    },
-    "note": "Informations en attente de confirmation avant mise en ligne : dimensions exactes de la piscine, statut de la remise en peinture des portes."
+      "description": "Structure à pans de bois ouverte sur la terrasse, pensée comme un lieu de vie à part entière : repas à l'ombre, siestes, prolongement naturel de la piscine chauffée à 27°C d'avril à octobre — 4,50 m sur 12 m, en contrebas de la terrasse."
+    }
   },
   "spaces": {
     "kicker": "Le différenciateur",
@@ -74,20 +134,20 @@
     "items": [
       {
         "number": "01",
-        "title": "La piscine et sa terrasse",
-        "description": "Chauffée à l'année, bordée de bois clair et d'un olivier centenaire — le cœur battant de la maison, de jour comme en soirée.",
-        "imageKey": "hero-piscine-jour"
-      },
-      {
-        "number": "02",
         "title": "Le pool house",
         "description": "Repas à l'ombre de la charpente, bar donnant sur l'eau — un lieu de vie indépendant, à mi-chemin entre intérieur et jardin.",
         "imageKey": "pool-house-dejeuner"
       },
       {
+        "number": "02",
+        "title": "La piscine et sa terrasse",
+        "description": "Chauffée à l'année, bordée de bois clair et d'un olivier centenaire — le cœur battant de la maison, de jour comme en soirée.",
+        "imageKey": "hero-piscine-jour"
+      },
+      {
         "number": "03",
         "title": "Séjour et cuisine",
-        "description": "Cuisine ouverte, poêle à bois, grande table commune — le foyer de la maison landaise, pensé pour les repas à dix.",
+        "description": "Cuisine ouverte, poêle à bois, grande table commune — le foyer de la maison landaise, pensé pour les repas à huit.",
         "imageKey": "sejour-cuisine"
       },
       {
@@ -102,8 +162,7 @@
         "description": "Suite parentale, chambres secondaires et dortoir dédié aux enfants — chaque génération a son espace, sans jamais s'éloigner des autres.",
         "imageKey": "chambre-parentale"
       }
-    ],
-    "note": "Répartition provisoire des 5 espaces, à confirmer avec les textes définitifs du document V5."
+    ]
   },
   "gallery": {
     "kicker": "En images",
@@ -118,9 +177,9 @@
     "table": {
       "headers": ["Période", "Nuit / semaine", "Capacité"],
       "rows": [
-        ["Basse saison", "À communiquer", "10 personnes"],
-        ["Moyenne saison", "À communiquer", "10 personnes"],
-        ["Haute saison", "À communiquer", "10 personnes"]
+        ["Basse saison", "À communiquer", "8 personnes"],
+        ["Moyenne saison", "À communiquer", "8 personnes"],
+        ["Haute saison", "À communiquer", "8 personnes"]
       ]
     },
     "note": "Grille tarifaire à produire avant mise en ligne.",
@@ -155,16 +214,16 @@
     "title": "Contact & accès",
     "location": {
       "title": "Labenne-Océan, Landes",
-      "description": "À quelques minutes à pied de l'océan, au cœur d'un quartier résidentiel boisé.",
-      "beachDistance": "Distance exacte à la plage — à confirmer"
+      "description": "Au cœur d'un quartier résidentiel calme et boisé, sur un terrain clos de 1 330 m².",
+      "beachDistance": "400 m à pied jusqu'à la plage"
     },
     "access": {
       "title": "Accès",
       "description": "Détails d'accès (voiture, gare la plus proche, aéroport) à préciser avant mise en ligne."
     },
     "contactTitle": "Une question ?",
-    "contactDescription": "Adresse e-mail et formulaire de contact à connecter.",
-    "note": "Distance exacte à la plage à confirmer avant mise en ligne."
+    "contactDescription": "Écrivez-nous directement, nous répondons personnellement à chaque message.",
+    "contactEmail": "contact@lagemmerie.com"
   },
   "shop": {
     "kicker": "Phase 2 — bientôt",
@@ -181,6 +240,14 @@
         "description": "Collection en développement."
       }
     ],
-    "note": "Page teaser — activation complète prévue en phase 2, sans refonte de la navigation."
+    "note": "Page teaser — activation complète prévue en phase 2, sans refonte de la navigation.",
+    "notify": {
+      "title": "Être averti·e du lancement",
+      "emailLabel": "E-mail",
+      "submit": "M'avertir au lancement",
+      "reassurance": "Un seul e-mail, au lancement de la collection. Aucune sollicitation avant cela.",
+      "successTitle": "C'est noté.",
+      "successMessage": "Nous vous écrirons dès le lancement de la collection linge & bougies."
+    }
   }
 }

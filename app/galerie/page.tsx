@@ -6,10 +6,15 @@ import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { galleryImages } from "@/lib/images";
 
+const title = "Galerie photo — La Gemmerie, Labenne-Océan";
+const description =
+  "La maison landaise et le pool house de La Gemmerie en images — Labenne-Océan, Landes.";
+
 export const metadata: Metadata = {
-  title: "Galerie",
-  description:
-    "La maison landaise et le pool house de La Gemmerie en images — Labenne-Océan, Landes.",
+  title,
+  description,
+  openGraph: { title, description },
+  twitter: { title, description },
 };
 
 export default async function GaleriePage() {

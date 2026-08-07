@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
+import { ProductNotifyForm } from "@/components/ProductNotifyForm";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 
+const title = "La Gemmerie côté produits — Linge & bougies, Labenne-Océan";
+const description =
+  "Collection de linge de maison et de bougies La Gemmerie — lancement prévu en phase 2.";
+
 export const metadata: Metadata = {
-  title: "La Gemmerie côté produits",
-  description:
-    "Collection de linge de maison et de bougies La Gemmerie — lancement prévu en phase 2.",
+  title,
+  description,
+  openGraph: { title, description },
+  twitter: { title, description },
 };
 
 export default async function BoutiquePage() {
@@ -39,7 +45,11 @@ export default async function BoutiquePage() {
         ))}
       </div>
 
-      <Reveal delay={460} className="mt-14 text-xs text-bronze-700/80">
+      <Reveal delay={460} className="mt-14 w-full">
+        <ProductNotifyForm dict={dict} />
+      </Reveal>
+
+      <Reveal delay={520} className="mt-6 text-xs text-bronze-700/80">
         {s.note}
       </Reveal>
     </section>

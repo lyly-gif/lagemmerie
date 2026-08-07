@@ -22,12 +22,16 @@ export function Header({ locale, dict }: { locale: Locale; dict: Content }) {
     <>
     <header className="sticky top-0 z-50 border-b border-line/60 bg-sand-100/90 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
-        <Link
-          href="/"
-          className="font-display text-lg italic tracking-wide text-forest-950"
-          onClick={() => setOpen(false)}
-        >
-          La Gemmerie
+        <Link href="/" onClick={() => setOpen(false)} className="shrink-0">
+          {/* eslint-disable-next-line @next/next/no-img-element -- static
+              brand SVG; next/image's raster pipeline adds nothing for vectors */}
+          <img
+            src="/images/brand/la-gemmerie-alternative-gemme-horizontal.svg"
+            alt="La Gemmerie"
+            width={196}
+            height={27}
+            className="h-[27px] w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -53,7 +57,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Content }) {
           <LanguageSwitcher current={locale} />
           <Link
             href="/tarifs"
-            className="border border-bronze-600 px-4 py-2 text-xs font-medium tracking-[0.14em] text-bronze-700 uppercase transition-colors hover:bg-bronze-600 hover:text-sand-50"
+            className="border border-bronze-600 bg-bronze-600 px-4 py-2 text-xs font-medium tracking-[0.14em] text-sand-50 uppercase transition-colors hover:bg-bronze-700"
           >
             {dict.nav.bookCta}
           </Link>
@@ -96,7 +100,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Content }) {
             <Link
               href="/tarifs"
               onClick={() => setOpen(false)}
-              className="border border-bronze-500 px-4 py-2 text-xs font-medium tracking-[0.14em] text-bronze-400 uppercase"
+              className="border border-bronze-500 bg-bronze-500 px-4 py-2 text-xs font-medium tracking-[0.14em] text-forest-950 uppercase"
             >
               {dict.nav.bookCta}
             </Link>

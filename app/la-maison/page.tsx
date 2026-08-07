@@ -6,10 +6,15 @@ import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
 
+const title = "Maison landaise 150 m² avec pool house à Labenne-Océan";
+const description =
+  "Maison landaise de 150 m² et pool house contemporain de 40 m², 4 chambres, jusqu'à 8 personnes, à Labenne-Océan (Landes).";
+
 export const metadata: Metadata = {
-  title: "Maison landaise 170 m² avec pool house à Labenne-Océan",
-  description:
-    "Maison landaise de 170 m² et pool house contemporain de 40 m², 4 chambres, jusqu'à 10 personnes, à Labenne-Océan (Landes).",
+  title,
+  description,
+  openGraph: { title, description },
+  twitter: { title, description },
 };
 
 export default async function LaMaisonPage() {
@@ -102,15 +107,6 @@ export default async function LaMaisonPage() {
             {h.poolHouse.title}
           </h2>
           <p className="mt-5 leading-relaxed text-forest-800/80">{h.poolHouse.description}</p>
-        </Reveal>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-6 pb-24 md:px-10">
-        <Reveal>
-          <div className="border border-bronze-500/30 bg-sand-200 px-6 py-5 text-sm text-forest-800/80">
-            <span className="font-medium text-bronze-700">À confirmer avant mise en ligne —</span>{" "}
-            {h.note}
-          </div>
         </Reveal>
       </section>
     </>

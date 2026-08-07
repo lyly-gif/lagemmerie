@@ -6,16 +6,22 @@ import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured, type FeaturedKey } from "@/lib/images";
 
+const title = "Grande maison pour plusieurs familles dans les Landes";
+const description =
+  "5 espaces de vie pensés pour recevoir plusieurs familles ou un groupe d'amis en toute intimité, à Labenne-Océan (Landes).";
+
 export const metadata: Metadata = {
-  title: "Grande maison pour plusieurs familles dans les Landes",
-  description:
-    "5 espaces de vie pensés pour recevoir plusieurs familles ou un groupe d'amis en toute intimité, à Labenne-Océan (Landes).",
+  title,
+  description,
+  openGraph: { title, description },
+  twitter: { title, description },
 };
 
 export default async function EspacesPage() {
   const locale = await getCurrentLocale();
   const dict = getDictionary(locale);
   const s = dict.spaces;
+  const [signature, ...rest] = s.items;
 
   return (
     <>
@@ -33,8 +39,32 @@ export default async function EspacesPage() {
         </Reveal>
       </section>
 
+      {/* Signature space — full-bleed treatment, deliberately not part of the
+          grid rhythm below: THE differentiator, not item 1 of 5. */}
+      <Reveal className="relative flex min-h-[70vh] items-end overflow-hidden bg-forest-950">
+        <Image
+          src={featured[signature.imageKey as FeaturedKey]}
+          alt={signature.title}
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/25 to-forest-950/10" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-14 md:px-10 md:pb-20">
+          <p className="font-display text-6xl text-bronze-400/70 italic md:text-7xl">
+            {signature.number}
+          </p>
+          <h2 className="mt-4 font-display text-3xl text-sand-100 md:text-5xl">
+            {signature.title}
+          </h2>
+          <p className="text-balance mt-5 max-w-lg leading-relaxed text-sand-100/80">
+            {signature.description}
+          </p>
+        </div>
+      </Reveal>
+
       <div>
-        {s.items.map((item, i) => {
+        {rest.map((item, i) => {
           const reversed = i % 2 === 1;
           return (
             <section
@@ -70,14 +100,6 @@ export default async function EspacesPage() {
           );
         })}
       </div>
-
-      <section className="mx-auto max-w-4xl px-6 pb-24 md:px-10">
-        <Reveal>
-          <div className="border border-bronze-500/30 bg-sand-200 px-6 py-5 text-sm text-forest-800/80">
-            {s.note}
-          </div>
-        </Reveal>
-      </section>
     </>
   );
 }

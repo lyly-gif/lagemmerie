@@ -1,0 +1,87 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useRef } from "react";
+import { featured, type FeaturedKey } from "@/lib/images";
+
+type SpaceItem = {
+  number: string;
+  title: string;
+  imageKey: string;
+};
+
+export function SpacesCarousel({
+  items,
+  differentiatorTag,
+}: {
+  items: SpaceItem[];
+  differentiatorTag: string;
+}) {
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  function scrollByCard(direction: 1 | -1) {
+    const track = trackRef.current;
+    const card = track?.querySelector<HTMLElement>("[data-card]");
+    if (!track || !card) return;
+    track.scrollBy({ left: direction * (card.offsetWidth + 18), behavior: "smooth" });
+  }
+
+  return (
+    <div>
+      <div className="mb-6 flex justify-end gap-2">
+        <button
+          type="button"
+          aria-label="Précédent"
+          onClick={() => scrollByCard(-1)}
+          className="flex h-[42px] w-[42px] items-center justify-center border border-bronze-500 text-bronze-700 transition-colors hover:bg-bronze-600 hover:text-sand-50"
+        >
+          ‹
+        </button>
+        <button
+          type="button"
+          aria-label="Suivant"
+          onClick={() => scrollByCard(1)}
+          className="flex h-[42px] w-[42px] items-center justify-center border border-bronze-500 text-bronze-700 transition-colors hover:bg-bronze-600 hover:text-sand-50"
+        >
+          ›
+        </button>
+      </div>
+
+      <div
+        ref={trackRef}
+        className="scrollbar-none flex gap-[18px] overflow-x-auto pb-3"
+        style={{ scrollSnapType: "x mandatory" }}
+      >
+        {items.map((item, i) => (
+          <Link
+            key={item.number}
+            href="/espaces"
+            data-card
+            style={{ scrollSnapAlign: "start" }}
+            className={`group relative aspect-[3/4] w-[min(78vw,380px)] shrink-0 overflow-hidden bg-forest-900 ${
+              i === 0 ? "w-[min(84vw,440px)]" : ""
+            }`}
+          >
+            <Image
+              src={featured[item.imageKey as FeaturedKey]}
+              alt={item.title}
+              fill
+              sizes="(min-width: 768px) 40vw, 80vw"
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+            {i === 0 && (
+              <span className="absolute top-4 left-4 bg-bronze-600 px-2.5 py-1.5 text-[10px] tracking-[0.1em] text-sand-50 uppercase">
+                {differentiatorTag}
+              </span>
+            )}
+            <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-forest-950/85 via-forest-950/10 to-transparent p-5">
+              <span className="font-display text-sm text-bronze-400 italic">{item.number}</span>
+              <span className="font-display text-xl text-sand-50">{item.title}</span>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}

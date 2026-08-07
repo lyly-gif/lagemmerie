@@ -24,7 +24,7 @@
 
   --color-line: #cabb9a;
 
-  --font-display: var(--font-fraunces), "Iowan Old Style", serif;
+  --font-display: var(--font-playfair), Georgia, serif;
   --font-body: var(--font-karla), "Helvetica Neue", sans-serif;
 
   --animate-reveal: reveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -58,6 +58,13 @@ body {
 ::selection {
   background: var(--color-bronze-500);
   color: var(--color-sand-50);
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
 
 /* Fine paper grain — subtle warmth, never a decorative gimmick */

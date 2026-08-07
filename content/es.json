@@ -23,7 +23,7 @@
   },
   "home": {
     "kicker": "[ES] Labenne-Océan · Landes",
-    "title": "[ES] Une maison landaise. Une piscine chauffée. Dix vies qui s...",
+    "title": "[ES] Une maison landaise, un pool house, une piscine chauffée ...",
     "subtitle": "[ES] Entre pins et océan, une propriété pensée pour les famill...",
     "ctaPrimary": "[ES] Découvrir la maison",
     "ctaSecondary": "[ES] Vérifier les disponibilités",
@@ -36,25 +36,143 @@
         "[ES] Une maison qui tient des deux — le geste artisanal d'un c..."
       ]
     },
+    "amenities": {
+      "title": "[ES] Ce qui vous attend sur place",
+      "items": [
+        {
+          "icon": "pool",
+          "label": "[ES] Piscine chauffée avril–octobre"
+        },
+        {
+          "icon": "wifi",
+          "label": "[ES] Wifi dans toute la maison"
+        },
+        {
+          "icon": "kitchen",
+          "label": "[ES] Pool house et cuisine d'été"
+        },
+        {
+          "icon": "linens",
+          "label": "[ES] Linge de lit et ménage inclus"
+        },
+        {
+          "icon": "families",
+          "label": "[ES] Idéal familles à plusieurs foyers"
+        },
+        {
+          "icon": "home",
+          "label": "[ES] Parking privé sur la propriété"
+        }
+      ]
+    },
     "spacesPreview": {
       "kicker": "[ES] Le différenciateur",
       "title": "[ES] Les 5 espaces de vie",
-      "intro": "[ES] 170 m² de maison landaise, 40 m² de pool house indépendan...",
-      "cta": "[ES] Voir les 5 espaces"
+      "intro": "[ES] 150 m² de maison landaise, 40 m² de pool house indépendan...",
+      "cta": "[ES] Voir les 5 espaces",
+      "differentiatorTag": "[ES] Le différenciateur"
     },
     "ctaBand": {
-      "title": "[ES] Dix personnes, quatre chambres, une piscine chauffée à l'...",
+      "title": "[ES] Huit personnes, quatre chambres, une piscine chauffée à l...",
+      "cta": "[ES] Vérifier les disponibilités"
+    }
+  },
+  "practical": {
+    "kicker": "[ES] Bon à savoir",
+    "title": "[ES] Informations pratiques",
+    "tabs": {
+      "equip": "[ES] Équipements",
+      "loc": "[ES] Localisation",
+      "cal": "[ES] Disponibilités"
+    },
+    "equipment": {
+      "items": [
+        {
+          "icon": "pool",
+          "label": "[ES] Piscine chauffée (27°C, avril–octobre)"
+        },
+        {
+          "icon": "wifi",
+          "label": "[ES] Wifi dans toute la maison"
+        },
+        {
+          "icon": "kitchen",
+          "label": "[ES] Cuisine équipée + cuisine d'été"
+        },
+        {
+          "icon": "laundry",
+          "label": "[ES] Lave-linge & sèche-linge"
+        },
+        {
+          "icon": "linens",
+          "label": "[ES] Linge de lit & serviettes fournis"
+        },
+        {
+          "icon": "cleaning",
+          "label": "[ES] Ménage inclus avant l'arrivée"
+        },
+        {
+          "icon": "home",
+          "label": "[ES] Parking privé sur la propriété"
+        },
+        {
+          "icon": "tv",
+          "label": "[ES] Salon TV sous combles"
+        },
+        {
+          "icon": "smokeDetector",
+          "label": "[ES] Détecteurs fumée & monoxyde installés"
+        },
+        {
+          "icon": "poolSafety",
+          "label": "[ES] Volet de sécurité piscine"
+        },
+        {
+          "icon": "families",
+          "label": "[ES] Idéal familles à plusieurs foyers"
+        },
+        {
+          "icon": "garden",
+          "label": "[ES] Terrain clos et arboré, 1 330 m²"
+        }
+      ],
+      "moreCta": "[ES] Voir tous les équipements"
+    },
+    "location": {
+      "mapQuery": "Allée+de+Normandie%2C+40530+Labenne%2C+France",
+      "mapLabel": "[ES] Allée de Normandie, Labenne-Océan",
+      "facts": [
+        {
+          "title": "[ES] Allée de Normandie",
+          "description": "[ES] Labenne-Océan, Landes — le numéro exact n'est pas affiché..."
+        },
+        {
+          "title": "[ES] 400 m",
+          "description": "[ES] Distance à pied jusqu'à la plage"
+        },
+        {
+          "title": "[ES] Terrain clos, 1 330 m²",
+          "description": "[ES] Quartier résidentiel calme de Labenne-Océan"
+        }
+      ],
+      "note": "[ES] La carte indique la rue ; le numéro de la propriété reste..."
+    },
+    "availability": {
+      "monthLabel": "[ES] Juillet 2027 — exemple d'affichage",
+      "legendAvailable": "[ES] Disponible",
+      "legendUnavailable": "[ES] Déjà réservé",
+      "sideText": "[ES] Le calendrier réel se connectera directement à l'outil de...",
       "cta": "[ES] Vérifier les disponibilités"
     }
   },
   "house": {
     "kicker": "[ES] La propriété",
     "title": "[ES] La maison",
-    "intro": "[ES] Une maison landaise de 170 m² prolongée par un pool house...",
+    "intro": "[ES] Une maison landaise de 150 m² prolongée par un pool house...",
     "facts": [
       {
         "label": "[ES] Capacité",
-        "value": "[ES] 10 personnes"
+        "value": "[ES] 8 personnes"
       },
       {
         "label": "[ES] Chambres",
@@ -62,7 +180,7 @@
       },
       {
         "label": "[ES] Maison landaise",
-        "value": "[ES] ≈ 170 m²"
+        "value": "[ES] ≈ 150 m²"
       },
       {
         "label": "[ES] Pool house",
@@ -76,8 +194,7 @@
     "poolHouse": {
       "title": "[ES] Le pool house",
       "description": "[ES] Structure à pans de bois ouverte sur la terrasse, pensée ..."
-    },
-    "note": "[ES] Informations en attente de confirmation avant mise en lig..."
+    }
   },
   "spaces": {
     "kicker": "[ES] Le différenciateur",
@@ -86,15 +203,15 @@
     "items": [
       {
         "number": "01",
-        "title": "[ES] La piscine et sa terrasse",
-        "description": "[ES] Chauffée à l'année, bordée de bois clair et d'un olivier ...",
-        "imageKey": "hero-piscine-jour"
-      },
-      {
-        "number": "02",
         "title": "[ES] Le pool house",
         "description": "[ES] Repas à l'ombre de la charpente, bar donnant sur l'eau — ...",
         "imageKey": "pool-house-dejeuner"
+      },
+      {
+        "number": "02",
+        "title": "[ES] La piscine et sa terrasse",
+        "description": "[ES] Chauffée à l'année, bordée de bois clair et d'un olivier ...",
+        "imageKey": "hero-piscine-jour"
       },
       {
         "number": "03",
@@ -114,8 +231,7 @@
         "description": "[ES] Suite parentale, chambres secondaires et dortoir dédié au...",
         "imageKey": "chambre-parentale"
       }
-    ],
-    "note": "[ES] Répartition provisoire des 5 espaces, à confirmer avec le..."
+    ]
   },
   "gallery": {
     "kicker": "[ES] En images",
@@ -137,17 +253,17 @@
         [
           "[ES] Basse saison",
           "[ES] À communiquer",
-          "[ES] 10 personnes"
+          "[ES] 8 personnes"
         ],
         [
           "[ES] Moyenne saison",
           "[ES] À communiquer",
-          "[ES] 10 personnes"
+          "[ES] 8 personnes"
         ],
         [
           "[ES] Haute saison",
           "[ES] À communiquer",
-          "[ES] 10 personnes"
+          "[ES] 8 personnes"
         ]
       ]
     },
@@ -183,16 +299,16 @@
     "title": "[ES] Contact & accès",
     "location": {
       "title": "[ES] Labenne-Océan, Landes",
-      "description": "[ES] À quelques minutes à pied de l'océan, au cœur d'un quarti...",
-      "beachDistance": "[ES] Distance exacte à la plage — à confirmer"
+      "description": "[ES] Au cœur d'un quartier résidentiel calme et boisé, sur un ...",
+      "beachDistance": "[ES] 400 m à pied jusqu'à la plage"
     },
     "access": {
       "title": "[ES] Accès",
       "description": "[ES] Détails d'accès (voiture, gare la plus proche, aéroport) ..."
     },
     "contactTitle": "[ES] Une question ?",
-    "contactDescription": "[ES] Adresse e-mail et formulaire de contact à connecter.",
-    "note": "[ES] Distance exacte à la plage à confirmer avant mise en ligne."
+    "contactDescription": "[ES] Écrivez-nous directement, nous répondons personnellement ...",
+    "contactEmail": "contact@lagemmerie.com"
   },
   "shop": {
     "kicker": "[ES] Phase 2 — bientôt",
@@ -209,6 +325,14 @@
         "description": "[ES] Collection en développement."
       }
     ],
-    "note": "[ES] Page teaser — activation complète prévue en phase 2, sans..."
+    "note": "[ES] Page teaser — activation complète prévue en phase 2, sans...",
+    "notify": {
+      "title": "[ES] Être averti·e du lancement",
+      "emailLabel": "[ES] E-mail",
+      "submit": "[ES] M'avertir au lancement",
+      "reassurance": "[ES] Un seul e-mail, au lancement de la collection. Aucune sol...",
+      "successTitle": "[ES] C'est noté.",
+      "successMessage": "[ES] Nous vous écrirons dès le lancement de la collection ling..."
+    }
   }
 }

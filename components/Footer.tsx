@@ -9,7 +9,20 @@ export function Footer({ dict }: { dict: Content }) {
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-10">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
-            <p className="font-display text-2xl italic">{dict.site.name}</p>
+            <div className="flex items-center gap-2.5">
+              {/* eslint-disable-next-line @next/next/no-img-element -- static
+                  brand SVG; the horizontal logo's dark text is illegible on
+                  this dark background, so only the bronze symbol goes here
+                  (brief-logo-la-gemmerie.md §2, option A) */}
+              <img
+                src="/images/brand/la-gemmerie-alternative-gemme-symbole-monochrome.svg"
+                alt=""
+                width={18}
+                height={22}
+                className="h-[22px] w-auto"
+              />
+              <p className="font-display text-2xl text-sand-100 italic">{dict.site.name}</p>
+            </div>
             <p className="mt-3 max-w-xs text-sm text-sand-100/60">{dict.footer.tagline}</p>
           </div>
 

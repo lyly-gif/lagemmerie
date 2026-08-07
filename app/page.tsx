@@ -1,20 +1,49 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
-import { SpacesPreview } from "@/components/SpacesPreview";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
+import { PhotoBanner } from "@/components/PhotoBanner";
+import { SpacesCarousel } from "@/components/SpacesCarousel";
+import { PracticalInfoTabs } from "@/components/PracticalInfoTabs";
+import { LineIcon, type IconName } from "@/components/icons/LineIcon";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
 
+const ogTitle = "La Gemmerie — Maison de vacances avec piscine chauffée à Labenne-Océan";
+const description =
+  "Maison landaise 8 personnes avec piscine chauffée à Labenne-Océan (Landes). Quiet luxury, 5 espaces de vie, réservation en direct.";
+
 export const metadata: Metadata = {
   // Absolute: bypasses the "%s — La Gemmerie" template so the brand name
   // leads on the homepage specifically (SEO mapping, tarifs-et-seo-la-gemmerie.md §2).
-  title: { absolute: "La Gemmerie — Maison de vacances avec piscine chauffée à Labenne-Océan" },
-  description:
-    "Maison landaise 10 personnes avec piscine chauffée à Labenne-Océan (Landes). Quiet luxury, 5 espaces de vie, réservation en direct.",
+  title: { absolute: ogTitle },
+  description,
+  openGraph: { title: ogTitle, description },
+  twitter: { title: ogTitle, description },
 };
+
+const heroImages = [
+  {
+    src: featured["hero-piscine-jour"],
+    alt: "Piscine chauffée et terrasse en bois de La Gemmerie, Labenne-Océan",
+  },
+  {
+    src: featured["piscine-oliviers"],
+    alt: "Piscine et olivier centenaire, jardin de La Gemmerie",
+  },
+  {
+    src: featured["pool-house-facade"],
+    alt: "Façade du pool house, architecture landaise à pans de bois",
+  },
+];
+
+const bannerImages = [
+  { src: featured["pool-house-dejeuner"], alt: "Déjeuner sur la terrasse du pool house" },
+  { src: featured["chambre-secondaire"], alt: "Chambre secondaire de la maison landaise" },
+  { src: featured["salle-de-bain"], alt: "Salle de bain de la maison landaise" },
+];
 
 export default async function HomePage() {
   const locale = await getCurrentLocale();
@@ -22,17 +51,10 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* Hero — cahier des charges: shot to be replaced with the night-lit
-          pool photo once produced (§3, "photo nocturne piscine à produire") */}
+      {/* Hero — cahier des charges: night-lit pool shot still pending (§3);
+          slideshow rotates day photography in the meantime. */}
       <section className="relative flex min-h-[92vh] items-end overflow-hidden bg-forest-950">
-        <Image
-          src={featured["hero-piscine-jour"]}
-          alt="Piscine chauffée et terrasse en bois de La Gemmerie, Labenne-Océan"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+        <HeroSlideshow images={heroImages} />
         <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/25 to-forest-950/10" />
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 md:px-10 md:pb-24">
@@ -70,74 +92,95 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Manifesto — the name */}
-      <section className="mx-auto max-w-4xl px-6 py-24 md:px-10 md:py-32">
-        <Reveal>
-          <Kicker>{dict.home.manifesto.kicker}</Kicker>
-        </Reveal>
-        <Reveal delay={80}>
-          <h2 className="mt-6 font-display text-4xl italic text-forest-950 md:text-5xl">
-            {dict.home.manifesto.title}
-          </h2>
-        </Reveal>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-10">
-          {dict.home.manifesto.paragraphs.map((p, i) => (
-            <Reveal key={p} delay={160 + i * 100}>
-              <p className="text-balance font-display text-lg leading-relaxed text-forest-800 italic md:text-xl">
-                {p}
-              </p>
+      <PhotoBanner images={bannerImages} />
+
+      {/* Le nom + équipements + chiffres clés, réunis dans une seule bande */}
+      <section className="grain bg-forest-950 px-6 py-22 text-sand-100 md:px-10 md:py-24">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="grid gap-14 md:grid-cols-2">
+            <Reveal>
+              <Kicker tone="sand">{dict.home.manifesto.kicker}</Kicker>
+              <h2 className="mt-4 font-display text-3xl md:text-5xl">
+                La <span className="text-bronze-400">Gemmerie</span>
+              </h2>
+              <div className="mt-6 flex flex-col gap-3">
+                {dict.home.manifesto.paragraphs.map((p) => (
+                  <p key={p} className="max-w-[46ch] text-[15px] leading-relaxed text-sand-100/80">
+                    {p}
+                  </p>
+                ))}
+              </div>
             </Reveal>
-          ))}
+
+            <Reveal delay={120}>
+              <p className="mb-6 text-xs font-medium tracking-[0.16em] text-bronze-400 uppercase">
+                {dict.home.amenities.title}
+              </p>
+              <div className="grid grid-cols-2 gap-x-5 gap-y-7 sm:grid-cols-3">
+                {dict.home.amenities.items.map((item) => (
+                  <div key={item.label} className="flex flex-col gap-2.5">
+                    <LineIcon name={item.icon as IconName} className="h-[26px] w-[26px] text-bronze-400" />
+                    <span className="text-[12.5px] text-sand-100/85">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal delay={160}>
+            <div className="mt-14 grid grid-cols-2 gap-6 border-t border-sand-100/[0.22] pt-10 md:grid-cols-4">
+              {dict.house.facts.map((fact) => (
+                <div key={fact.label}>
+                  <p className="font-display text-2xl text-bronze-400 md:text-3xl">{fact.value}</p>
+                  <p className="mt-1.5 text-[11px] tracking-[0.12em] text-sand-100/60 uppercase">
+                    {fact.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* Facts band */}
-      <section className="grain border-y border-line/60 bg-forest-950 py-16 text-sand-100">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 md:grid-cols-4 md:px-10">
-          {dict.house.facts.map((fact, i) => (
-            <Reveal key={fact.label} delay={i * 80}>
-              <p className="font-display text-3xl text-bronze-400 italic md:text-4xl">
-                {fact.value}
-              </p>
-              <p className="mt-2 text-xs tracking-[0.14em] text-sand-100/50 uppercase">
-                {fact.label}
-              </p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      {/* 5 spaces preview */}
-      <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-xl">
+      {/* 5 espaces de vie — carrousel, pool house en premier */}
+      <section className="pt-24 pb-0 md:pt-32">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-end justify-between gap-6 px-6 pb-10 md:px-10">
+          <div>
             <Reveal>
               <Kicker>{dict.home.spacesPreview.kicker}</Kicker>
             </Reveal>
             <Reveal delay={80}>
-              <h2 className="mt-6 font-display text-4xl text-forest-950 md:text-5xl">
+              <h2 className="mt-3.5 max-w-[520px] font-display text-3xl text-forest-950 md:text-5xl">
                 {dict.home.spacesPreview.title}
               </h2>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-5 leading-relaxed text-forest-800/80">
+              <p className="mt-3 max-w-[420px] text-[14.5px] leading-relaxed text-forest-800/75">
                 {dict.home.spacesPreview.intro}
               </p>
             </Reveal>
           </div>
-          <Reveal delay={200}>
-            <Link
-              href="/espaces"
-              className="w-fit shrink-0 text-xs font-medium tracking-[0.14em] text-bronze-700 uppercase underline decoration-bronze-500/40 underline-offset-8 hover:text-bronze-800"
-            >
-              {dict.home.spacesPreview.cta}
-            </Link>
-          </Reveal>
         </div>
 
-        <div className="mt-14">
-          <SpacesPreview dict={dict} />
-        </div>
+        <Reveal delay={200} className="px-6 md:px-10">
+          <SpacesCarousel
+            items={dict.spaces.items}
+            differentiatorTag={dict.home.spacesPreview.differentiatorTag}
+          />
+        </Reveal>
+      </section>
+
+      {/* Informations pratiques */}
+      <section className="mx-auto max-w-[1200px] px-6 py-24 md:px-10 md:py-28">
+        <Reveal>
+          <Kicker>{dict.practical.kicker}</Kicker>
+          <h2 className="mt-3.5 font-display text-3xl text-forest-950 md:text-4xl">
+            {dict.practical.title}
+          </h2>
+        </Reveal>
+        <Reveal delay={100} className="mt-9">
+          <PracticalInfoTabs dict={dict} />
+        </Reveal>
       </section>
 
       {/* CTA band */}

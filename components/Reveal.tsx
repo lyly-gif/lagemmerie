@@ -34,6 +34,11 @@ export function Reveal({
     if (alreadyInView) return;
 
     setState("hidden");
+    // Positive bottom margin: the trigger zone extends past the viewport,
+    // so content reveals just before it scrolls into view rather than only
+    // once it's already there — a fast scroller shouldn't outrun it and
+    // read the gap as the page stopping (audit-ux-design-la-gemmerie.md §2,
+    // "600-700px de vide" between /espaces sections).
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -41,7 +46,7 @@ export function Reveal({
           observer.disconnect();
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -5% 0px" }
+      { threshold: 0, rootMargin: "0px 0px 400px 0px" }
     );
     observer.observe(node);
     return () => observer.disconnect();
