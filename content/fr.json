@@ -101,11 +101,7 @@
       "note": "La carte indique la rue ; le numéro de la propriété reste privé jusqu'à la confirmation de réservation."
     },
     "availability": {
-      "monthLabel": "Juillet 2027 — exemple d'affichage",
-      "legendAvailable": "Disponible",
-      "legendUnavailable": "Déjà réservé",
-      "sideText": "Le calendrier réel se connectera directement à l'outil de gestion des disponibilités une fois la conciergerie confirmée (Amenitiz ou Smoobu). Cet écran illustre la mise en page cible.",
-      "cta": "Vérifier les disponibilités"
+      "intro": "Disponibilités réelles et réservation directe, sans commission de plateforme."
     }
   },
   "house": {

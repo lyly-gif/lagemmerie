@@ -158,11 +158,7 @@
       "note": "[EN] La carte indique la rue ; le numéro de la propriété reste..."
     },
     "availability": {
-      "monthLabel": "[EN] Juillet 2027 — exemple d'affichage",
-      "legendAvailable": "[EN] Disponible",
-      "legendUnavailable": "[EN] Déjà réservé",
-      "sideText": "[EN] Le calendrier réel se connectera directement à l'outil de...",
-      "cta": "[EN] Vérifier les disponibilités"
+      "intro": "[EN] Disponibilités réelles et réservation directe, sans commi..."
     }
   },
   "house": {
