@@ -34,7 +34,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Content }) {
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="ml-10 hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
