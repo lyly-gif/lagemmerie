@@ -34,8 +34,8 @@ const heroImages = [
     alt: "Piscine et olivier centenaire, jardin de La Gemmerie",
   },
   {
-    src: featured["pool-house-facade"],
-    alt: "Façade du pool house, architecture landaise à pans de bois",
+    src: featured["sejour-cuisine"],
+    alt: "Séjour et cuisine ouverte de la maison landaise, poêle à bois",
   },
 ];
 
