@@ -7,17 +7,6 @@ type GalleryImage = { src: string; alt: string; width: number; height: number };
 
 const SWIPE_THRESHOLD = 50;
 
-// Tile span is derived from each photo's real aspect ratio so mixed
-// landscape/portrait sets read as an intentional editorial grid (bento-style)
-// instead of the uneven vertical streaks a pure CSS-columns masonry produces
-// when tile heights vary a lot between columns.
-function tileSpan({ width, height }: GalleryImage): string {
-  const ratio = width / height;
-  if (ratio >= 1.35) return "col-span-2 row-span-1";
-  if (ratio <= 0.8) return "col-span-1 row-span-2";
-  return "col-span-1 row-span-1";
-}
-
 export function Gallery({ images }: { images: GalleryImage[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const touchStartX = useRef<number | null>(null);
@@ -59,19 +48,22 @@ export function Gallery({ images }: { images: GalleryImage[] }) {
 
   return (
     <>
-      <div className="grid grid-flow-row-dense grid-cols-2 auto-rows-[150px] gap-3 sm:grid-cols-3 sm:auto-rows-[180px] md:grid-cols-4 md:auto-rows-[220px] md:gap-4">
+      {/* Every tile shares the same wide ratio via object-cover — a single
+          harmonious rhythm rather than a jagged mix of portrait/landscape
+          spans (reference: Le Collectionist's property galleries). */}
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6">
         {images.map((img, i) => (
           <button
             key={img.src}
             type="button"
             onClick={() => setOpenIndex(i)}
-            className={`group relative block overflow-hidden bg-forest-900 ${tileSpan(img)}`}
+            className="group relative block aspect-[3/2] w-full overflow-hidden bg-forest-900"
           >
             <Image
               src={img.src}
               alt={img.alt}
               fill
-              sizes="(min-width: 768px) 25vw, 50vw"
+              sizes="(min-width: 640px) 50vw, 100vw"
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
             <span className="absolute inset-0 bg-forest-950/0 transition-colors group-hover:bg-forest-950/10" />

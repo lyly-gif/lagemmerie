@@ -60,6 +60,14 @@ export default async function GaleriePage() {
               <div className="mt-6">
                 <Gallery images={category.images} />
               </div>
+              {category.subsections?.map((sub) => (
+                <div key={sub.key} className="mt-10">
+                  <p className="mb-4 text-xs font-medium tracking-[0.14em] text-bronze-700 uppercase">
+                    {g.categories[sub.key as keyof typeof g.categories]}
+                  </p>
+                  <Gallery images={sub.images} />
+                </div>
+              ))}
             </div>
           ))}
         </div>

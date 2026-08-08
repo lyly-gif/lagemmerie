@@ -209,8 +209,8 @@
         "description": "[ES] Repas à l'ombre de la charpente, bar donnant sur l'eau — ...",
         "imageKey": "pool-house-dejeuner",
         "galleryNumbers": [
-          28,
-          3,
+          5,
+          7,
           8,
           10
         ]
@@ -235,9 +235,9 @@
         "description": "[ES] Cuisine entièrement équipée, poêle à bois, grande table c...",
         "imageKey": "sejour-cuisine",
         "galleryNumbers": [
+          14,
           19,
           20,
-          26,
           27
         ]
       },
@@ -245,13 +245,12 @@
         "number": "04",
         "slug": "salon",
         "title": "[ES] Le salon",
-        "description": "[ES] À l'étage, un coin plus intime, en retrait du bruit — pou...",
+        "description": "[ES] Canapé profond et poêle à bois, en retrait de la cuisine ...",
         "imageKey": "salon",
         "galleryNumbers": [
           18,
-          12,
-          13,
-          24
+          24,
+          26
         ]
       },
       {
@@ -277,10 +276,15 @@
     "categories": {
       "poolHouse": "[ES] Le pool house",
       "poolGarden": "[ES] La piscine & le jardin",
-      "livingKitchen": "[ES] Séjour & cuisine",
+      "livingKitchen": "[ES] Cuisine",
       "lounge": "[ES] Le salon",
       "mezzanine": "[ES] Mezzanine & salle TV",
-      "bedrooms": "[ES] Les chambres & la salle de bain"
+      "chambre1": "[ES] Chambre 1",
+      "chambre1Bathroom": "[ES] Salle de bain",
+      "chambre2": "[ES] Chambre 2",
+      "chambre2Bathroom": "[ES] Salle de bain",
+      "enfants": "[ES] Chambres d'enfants",
+      "dortoir": "[ES] Dortoir"
     }
   },
   "rates": {

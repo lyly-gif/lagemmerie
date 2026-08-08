@@ -209,8 +209,8 @@
         "description": "[NL] Repas à l'ombre de la charpente, bar donnant sur l'eau — ...",
         "imageKey": "pool-house-dejeuner",
         "galleryNumbers": [
-          28,
-          3,
+          5,
+          7,
           8,
           10
         ]
@@ -235,9 +235,9 @@
         "description": "[NL] Cuisine entièrement équipée, poêle à bois, grande table c...",
         "imageKey": "sejour-cuisine",
         "galleryNumbers": [
+          14,
           19,
           20,
-          26,
           27
         ]
       },
@@ -245,13 +245,12 @@
         "number": "04",
         "slug": "salon",
         "title": "[NL] Le salon",
-        "description": "[NL] À l'étage, un coin plus intime, en retrait du bruit — pou...",
+        "description": "[NL] Canapé profond et poêle à bois, en retrait de la cuisine ...",
         "imageKey": "salon",
         "galleryNumbers": [
           18,
-          12,
-          13,
-          24
+          24,
+          26
         ]
       },
       {
@@ -277,10 +276,15 @@
     "categories": {
       "poolHouse": "[NL] Le pool house",
       "poolGarden": "[NL] La piscine & le jardin",
-      "livingKitchen": "[NL] Séjour & cuisine",
+      "livingKitchen": "[NL] Cuisine",
       "lounge": "[NL] Le salon",
       "mezzanine": "[NL] Mezzanine & salle TV",
-      "bedrooms": "[NL] Les chambres & la salle de bain"
+      "chambre1": "[NL] Chambre 1",
+      "chambre1Bathroom": "[NL] Salle de bain",
+      "chambre2": "[NL] Chambre 2",
+      "chambre2Bathroom": "[NL] Salle de bain",
+      "enfants": "[NL] Chambres d'enfants",
+      "dortoir": "[NL] Dortoir"
     }
   },
   "rates": {
