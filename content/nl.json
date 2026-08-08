@@ -51,6 +51,14 @@
       {
         "label": "[NL] Pool house",
         "value": "[NL] ≈ 40 m²"
+      },
+      {
+        "label": "[NL] Salles de bain",
+        "value": "[NL] 2"
+      },
+      {
+        "label": "[NL] Piscine",
+        "value": "[NL] Chauffée"
       }
     ],
     "spacesPreview": {

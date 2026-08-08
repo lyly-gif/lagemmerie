@@ -51,6 +51,14 @@
       {
         "label": "[ES] Pool house",
         "value": "[ES] ≈ 40 m²"
+      },
+      {
+        "label": "[ES] Salles de bain",
+        "value": "[ES] 2"
+      },
+      {
+        "label": "[ES] Piscine",
+        "value": "[ES] Chauffée"
       }
     ],
     "spacesPreview": {

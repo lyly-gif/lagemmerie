@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { featured, type FeaturedKey } from "@/lib/images";
+
+const AUTO_CROSSFADE_MS = 3200;
 
 type SpaceItem = {
   number: string;
@@ -22,6 +24,15 @@ export function SpacesCarousel({
 }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [hovered, setHovered] = useState<number | null>(null);
+  // Hover alone never shows the second photo on touch devices — there is no
+  // hover there — so every card also crossfades on its own timer. A hover
+  // still forces the alt photo immediately for mouse users.
+  const [autoAlt, setAutoAlt] = useState(false);
+
+  useEffect(() => {
+    const id = setInterval(() => setAutoAlt((v) => !v), AUTO_CROSSFADE_MS);
+    return () => clearInterval(id);
+  }, []);
 
   function scrollByCard(direction: 1 | -1) {
     const track = trackRef.current;
@@ -60,6 +71,7 @@ export function SpacesCarousel({
           const hoverSrc = item.galleryNumbers?.[0]
             ? `/images/gallery/${String(item.galleryNumbers[0]).padStart(2, "0")}.jpg`
             : null;
+          const showAlt = !!hoverSrc && (hovered === i || (hovered === null && autoAlt));
           return (
           <Link
             key={item.number}
@@ -77,8 +89,8 @@ export function SpacesCarousel({
               alt={item.title}
               fill
               sizes="(min-width: 768px) 40vw, 80vw"
-              className={`object-cover transition-opacity duration-500 ${
-                hoverSrc && hovered === i ? "opacity-0" : "opacity-100"
+              className={`object-cover transition-opacity duration-700 ${
+                showAlt ? "opacity-0" : "opacity-100"
               }`}
             />
             {hoverSrc && (
@@ -87,8 +99,8 @@ export function SpacesCarousel({
                 alt={item.title}
                 fill
                 sizes="(min-width: 768px) 40vw, 80vw"
-                className={`object-cover transition-opacity duration-500 ${
-                  hovered === i ? "opacity-100" : "opacity-0"
+                className={`object-cover transition-opacity duration-700 ${
+                  showAlt ? "opacity-100" : "opacity-0"
                 }`}
               />
             )}

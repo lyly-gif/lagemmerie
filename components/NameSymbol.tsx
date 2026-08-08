@@ -60,7 +60,7 @@ export function NameSymbol({ className = "h-16 w-auto md:h-20" }: { className?: 
             transformBox: "fill-box",
             opacity: visible ? 1 : 0,
             transform: visible ? "scale(1)" : "scale(0.4)",
-            transition: `opacity 0.5s ease-out ${i * 55}ms, transform 0.5s cubic-bezier(0.16,1,0.3,1) ${i * 55}ms`,
+            transition: `opacity 0.9s ease-out ${i * 160}ms, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${i * 160}ms`,
           }}
         />
       ))}

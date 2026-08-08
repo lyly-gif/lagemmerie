@@ -39,7 +39,9 @@
       { "label": "Capacité", "value": "8 personnes" },
       { "label": "Chambres", "value": "4" },
       { "label": "Maison landaise", "value": "≈ 150 m²" },
-      { "label": "Pool house", "value": "≈ 40 m²" }
+      { "label": "Pool house", "value": "≈ 40 m²" },
+      { "label": "Salles de bain", "value": "2" },
+      { "label": "Piscine", "value": "Chauffée" }
     ],
     "spacesPreview": {
       "kicker": "Le différenciateur",

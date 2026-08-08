@@ -94,32 +94,34 @@ export default async function HomePage() {
 
       <PhotoBanner images={bannerImages} />
 
-      {/* Le nom — purement narratif, le symbole de marque en est le point
-          focal ; plus aucun mélange avec équipements/chiffres (déjà
+      {/* Le nom — bandeau compact, purement narratif : logo à gauche, texte
+          à droite, plus aucun mélange avec équipements/chiffres (déjà
           couverts ailleurs sur la page, cf. bande stats et Informations
           pratiques). */}
-      <section className="grain bg-forest-950 px-6 py-24 text-sand-100 md:px-10 md:py-32">
-        <Reveal className="mx-auto flex max-w-2xl flex-col items-center text-center">
-          <NameSymbol className="h-32 w-auto md:h-48" />
-          <Kicker tone="sand" className="mt-8 justify-center">
-            {dict.home.manifesto.kicker}
-          </Kicker>
-          <h2 className="mt-4 font-display text-3xl md:text-5xl">
-            La <span className="text-bronze-400">Gemmerie</span>
-          </h2>
-          <div className="mt-6 flex flex-col gap-3">
-            {dict.home.manifesto.paragraphs.map((p) => (
-              <p key={p} className="text-[15px] leading-relaxed text-sand-100/80">
-                {p}
-              </p>
-            ))}
+      <section className="grain bg-forest-950 px-6 py-14 text-sand-100 md:px-10 md:py-16">
+        <Reveal className="mx-auto flex max-w-4xl flex-col items-center gap-8 text-center md:flex-row md:items-center md:gap-12 md:text-left">
+          <NameSymbol className="h-20 w-auto shrink-0 md:h-28" />
+          <div>
+            <Kicker tone="sand" className="justify-center md:justify-start">
+              {dict.home.manifesto.kicker}
+            </Kicker>
+            <h2 className="mt-3 font-display text-2xl md:text-4xl">
+              La <span className="text-bronze-400">Gemmerie</span>
+            </h2>
+            <div className="mt-4 flex flex-col gap-2.5">
+              {dict.home.manifesto.paragraphs.map((p) => (
+                <p key={p} className="text-sm leading-relaxed text-sand-100/80 md:text-[15px]">
+                  {p}
+                </p>
+              ))}
+            </div>
           </div>
         </Reveal>
       </section>
 
       {/* Chiffres clés — bande autonome, sortie de la section narrative */}
       <section className="border-y border-line/60 bg-sand-200 py-10">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 md:grid-cols-4 md:px-10">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 md:grid-cols-3 md:px-10">
           {dict.home.facts.map((fact) => (
             <div key={fact.label}>
               <p className="font-display text-2xl text-bronze-700 italic md:text-3xl">
