@@ -81,7 +81,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Content }) {
     </header>
 
       {open && (
-        <div className="fixed inset-x-0 top-[65px] bottom-0 z-40 flex flex-col justify-between bg-forest-950 px-8 py-10 lg:hidden">
+        <div className="fixed inset-x-0 top-[65px] bottom-0 z-50 flex flex-col justify-between bg-forest-950 px-8 py-10 lg:hidden">
           <nav className="flex flex-col gap-1">
             {navLinks.map((link, i) => (
               <Link

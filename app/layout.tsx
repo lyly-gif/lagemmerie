@@ -3,6 +3,7 @@ import { Playfair_Display, Karla } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { StickyBookCta } from "@/components/StickyBookCta";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 
@@ -103,6 +104,7 @@ export default async function RootLayout(props: LayoutProps<"/">) {
         <Header locale={locale} dict={dict} />
         <main>{props.children}</main>
         <Footer dict={dict} />
+        <StickyBookCta dict={dict} />
       </body>
     </html>
   );
