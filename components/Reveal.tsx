@@ -17,10 +17,12 @@ export function Reveal({
   children,
   delay = 0,
   className = "",
+  id,
 }: {
   children: React.ReactNode;
   delay?: number;
   className?: string;
+  id?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [state, setState] = useState<"static" | "hidden" | "visible">("static");
@@ -54,7 +56,7 @@ export function Reveal({
 
   if (state === "static") {
     return (
-      <div ref={ref} className={className}>
+      <div ref={ref} id={id} className={className}>
         {children}
       </div>
     );
@@ -63,6 +65,7 @@ export function Reveal({
   return (
     <div
       ref={ref}
+      id={id}
       style={{
         transitionDelay: `${delay}ms`,
         opacity: state === "visible" ? 1 : 0,

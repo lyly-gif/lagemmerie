@@ -7,7 +7,6 @@
   },
   "nav": {
     "home": "[DE] Accueil",
-    "house": "[DE] La maison",
     "spaces": "[DE] Les 5 espaces de vie",
     "gallery": "[DE] Galerie",
     "rates": "[DE] Tarifs & réservation",
@@ -36,6 +35,24 @@
         "[DE] Une maison qui tient des deux — le geste artisanal d'un c..."
       ]
     },
+    "facts": [
+      {
+        "label": "[DE] Capacité",
+        "value": "[DE] 8 personnes"
+      },
+      {
+        "label": "[DE] Chambres",
+        "value": "[DE] 4"
+      },
+      {
+        "label": "[DE] Maison landaise",
+        "value": "[DE] ≈ 150 m²"
+      },
+      {
+        "label": "[DE] Pool house",
+        "value": "[DE] ≈ 40 m²"
+      }
+    ],
     "amenities": {
       "title": "[DE] Ce qui vous attend sur place",
       "items": [
@@ -161,10 +178,11 @@
       "intro": "[DE] Disponibilités réelles et réservation directe, sans commi..."
     }
   },
-  "house": {
-    "kicker": "[DE] La propriété",
-    "title": "[DE] La maison",
-    "intro": "[DE] Une maison landaise de 150 m² prolongée par un pool house...",
+  "spaces": {
+    "kicker": "[DE] Le différenciateur",
+    "title": "[DE] Les 5 espaces de vie",
+    "intro": "[DE] Le point commun des familles qui choisissent La Gemmerie ...",
+    "architectureNote": "[DE] Charpente et tomettes, larges baies vitrées sur le jardin...",
     "facts": [
       {
         "label": "[DE] Capacité",
@@ -183,49 +201,71 @@
         "value": "[DE] ≈ 40 m²"
       }
     ],
-    "mainHouse": {
-      "title": "[DE] La maison landaise",
-      "description": "[DE] Charpente et tomettes, larges baies vitrées sur le jardin..."
-    },
-    "poolHouse": {
-      "title": "[DE] Le pool house",
-      "description": "[DE] Structure à pans de bois ouverte sur la terrasse, pensée ..."
-    }
-  },
-  "spaces": {
-    "kicker": "[DE] Le différenciateur",
-    "title": "[DE] Les 5 espaces de vie",
-    "intro": "[DE] Le point commun des familles qui choisissent La Gemmerie ...",
     "items": [
       {
         "number": "01",
+        "slug": "pool-house",
         "title": "[DE] Le pool house",
         "description": "[DE] Repas à l'ombre de la charpente, bar donnant sur l'eau — ...",
-        "imageKey": "pool-house-dejeuner"
+        "imageKey": "pool-house-dejeuner",
+        "galleryNumbers": [
+          28,
+          3,
+          8,
+          10
+        ]
       },
       {
         "number": "02",
+        "slug": "piscine",
         "title": "[DE] La piscine et sa terrasse",
-        "description": "[DE] Chauffée à l'année, bordée de bois clair et d'un olivier ...",
-        "imageKey": "hero-piscine-jour"
+        "description": "[DE] Chauffée à 27°C d'avril à octobre, elle mesure 4,50 × 12 ...",
+        "imageKey": "hero-piscine-jour",
+        "galleryNumbers": [
+          1,
+          4,
+          29,
+          30
+        ]
       },
       {
         "number": "03",
+        "slug": "sejour-cuisine",
         "title": "[DE] Séjour et cuisine",
-        "description": "[DE] Cuisine ouverte, poêle à bois, grande table commune — le ...",
-        "imageKey": "sejour-cuisine"
+        "description": "[DE] Cuisine entièrement équipée, poêle à bois, grande table c...",
+        "imageKey": "sejour-cuisine",
+        "galleryNumbers": [
+          19,
+          20,
+          26,
+          27
+        ]
       },
       {
         "number": "04",
+        "slug": "salon",
         "title": "[DE] Le salon",
-        "description": "[DE] Un coin plus intime, en retrait du bruit — pour lire, se ...",
-        "imageKey": "salon"
+        "description": "[DE] À l'étage, un coin plus intime, en retrait du bruit — pou...",
+        "imageKey": "salon",
+        "galleryNumbers": [
+          18,
+          12,
+          13,
+          24
+        ]
       },
       {
         "number": "05",
+        "slug": "chambres",
         "title": "[DE] Les chambres",
         "description": "[DE] Suite parentale, chambres secondaires et dortoir dédié au...",
-        "imageKey": "chambre-parentale"
+        "imageKey": "chambre-parentale",
+        "galleryNumbers": [
+          11,
+          15,
+          16,
+          21
+        ]
       }
     ]
   },
@@ -239,6 +279,7 @@
       "poolGarden": "[DE] La piscine & le jardin",
       "livingKitchen": "[DE] Séjour & cuisine",
       "lounge": "[DE] Le salon",
+      "mezzanine": "[DE] Mezzanine & salle TV",
       "bedrooms": "[DE] Les chambres & la salle de bain"
     }
   },

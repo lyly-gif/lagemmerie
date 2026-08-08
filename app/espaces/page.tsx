@@ -2,9 +2,10 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
+import { Gallery } from "@/components/Gallery";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
-import { featured, type FeaturedKey } from "@/lib/images";
+import { featured, galleryImagesByNumbers, type FeaturedKey } from "@/lib/images";
 
 const title = "Grande maison pour plusieurs familles dans les Landes";
 const description =
@@ -37,11 +38,31 @@ export default async function EspacesPage() {
             {s.intro}
           </p>
         </Reveal>
+        <Reveal delay={280}>
+          <p className="text-balance mt-4 max-w-2xl leading-relaxed text-forest-800/60">
+            {s.architectureNote}
+          </p>
+        </Reveal>
+      </section>
+
+      <section className="border-y border-line/60 bg-sand-200 py-10">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 md:grid-cols-4 md:px-10">
+          {s.facts.map((fact) => (
+            <div key={fact.label}>
+              <p className="font-display text-2xl text-bronze-700 italic md:text-3xl">
+                {fact.value}
+              </p>
+              <p className="mt-1 text-xs tracking-[0.14em] text-forest-800/60 uppercase">
+                {fact.label}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Signature space — full-bleed treatment, deliberately not part of the
           grid rhythm below: THE differentiator, not item 1 of 5. */}
-      <Reveal className="relative flex min-h-[70vh] items-end overflow-hidden bg-forest-950">
+      <Reveal id={signature.slug} className="relative flex min-h-[70vh] scroll-mt-20 items-end overflow-hidden bg-forest-950">
         <Image
           src={featured[signature.imageKey as FeaturedKey]}
           alt={signature.title}
@@ -63,39 +84,54 @@ export default async function EspacesPage() {
         </div>
       </Reveal>
 
+      {signature.galleryNumbers?.length > 0 && (
+        <div className="mx-auto max-w-7xl px-6 pt-10 md:px-10">
+          <Gallery images={galleryImagesByNumbers(signature.galleryNumbers)} />
+        </div>
+      )}
+
       <div>
         {rest.map((item, i) => {
           const reversed = i % 2 === 1;
           return (
             <section
               key={item.number}
-              className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-2 md:items-center md:gap-16 md:px-10 md:py-20"
+              id={item.slug}
+              className="mx-auto max-w-7xl scroll-mt-20 px-6 py-16 md:px-10 md:py-20"
             >
-              <Reveal className={reversed ? "md:order-2" : "order-2 md:order-1"}>
-                <p className="font-display text-6xl text-bronze-500/50 italic md:text-7xl">
-                  {item.number}
-                </p>
-                <h2 className="mt-4 font-display text-3xl text-forest-950 md:text-4xl">
-                  {item.title}
-                </h2>
-                <p className="mt-5 max-w-md leading-relaxed text-forest-800/80">
-                  {item.description}
-                </p>
-              </Reveal>
-              <Reveal
-                delay={120}
-                className={reversed ? "md:order-1" : "order-1 md:order-2"}
-              >
-                <div className="relative aspect-[4/5] overflow-hidden bg-forest-900">
-                  <Image
-                    src={featured[item.imageKey as FeaturedKey]}
-                    alt={item.title}
-                    fill
-                    sizes="(min-width: 768px) 45vw, 100vw"
-                    className="object-cover"
-                  />
-                </div>
-              </Reveal>
+              <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
+                <Reveal className={reversed ? "md:order-2" : "order-2 md:order-1"}>
+                  <p className="font-display text-6xl text-bronze-500/50 italic md:text-7xl">
+                    {item.number}
+                  </p>
+                  <h2 className="mt-4 font-display text-3xl text-forest-950 md:text-4xl">
+                    {item.title}
+                  </h2>
+                  <p className="mt-5 max-w-md leading-relaxed text-forest-800/80">
+                    {item.description}
+                  </p>
+                </Reveal>
+                <Reveal
+                  delay={120}
+                  className={reversed ? "md:order-1" : "order-1 md:order-2"}
+                >
+                  <div className="relative aspect-[4/5] overflow-hidden bg-forest-900">
+                    <Image
+                      src={featured[item.imageKey as FeaturedKey]}
+                      alt={item.title}
+                      fill
+                      sizes="(min-width: 768px) 45vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </Reveal>
+              </div>
+
+              {item.galleryNumbers?.length > 0 && (
+                <Reveal delay={160} className="mt-10">
+                  <Gallery images={galleryImagesByNumbers(item.galleryNumbers)} />
+                </Reveal>
+              )}
             </section>
           );
         })}

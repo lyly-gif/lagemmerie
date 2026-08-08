@@ -2,13 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { featured, type FeaturedKey } from "@/lib/images";
 
 type SpaceItem = {
   number: string;
+  slug: string;
   title: string;
   imageKey: string;
+  galleryNumbers: number[];
 };
 
 export function SpacesCarousel({
@@ -19,6 +21,7 @@ export function SpacesCarousel({
   differentiatorTag: string;
 }) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const [hovered, setHovered] = useState<number | null>(null);
 
   function scrollByCard(direction: 1 | -1) {
     const track = trackRef.current;
@@ -53,11 +56,17 @@ export function SpacesCarousel({
         className="scrollbar-none flex gap-[18px] overflow-x-auto pb-3"
         style={{ scrollSnapType: "x mandatory" }}
       >
-        {items.map((item, i) => (
+        {items.map((item, i) => {
+          const hoverSrc = item.galleryNumbers?.[0]
+            ? `/images/gallery/${String(item.galleryNumbers[0]).padStart(2, "0")}.jpg`
+            : null;
+          return (
           <Link
             key={item.number}
-            href="/espaces"
+            href={`/espaces#${item.slug}`}
             data-card
+            onMouseEnter={() => setHovered(i)}
+            onMouseLeave={() => setHovered(null)}
             style={{ scrollSnapAlign: "start" }}
             className={`group relative aspect-[3/4] w-[min(78vw,380px)] shrink-0 overflow-hidden bg-forest-900 ${
               i === 0 ? "w-[min(84vw,440px)]" : ""
@@ -68,8 +77,21 @@ export function SpacesCarousel({
               alt={item.title}
               fill
               sizes="(min-width: 768px) 40vw, 80vw"
-              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              className={`object-cover transition-opacity duration-500 ${
+                hoverSrc && hovered === i ? "opacity-0" : "opacity-100"
+              }`}
             />
+            {hoverSrc && (
+              <Image
+                src={hoverSrc}
+                alt={item.title}
+                fill
+                sizes="(min-width: 768px) 40vw, 80vw"
+                className={`object-cover transition-opacity duration-500 ${
+                  hovered === i ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            )}
             {i === 0 && (
               <span className="absolute top-4 left-4 bg-bronze-600 px-2.5 py-1.5 text-[10px] tracking-[0.1em] text-sand-50 uppercase">
                 {differentiatorTag}
@@ -80,7 +102,8 @@ export function SpacesCarousel({
               <span className="font-display text-xl text-sand-50">{item.title}</span>
             </div>
           </Link>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

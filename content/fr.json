@@ -7,7 +7,6 @@
   },
   "nav": {
     "home": "Accueil",
-    "house": "La maison",
     "spaces": "Les 5 espaces de vie",
     "gallery": "Galerie",
     "rates": "Tarifs & réservation",
@@ -36,6 +35,12 @@
         "Une maison qui tient des deux — le geste artisanal d'un côté, l'exigence discrète de l'autre."
       ]
     },
+    "facts": [
+      { "label": "Capacité", "value": "8 personnes" },
+      { "label": "Chambres", "value": "4" },
+      { "label": "Maison landaise", "value": "≈ 150 m²" },
+      { "label": "Pool house", "value": "≈ 40 m²" }
+    ],
     "amenities": {
       "title": "Ce qui vous attend sur place",
       "items": [
@@ -104,59 +109,57 @@
       "intro": "Disponibilités réelles et réservation directe, sans commission de plateforme."
     }
   },
-  "house": {
-    "kicker": "La propriété",
-    "title": "La maison",
-    "intro": "Une maison landaise de 150 m² prolongée par un pool house contemporain de 40 m², pensés comme deux ambiances complémentaires plutôt que comme une extension.",
+  "spaces": {
+    "kicker": "Le différenciateur",
+    "title": "Les 5 espaces de vie",
+    "intro": "Le point commun des familles qui choisissent La Gemmerie : plusieurs générations, plusieurs rythmes, un seul toit. Chaque espace a été pensé pour qu'on puisse s'y retrouver — ou s'y retirer.",
+    "architectureNote": "Charpente et tomettes, larges baies vitrées sur le jardin, poêle à bois pour les ailes de saison — une architecture régionale respectée plutôt que reconstituée.",
     "facts": [
       { "label": "Capacité", "value": "8 personnes" },
       { "label": "Chambres", "value": "4" },
       { "label": "Maison landaise", "value": "≈ 150 m²" },
       { "label": "Pool house", "value": "≈ 40 m²" }
     ],
-    "mainHouse": {
-      "title": "La maison landaise",
-      "description": "Charpente et tomettes, larges baies vitrées sur le jardin, poêle à bois pour les ailes de saison — une architecture régionale respectée plutôt que reconstituée."
-    },
-    "poolHouse": {
-      "title": "Le pool house",
-      "description": "Structure à pans de bois ouverte sur la terrasse, pensée comme un lieu de vie à part entière : repas à l'ombre, siestes, prolongement naturel de la piscine chauffée à 27°C d'avril à octobre — 4,50 m sur 12 m, en contrebas de la terrasse."
-    }
-  },
-  "spaces": {
-    "kicker": "Le différenciateur",
-    "title": "Les 5 espaces de vie",
-    "intro": "Le point commun des familles qui choisissent La Gemmerie : plusieurs générations, plusieurs rythmes, un seul toit. Chaque espace a été pensé pour qu'on puisse s'y retrouver — ou s'y retirer.",
     "items": [
       {
         "number": "01",
+        "slug": "pool-house",
         "title": "Le pool house",
-        "description": "Repas à l'ombre de la charpente, bar donnant sur l'eau — un lieu de vie indépendant, à mi-chemin entre intérieur et jardin.",
-        "imageKey": "pool-house-dejeuner"
+        "description": "Repas à l'ombre de la charpente, bar donnant sur l'eau — un lieu de vie indépendant de 40 m², à mi-chemin entre intérieur et jardin, pensé pour les repas, les siestes et les fins de journée prolongées.",
+        "imageKey": "pool-house-dejeuner",
+        "galleryNumbers": [28, 3, 8, 10]
       },
       {
         "number": "02",
+        "slug": "piscine",
         "title": "La piscine et sa terrasse",
-        "description": "Chauffée à l'année, bordée de bois clair et d'un olivier centenaire — le cœur battant de la maison, de jour comme en soirée.",
-        "imageKey": "hero-piscine-jour"
+        "description": "Chauffée à 27°C d'avril à octobre, elle mesure 4,50 × 12 m et se prolonge par une terrasse en bois clair équipée de transats, bordée d'un olivier centenaire — le cœur battant de la maison, de jour comme en soirée.",
+        "imageKey": "hero-piscine-jour",
+        "galleryNumbers": [1, 4, 29, 30]
       },
       {
         "number": "03",
+        "slug": "sejour-cuisine",
         "title": "Séjour et cuisine",
-        "description": "Cuisine ouverte, poêle à bois, grande table commune — le foyer de la maison landaise, pensé pour les repas à huit.",
-        "imageKey": "sejour-cuisine"
+        "description": "Cuisine entièrement équipée, poêle à bois, grande table commune — le foyer de la maison landaise, pensé pour les repas à huit.",
+        "imageKey": "sejour-cuisine",
+        "galleryNumbers": [19, 20, 26, 27]
       },
       {
         "number": "04",
+        "slug": "salon",
         "title": "Le salon",
-        "description": "Un coin plus intime, en retrait du bruit — pour lire, se poser, prolonger la soirée à deux ou trois.",
-        "imageKey": "salon"
+        "description": "À l'étage, un coin plus intime, en retrait du bruit — pour lire, se poser, prolonger la soirée à deux ou trois.",
+        "imageKey": "salon",
+        "galleryNumbers": [18, 12, 13, 24]
       },
       {
         "number": "05",
+        "slug": "chambres",
         "title": "Les chambres",
         "description": "Suite parentale, chambres secondaires et dortoir dédié aux enfants — chaque génération a son espace, sans jamais s'éloigner des autres.",
-        "imageKey": "chambre-parentale"
+        "imageKey": "chambre-parentale",
+        "galleryNumbers": [11, 15, 16, 21]
       }
     ]
   },
@@ -170,6 +173,7 @@
       "poolGarden": "La piscine & le jardin",
       "livingKitchen": "Séjour & cuisine",
       "lounge": "Le salon",
+      "mezzanine": "Mezzanine & salle TV",
       "bedrooms": "Les chambres & la salle de bain"
     }
   },

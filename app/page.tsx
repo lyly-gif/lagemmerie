@@ -5,6 +5,7 @@ import { Kicker } from "@/components/Kicker";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { PhotoBanner } from "@/components/PhotoBanner";
 import { SpacesCarousel } from "@/components/SpacesCarousel";
+import { NameSymbol } from "@/components/NameSymbol";
 import { PracticalInfoTabs } from "@/components/PracticalInfoTabs";
 import { LineIcon, type IconName } from "@/components/icons/LineIcon";
 import { getCurrentLocale } from "@/lib/locale";
@@ -34,8 +35,8 @@ const heroImages = [
     alt: "Piscine et olivier centenaire, jardin de La Gemmerie",
   },
   {
-    src: featured["pool-house-facade"],
-    alt: "Façade du pool house, architecture landaise à pans de bois",
+    src: featured["piscine-detail"],
+    alt: "Reflets sur l'eau de la piscine chauffée de La Gemmerie",
   },
 ];
 
@@ -99,7 +100,10 @@ export default async function HomePage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-14 md:grid-cols-2">
             <Reveal>
-              <Kicker tone="sand">{dict.home.manifesto.kicker}</Kicker>
+              <NameSymbol />
+              <Kicker tone="sand" className="mt-6">
+                {dict.home.manifesto.kicker}
+              </Kicker>
               <h2 className="mt-4 font-display text-3xl md:text-5xl">
                 La <span className="text-bronze-400">Gemmerie</span>
               </h2>
@@ -129,7 +133,7 @@ export default async function HomePage() {
 
           <Reveal delay={160}>
             <div className="mt-14 grid grid-cols-2 gap-6 border-t border-sand-100/[0.22] pt-10 md:grid-cols-4">
-              {dict.house.facts.map((fact) => (
+              {dict.home.facts.map((fact) => (
                 <div key={fact.label}>
                   <p className="font-display text-2xl text-bronze-400 md:text-3xl">{fact.value}</p>
                   <p className="mt-1.5 text-[11px] tracking-[0.12em] text-sand-100/60 uppercase">

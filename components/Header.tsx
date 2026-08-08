@@ -6,7 +6,6 @@ import type { Content, Locale } from "@/lib/content";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const links = (dict: Content) => [
-  { href: "/la-maison", label: dict.nav.house },
   { href: "/espaces", label: dict.nav.spaces },
   { href: "/galerie", label: dict.nav.gallery },
   { href: "/tarifs", label: dict.nav.rates },

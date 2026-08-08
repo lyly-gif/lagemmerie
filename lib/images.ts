@@ -78,11 +78,22 @@ function buildImages(numbers: number[]): GalleryImage[] {
 
 // Grouped by space rather than shown as one flat grid, so visitors read the
 // gallery as "these are the distinct rooms" instead of a generic photo dump.
+//
+// Corrected against audit-complet-v2 §7: photo 10 (bar/cuisine d'été, même
+// suspension en rotin que 08/09) est le pool house, pas "Séjour & cuisine" ;
+// 14 est l'entrée/escalier de la maison, pas la cuisine ; 18 (canapé bleu
+// pâle + poêle à bois) est le vrai salon du rez-de-chaussée, mal rangé dans
+// "Séjour & cuisine" ; 12/13/24 (poufs, banquette + TV murale, coin lecture
+// sous les combles) sont la mezzanine à l'étage, pas "Le salon". Photo 02
+// (petit-déjeuner, terrasse en bois clair, clôture bac acier) ne correspond
+// pas au bardage/terrasse du pool house vu sur 03/05/09/28 — déplacée vers
+// la piscine & le jardin.
 const GALLERY_GROUPS: { key: string; numbers: number[] }[] = [
-  { key: "poolHouse", numbers: [2, 3, 5, 7, 8, 9, 28] },
-  { key: "poolGarden", numbers: [1, 4, 6, 29, 30, 31] },
-  { key: "livingKitchen", numbers: [10, 14, 18, 19, 20, 26, 27] },
-  { key: "lounge", numbers: [12, 13, 24] },
+  { key: "poolHouse", numbers: [3, 5, 7, 8, 9, 10, 28] },
+  { key: "poolGarden", numbers: [1, 2, 4, 6, 29, 30, 31] },
+  { key: "livingKitchen", numbers: [14, 19, 20, 26, 27] },
+  { key: "lounge", numbers: [18] },
+  { key: "mezzanine", numbers: [12, 13, 24] },
   { key: "bedrooms", numbers: [11, 15, 16, 17, 21, 22, 23] },
 ];
 
@@ -90,3 +101,10 @@ export const galleryCategories = GALLERY_GROUPS.map((group) => ({
   key: group.key,
   images: buildImages(group.numbers),
 }));
+
+// Lets /espaces pull a curated 3-4 photo mini-gallery per space straight
+// from the same numbered set used on /galerie, instead of maintaining a
+// second copy of image metadata.
+export function galleryImagesByNumbers(numbers: number[]): GalleryImage[] {
+  return buildImages(numbers);
+}
