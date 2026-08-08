@@ -41,7 +41,7 @@
       { "label": "Maison landaise", "value": "≈ 150 m²" },
       { "label": "Pool house", "value": "≈ 40 m²" },
       { "label": "Salles de bain", "value": "2" },
-      { "label": "Piscine", "value": "Chauffée" }
+      { "label": "Chauffée", "value": "Piscine" }
     ],
     "spacesPreview": {
       "kicker": "Le différenciateur",
@@ -51,8 +51,8 @@
       "differentiatorTag": "Le différenciateur"
     },
     "ctaBand": {
-      "title": "Huit personnes, quatre chambres, une piscine chauffée à l'année.",
-      "cta": "Vérifier les disponibilités"
+      "title": "Un séjour à La Gemmerie se réserve en direct — sans commission de plateforme.",
+      "cta": "Réserver mon séjour"
     }
   },
   "practical": {
@@ -81,12 +81,12 @@
       "moreCta": "Voir tous les équipements"
     },
     "location": {
-      "mapQuery": "Allée+de+Normandie%2C+40530+Labenne%2C+France",
-      "mapLabel": "Allée de Normandie, Labenne-Océan",
+      "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
+      "mapLabel": "Labenne-Océan, Landes",
       "facts": [
         {
-          "title": "Allée de Normandie",
-          "description": "Labenne-Océan, Landes — le numéro exact n'est pas affiché publiquement, il est communiqué après confirmation de réservation."
+          "title": "Proximité immédiate",
+          "description": "À quelques minutes à pied des plages et des commerces de Labenne-Océan."
         },
         { "title": "400 m", "description": "Distance à pied jusqu'à la plage" },
         {
@@ -94,7 +94,7 @@
           "description": "Quartier résidentiel calme de Labenne-Océan"
         }
       ],
-      "note": "La carte indique la rue ; le numéro de la propriété reste privé jusqu'à la confirmation de réservation."
+      "note": "La carte indique la zone du quartier ; l'adresse exacte est communiquée après confirmation de réservation."
     },
     "availability": {
       "intro": "Disponibilités réelles et réservation directe, sans commission de plateforme."
@@ -111,7 +111,7 @@
       { "label": "Maison landaise", "value": "≈ 150 m²" },
       { "label": "Pool house", "value": "≈ 40 m²" },
       { "label": "Salles de bain", "value": "2" },
-      { "label": "Piscine", "value": "Chauffée" }
+      { "label": "Chauffée", "value": "Piscine" }
     ],
     "items": [
       {

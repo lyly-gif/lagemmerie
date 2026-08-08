@@ -33,13 +33,22 @@ export function PracticalInfoTabs({ dict }: { dict: Content }) {
           {p.tabs.loc}
         </p>
         <div className="grid gap-10 md:grid-cols-2">
-          <div className="aspect-[4/3] overflow-hidden border border-line grayscale-[0.15] sepia-[0.08]">
+          <div className="relative aspect-[4/3] overflow-hidden border border-line grayscale-[0.15] sepia-[0.08]">
             <iframe
               loading="lazy"
-              src={`https://maps.google.com/maps?q=${p.location.mapQuery}&z=16&output=embed`}
+              src={`https://maps.google.com/maps?q=${p.location.mapQuery}&z=15&output=embed`}
               title={p.location.mapLabel}
               className="h-full w-full border-0"
             />
+            {/* Deliberately a perimeter, not a pin on the house itself —
+                the exact address stays private until booking is confirmed
+                (owner: "fais plutôt un cercle sur le périmètre"). */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 flex items-center justify-center"
+            >
+              <div className="h-2/3 w-2/3 rounded-full border-2 border-bronze-600/80 bg-bronze-500/10" />
+            </div>
           </div>
           <div className="flex flex-col gap-5">
             {p.location.facts.map((fact: { title: string; description: string }) => (

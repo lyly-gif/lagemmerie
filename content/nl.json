@@ -57,8 +57,8 @@
         "value": "[NL] 2"
       },
       {
-        "label": "[NL] Piscine",
-        "value": "[NL] Chauffée"
+        "label": "[NL] Chauffée",
+        "value": "[NL] Piscine"
       }
     ],
     "spacesPreview": {
@@ -69,8 +69,8 @@
       "differentiatorTag": "[NL] Le différenciateur"
     },
     "ctaBand": {
-      "title": "[NL] Huit personnes, quatre chambres, une piscine chauffée à l...",
-      "cta": "[NL] Vérifier les disponibilités"
+      "title": "[NL] Un séjour à La Gemmerie se réserve en direct — sans commi...",
+      "cta": "[NL] Réserver mon séjour"
     }
   },
   "practical": {
@@ -135,12 +135,12 @@
       "moreCta": "[NL] Voir tous les équipements"
     },
     "location": {
-      "mapQuery": "Allée+de+Normandie%2C+40530+Labenne%2C+France",
-      "mapLabel": "[NL] Allée de Normandie, Labenne-Océan",
+      "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
+      "mapLabel": "[NL] Labenne-Océan, Landes",
       "facts": [
         {
-          "title": "[NL] Allée de Normandie",
-          "description": "[NL] Labenne-Océan, Landes — le numéro exact n'est pas affiché..."
+          "title": "[NL] Proximité immédiate",
+          "description": "[NL] À quelques minutes à pied des plages et des commerces de ..."
         },
         {
           "title": "[NL] 400 m",
@@ -151,7 +151,7 @@
           "description": "[NL] Quartier résidentiel calme de Labenne-Océan"
         }
       ],
-      "note": "[NL] La carte indique la rue ; le numéro de la propriété reste..."
+      "note": "[NL] La carte indique la zone du quartier ; l'adresse exacte e..."
     },
     "availability": {
       "intro": "[NL] Disponibilités réelles et réservation directe, sans commi..."
@@ -184,8 +184,8 @@
         "value": "[NL] 2"
       },
       {
-        "label": "[NL] Piscine",
-        "value": "[NL] Chauffée"
+        "label": "[NL] Chauffée",
+        "value": "[NL] Piscine"
       }
     ],
     "items": [
