@@ -7,6 +7,17 @@ type GalleryImage = { src: string; alt: string; width: number; height: number };
 
 const SWIPE_THRESHOLD = 50;
 
+// Tile span is derived from each photo's real aspect ratio so mixed
+// landscape/portrait sets read as an intentional editorial grid (bento-style)
+// instead of the uneven vertical streaks a pure CSS-columns masonry produces
+// when tile heights vary a lot between columns.
+function tileSpan({ width, height }: GalleryImage): string {
+  const ratio = width / height;
+  if (ratio >= 1.35) return "col-span-2 row-span-1";
+  if (ratio <= 0.8) return "col-span-1 row-span-2";
+  return "col-span-1 row-span-1";
+}
+
 export function Gallery({ images }: { images: GalleryImage[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const touchStartX = useRef<number | null>(null);
@@ -48,25 +59,20 @@ export function Gallery({ images }: { images: GalleryImage[] }) {
 
   return (
     <>
-      {/* True masonry via CSS columns: each tile keeps its real aspect
-          ratio and packs against its shortest neighbor, instead of a fixed
-          grid forcing empty gaps under shorter images in the same row. */}
-      <div className="columns-2 gap-3 md:columns-3 md:gap-4">
+      <div className="grid grid-flow-row-dense grid-cols-2 auto-rows-[150px] gap-3 sm:grid-cols-3 sm:auto-rows-[180px] md:grid-cols-4 md:auto-rows-[220px] md:gap-4">
         {images.map((img, i) => (
           <button
             key={img.src}
             type="button"
             onClick={() => setOpenIndex(i)}
-            className="group relative mb-3 block w-full overflow-hidden bg-forest-900 md:mb-4"
-            style={{ breakInside: "avoid" }}
+            className={`group relative block overflow-hidden bg-forest-900 ${tileSpan(img)}`}
           >
             <Image
               src={img.src}
               alt={img.alt}
-              width={img.width}
-              height={img.height}
-              sizes="(min-width: 768px) 33vw, 50vw"
-              className="block w-full transition-transform duration-700 ease-out group-hover:scale-105"
+              fill
+              sizes="(min-width: 768px) 25vw, 50vw"
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
             <span className="absolute inset-0 bg-forest-950/0 transition-colors group-hover:bg-forest-950/10" />
           </button>

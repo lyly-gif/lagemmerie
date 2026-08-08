@@ -76,7 +76,7 @@ export default async function HomePage() {
           <Reveal delay={360}>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link
-                href="/la-maison"
+                href="/galerie"
                 className="border border-sand-100/40 px-6 py-3 text-xs font-medium tracking-[0.14em] text-sand-100 uppercase transition-colors hover:border-sand-100 hover:bg-sand-100 hover:text-forest-950"
               >
                 {dict.home.ctaPrimary}

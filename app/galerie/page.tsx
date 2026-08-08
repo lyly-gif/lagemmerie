@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
 import { Gallery } from "@/components/Gallery";
+import { GallerySideNav } from "@/components/GallerySideNav";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { galleryCategories } from "@/lib/images";
@@ -21,6 +22,10 @@ export default async function GaleriePage() {
   const locale = await getCurrentLocale();
   const dict = getDictionary(locale);
   const g = dict.gallery;
+  const navItems = galleryCategories.map((category) => ({
+    key: category.key,
+    label: g.categories[category.key as keyof typeof g.categories],
+  }));
 
   return (
     <section className="mx-auto max-w-7xl px-6 pt-20 pb-24 md:px-10 md:pt-28 md:pb-32">
@@ -36,24 +41,28 @@ export default async function GaleriePage() {
         </p>
       </Reveal>
 
-      <div className="mt-14 flex flex-col gap-16">
-        {galleryCategories.map((category, i) => (
-          <div key={category.key}>
-            <Reveal>
-              <div className="flex items-baseline gap-3">
-                <span className="font-display text-sm text-bronze-600 italic">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h2 className="font-display text-2xl text-forest-950 md:text-3xl">
-                  {g.categories[category.key as keyof typeof g.categories]}
-                </h2>
+      <div className="mt-14 md:flex md:items-start md:gap-16">
+        <GallerySideNav items={navItems} />
+
+        <div className="flex flex-1 flex-col gap-16">
+          {galleryCategories.map((category, i) => (
+            <div key={category.key} id={category.key} className="scroll-mt-28">
+              <Reveal>
+                <div className="flex items-baseline gap-3">
+                  <span className="font-display text-sm text-bronze-600 italic">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h2 className="font-display text-2xl text-forest-950 md:text-3xl">
+                    {g.categories[category.key as keyof typeof g.categories]}
+                  </h2>
+                </div>
+              </Reveal>
+              <div className="mt-6">
+                <Gallery images={category.images} />
               </div>
-            </Reveal>
-            <div className="mt-6">
-              <Gallery images={category.images} />
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       <Reveal className="mt-14">
