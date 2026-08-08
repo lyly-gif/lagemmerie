@@ -45,14 +45,14 @@ export default async function EspacesPage() {
         </Reveal>
       </section>
 
-      <section className="border-y border-line/60 bg-sand-200 py-10">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 md:grid-cols-4 md:px-10">
+      <section className="border-y border-line/60 bg-forest-950 py-10">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 md:grid-cols-3 md:px-10">
           {s.facts.map((fact) => (
             <div key={fact.label}>
-              <p className="font-display text-2xl text-bronze-700 italic md:text-3xl">
+              <p className="font-display text-2xl text-bronze-400 italic md:text-3xl">
                 {fact.value}
               </p>
-              <p className="mt-1 text-xs tracking-[0.14em] text-forest-800/60 uppercase">
+              <p className="mt-1 text-xs tracking-[0.14em] text-sand-100 uppercase">
                 {fact.label}
               </p>
             </div>

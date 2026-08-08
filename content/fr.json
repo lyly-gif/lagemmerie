@@ -41,17 +41,6 @@
       { "label": "Maison landaise", "value": "≈ 150 m²" },
       { "label": "Pool house", "value": "≈ 40 m²" }
     ],
-    "amenities": {
-      "title": "Ce qui vous attend sur place",
-      "items": [
-        { "icon": "pool", "label": "Piscine chauffée avril–octobre" },
-        { "icon": "wifi", "label": "Wifi dans toute la maison" },
-        { "icon": "kitchen", "label": "Pool house et cuisine d'été" },
-        { "icon": "linens", "label": "Linge de lit et ménage inclus" },
-        { "icon": "families", "label": "Idéal familles à plusieurs foyers" },
-        { "icon": "home", "label": "Parking privé sur la propriété" }
-      ]
-    },
     "spacesPreview": {
       "kicker": "Le différenciateur",
       "title": "Les 5 espaces de vie",
@@ -118,7 +107,9 @@
       { "label": "Capacité", "value": "8 personnes" },
       { "label": "Chambres", "value": "4" },
       { "label": "Maison landaise", "value": "≈ 150 m²" },
-      { "label": "Pool house", "value": "≈ 40 m²" }
+      { "label": "Pool house", "value": "≈ 40 m²" },
+      { "label": "Salles de bain", "value": "2" },
+      { "label": "Piscine", "value": "Chauffée" }
     ],
     "items": [
       {

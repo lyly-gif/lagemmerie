@@ -7,7 +7,6 @@ import { PhotoBanner } from "@/components/PhotoBanner";
 import { SpacesCarousel } from "@/components/SpacesCarousel";
 import { NameSymbol } from "@/components/NameSymbol";
 import { PracticalInfoTabs } from "@/components/PracticalInfoTabs";
-import { LineIcon, type IconName } from "@/components/icons/LineIcon";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
@@ -35,8 +34,8 @@ const heroImages = [
     alt: "Piscine et olivier centenaire, jardin de La Gemmerie",
   },
   {
-    src: featured["piscine-detail"],
-    alt: "Reflets sur l'eau de la piscine chauffée de La Gemmerie",
+    src: featured["pool-house-facade"],
+    alt: "Façade du pool house, architecture landaise à pans de bois",
   },
 ];
 
@@ -95,54 +94,42 @@ export default async function HomePage() {
 
       <PhotoBanner images={bannerImages} />
 
-      {/* Le nom + équipements + chiffres clés, réunis dans une seule bande */}
-      <section className="grain bg-forest-950 px-6 py-22 text-sand-100 md:px-10 md:py-24">
-        <div className="mx-auto max-w-[1200px]">
-          <div className="grid gap-14 md:grid-cols-2">
-            <Reveal>
-              <NameSymbol />
-              <Kicker tone="sand" className="mt-6">
-                {dict.home.manifesto.kicker}
-              </Kicker>
-              <h2 className="mt-4 font-display text-3xl md:text-5xl">
-                La <span className="text-bronze-400">Gemmerie</span>
-              </h2>
-              <div className="mt-6 flex flex-col gap-3">
-                {dict.home.manifesto.paragraphs.map((p) => (
-                  <p key={p} className="max-w-[46ch] text-[15px] leading-relaxed text-sand-100/80">
-                    {p}
-                  </p>
-                ))}
-              </div>
-            </Reveal>
-
-            <Reveal delay={120}>
-              <p className="mb-6 text-xs font-medium tracking-[0.16em] text-bronze-400 uppercase">
-                {dict.home.amenities.title}
+      {/* Le nom — purement narratif, le symbole de marque en est le point
+          focal ; plus aucun mélange avec équipements/chiffres (déjà
+          couverts ailleurs sur la page, cf. bande stats et Informations
+          pratiques). */}
+      <section className="grain bg-forest-950 px-6 py-24 text-sand-100 md:px-10 md:py-32">
+        <Reveal className="mx-auto flex max-w-2xl flex-col items-center text-center">
+          <NameSymbol className="h-32 w-auto md:h-48" />
+          <Kicker tone="sand" className="mt-8 justify-center">
+            {dict.home.manifesto.kicker}
+          </Kicker>
+          <h2 className="mt-4 font-display text-3xl md:text-5xl">
+            La <span className="text-bronze-400">Gemmerie</span>
+          </h2>
+          <div className="mt-6 flex flex-col gap-3">
+            {dict.home.manifesto.paragraphs.map((p) => (
+              <p key={p} className="text-[15px] leading-relaxed text-sand-100/80">
+                {p}
               </p>
-              <div className="grid grid-cols-2 gap-x-5 gap-y-7 sm:grid-cols-3">
-                {dict.home.amenities.items.map((item) => (
-                  <div key={item.label} className="flex flex-col gap-2.5">
-                    <LineIcon name={item.icon as IconName} className="h-[26px] w-[26px] text-bronze-400" />
-                    <span className="text-[12.5px] text-sand-100/85">{item.label}</span>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
+            ))}
           </div>
+        </Reveal>
+      </section>
 
-          <Reveal delay={160}>
-            <div className="mt-14 grid grid-cols-2 gap-6 border-t border-sand-100/[0.22] pt-10 md:grid-cols-4">
-              {dict.home.facts.map((fact) => (
-                <div key={fact.label}>
-                  <p className="font-display text-2xl text-bronze-400 md:text-3xl">{fact.value}</p>
-                  <p className="mt-1.5 text-[11px] tracking-[0.12em] text-sand-100/60 uppercase">
-                    {fact.label}
-                  </p>
-                </div>
-              ))}
+      {/* Chiffres clés — bande autonome, sortie de la section narrative */}
+      <section className="border-y border-line/60 bg-sand-200 py-10">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 md:grid-cols-4 md:px-10">
+          {dict.home.facts.map((fact) => (
+            <div key={fact.label}>
+              <p className="font-display text-2xl text-bronze-700 italic md:text-3xl">
+                {fact.value}
+              </p>
+              <p className="mt-1 text-xs tracking-[0.14em] text-forest-800/60 uppercase">
+                {fact.label}
+              </p>
             </div>
-          </Reveal>
+          ))}
         </div>
       </section>
 

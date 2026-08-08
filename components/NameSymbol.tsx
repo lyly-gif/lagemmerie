@@ -22,7 +22,7 @@ const FACETS = [
   { points: "102.43,181.15 133.70,212.42 102.43,243.69 71.17,212.42", tone: "#7C6142" },
 ];
 
-export function NameSymbol() {
+export function NameSymbol({ className = "h-16 w-auto md:h-20" }: { className?: string }) {
   const ref = useRef<SVGSVGElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -46,7 +46,7 @@ export function NameSymbol() {
     <svg
       ref={ref}
       viewBox="0 0 204.87 248.00"
-      className="h-16 w-auto md:h-20"
+      className={className}
       role="img"
       aria-label="Symbole gemme taillée La Gemmerie"
     >

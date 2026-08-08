@@ -53,35 +53,6 @@
         "value": "[ES] ≈ 40 m²"
       }
     ],
-    "amenities": {
-      "title": "[ES] Ce qui vous attend sur place",
-      "items": [
-        {
-          "icon": "pool",
-          "label": "[ES] Piscine chauffée avril–octobre"
-        },
-        {
-          "icon": "wifi",
-          "label": "[ES] Wifi dans toute la maison"
-        },
-        {
-          "icon": "kitchen",
-          "label": "[ES] Pool house et cuisine d'été"
-        },
-        {
-          "icon": "linens",
-          "label": "[ES] Linge de lit et ménage inclus"
-        },
-        {
-          "icon": "families",
-          "label": "[ES] Idéal familles à plusieurs foyers"
-        },
-        {
-          "icon": "home",
-          "label": "[ES] Parking privé sur la propriété"
-        }
-      ]
-    },
     "spacesPreview": {
       "kicker": "[ES] Le différenciateur",
       "title": "[ES] Les 5 espaces de vie",
@@ -199,6 +170,14 @@
       {
         "label": "[ES] Pool house",
         "value": "[ES] ≈ 40 m²"
+      },
+      {
+        "label": "[ES] Salles de bain",
+        "value": "[ES] 2"
+      },
+      {
+        "label": "[ES] Piscine",
+        "value": "[ES] Chauffée"
       }
     ],
     "items": [
