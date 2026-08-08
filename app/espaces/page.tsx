@@ -136,6 +136,29 @@ export default async function EspacesPage() {
           );
         })}
       </div>
+
+      {/* Not one of the 5 "espaces de vie" — a distinct addendum, so no
+          number badge and a lighter background separate it from the rhythm
+          above (owner explicitly asked for living spaces vs. bathrooms to
+          stay visually separate). */}
+      {s.bathrooms && (
+        <section className="border-t border-line/60 bg-sand-200 px-6 py-16 md:px-10 md:py-20">
+          <div className="mx-auto max-w-7xl">
+            <Reveal>
+              <Kicker>{s.bathrooms.kicker}</Kicker>
+              <h2 className="mt-4 font-display text-3xl text-forest-950 md:text-4xl">
+                {s.bathrooms.title}
+              </h2>
+              <p className="mt-5 max-w-2xl leading-relaxed text-forest-800/80">
+                {s.bathrooms.intro}
+              </p>
+            </Reveal>
+            <Reveal delay={120} className="mt-10">
+              <Gallery images={galleryImagesByNumbers(s.bathrooms.galleryNumbers)} />
+            </Reveal>
+          </div>
+        </section>
+      )}
     </>
   );
 }

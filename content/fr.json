@@ -127,7 +127,7 @@
         "title": "Le pool house",
         "description": "Repas à l'ombre de la charpente, bar donnant sur l'eau — un lieu de vie indépendant de 40 m², à mi-chemin entre intérieur et jardin, pensé pour les repas, les siestes et les fins de journée prolongées.",
         "imageKey": "pool-house-dejeuner",
-        "galleryNumbers": [5, 7, 8, 10]
+        "galleryNumbers": [8, 9, 5, 7]
       },
       {
         "number": "02",
@@ -143,7 +143,7 @@
         "title": "Séjour et cuisine",
         "description": "Cuisine entièrement équipée, poêle à bois, grande table commune — le foyer de la maison landaise, pensé pour les repas à huit.",
         "imageKey": "sejour-cuisine",
-        "galleryNumbers": [14, 19, 20, 27]
+        "galleryNumbers": [19, 20, 26]
       },
       {
         "number": "04",
@@ -151,7 +151,7 @@
         "title": "Le salon",
         "description": "Canapé profond et poêle à bois, en retrait de la cuisine — un coin plus intime pour lire, se poser, prolonger la soirée à deux ou trois.",
         "imageKey": "salon",
-        "galleryNumbers": [18, 24, 26]
+        "galleryNumbers": [18, 24, 27]
       },
       {
         "number": "05",
@@ -159,9 +159,15 @@
         "title": "Les chambres",
         "description": "Suite parentale, chambres secondaires et dortoir dédié aux enfants — chaque génération a son espace, sans jamais s'éloigner des autres.",
         "imageKey": "chambre-parentale",
-        "galleryNumbers": [11, 15, 16, 21]
+        "galleryNumbers": [11, 15, 16, 22]
       }
-    ]
+    ],
+    "bathrooms": {
+      "kicker": "Bon à savoir",
+      "title": "Les salles de bain",
+      "intro": "Une salle de bain à cabine de douche dans la chambre 1, une salle de bain commune à baignoire et douche partagée par le reste de la maison.",
+      "galleryNumbers": [23, 17]
+    }
   },
   "gallery": {
     "kicker": "En images",
@@ -177,9 +183,9 @@
       "chambre1": "Chambre 1",
       "chambre1Bathroom": "Salle de bain",
       "chambre2": "Chambre 2",
-      "chambre2Bathroom": "Salle de bain",
       "enfants": "Chambres d'enfants",
-      "dortoir": "Dortoir"
+      "dortoir": "Dortoir",
+      "sharedBathroom": "Salle de bain commune"
     }
   },
   "rates": {

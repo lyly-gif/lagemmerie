@@ -209,10 +209,10 @@
         "description": "[EN] Repas à l'ombre de la charpente, bar donnant sur l'eau — ...",
         "imageKey": "pool-house-dejeuner",
         "galleryNumbers": [
-          5,
-          7,
           8,
-          10
+          9,
+          5,
+          7
         ]
       },
       {
@@ -235,10 +235,9 @@
         "description": "[EN] Cuisine entièrement équipée, poêle à bois, grande table c...",
         "imageKey": "sejour-cuisine",
         "galleryNumbers": [
-          14,
           19,
           20,
-          27
+          26
         ]
       },
       {
@@ -250,7 +249,7 @@
         "galleryNumbers": [
           18,
           24,
-          26
+          27
         ]
       },
       {
@@ -263,10 +262,19 @@
           11,
           15,
           16,
-          21
+          22
         ]
       }
-    ]
+    ],
+    "bathrooms": {
+      "kicker": "[EN] Bon à savoir",
+      "title": "[EN] Les salles de bain",
+      "intro": "[EN] Une salle de bain à cabine de douche dans la chambre 1, u...",
+      "galleryNumbers": [
+        23,
+        17
+      ]
+    }
   },
   "gallery": {
     "kicker": "[EN] En images",
@@ -282,9 +290,9 @@
       "chambre1": "[EN] Chambre 1",
       "chambre1Bathroom": "[EN] Salle de bain",
       "chambre2": "[EN] Chambre 2",
-      "chambre2Bathroom": "[EN] Salle de bain",
       "enfants": "[EN] Chambres d'enfants",
-      "dortoir": "[EN] Dortoir"
+      "dortoir": "[EN] Dortoir",
+      "sharedBathroom": "[EN] Salle de bain commune"
     }
   },
   "rates": {

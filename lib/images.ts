@@ -80,42 +80,41 @@ function buildImages(numbers: number[]): GalleryImage[] {
 // gallery as "these are the distinct rooms" instead of a generic photo dump.
 //
 // Cross-checked against the owner's own renamed source files (dossier
-// "photos Labenne", filenames like "chambre 1_DSC9682a.jpg") — the
-// authoritative source for which numbered photo is which room:
-// - Mezzanine & salle TV stays its own tab (12 = poufs sous velux, 13 =
-//   banquette + TV murale) — it's a real space, not folded into a bedroom.
-// - Le salon: 18 (salon.jpg, canapé + poêle), 24 (salon_DSC9743a, coin
-//   lecture) et 26 (salon_DSC9759a, couloir/crédence) — all three filed by
-//   the owner under "salon", so 26 moves out of Cuisine.
-// - Chambre 1 = 21 (tête de lit grise + TV), avec la salle de bain à
-//   cabine de douche 23 en sous-section.
-// - Chambre 2 = 15 + 22 (les deux chambres "classiques", portes-fenêtres +
-//   tablette à magazines), avec leur salle de bain baignoire 17 en
-//   sous-section.
-// - Chambres d'enfants = 16 (lit superposé). Dortoir = 11 (lits multiples
-//   sous velux).
+// "photos Labenne") plus a direct owner review of the live tabs:
+// - Pool house: 8 (bar/apéro, vue piscine) and 9 (canapé + BBQ) lead the
+//   tab — the two photos the owner wants featured first, also used as the
+//   home carousel's hover image (SpacesCarousel uses galleryNumbers[0]).
+// - Cuisine loses 14 (l'escalier n'a rien à y faire) — direction Mezzanine.
+// - Mezzanine & salle TV gains 14 (l'escalier qui y mène).
+// - Chambre 1 / Chambre 2 swapped: 22 (tête de lit grise + TV + commode)
+//   is actually Chambre 1, and 21 (portes-fenêtres + tablette à magazines)
+//   is a second view of Chambre 2 alongside 15 — confirmed by the owner
+//   against the live /galerie tabs, correcting an earlier mix-up.
+// - Salle de bain 17 (baignoire + douche) is not private to a bedroom —
+//   it's the shared/common bathroom, so it gets its own top-level tab
+//   instead of being nested under Chambre 2.
+// - 26 and 27 were swapped: 26 is the espresso-machine counter detail
+//   (Cuisine), 27 is the hallway/crédence shot (Le salon) — verified by
+//   reading the numbered files directly, not the renamed source folder.
 const GALLERY_GROUPS: {
   key: string;
   numbers: number[];
   subsections?: { key: string; numbers: number[] }[];
 }[] = [
-  { key: "poolHouse", numbers: [5, 7, 8, 9, 10] },
+  { key: "poolHouse", numbers: [8, 9, 5, 7, 10] },
   { key: "poolGarden", numbers: [1, 2, 4, 6, 29, 30, 31] },
-  { key: "livingKitchen", numbers: [14, 19, 20, 27] },
-  { key: "lounge", numbers: [18, 24, 26] },
-  { key: "mezzanine", numbers: [12, 13] },
+  { key: "livingKitchen", numbers: [19, 20, 26] },
+  { key: "lounge", numbers: [18, 24, 27] },
+  { key: "mezzanine", numbers: [12, 13, 14] },
   {
     key: "chambre1",
-    numbers: [21],
+    numbers: [22],
     subsections: [{ key: "chambre1Bathroom", numbers: [23] }],
   },
-  {
-    key: "chambre2",
-    numbers: [15, 22],
-    subsections: [{ key: "chambre2Bathroom", numbers: [17] }],
-  },
+  { key: "chambre2", numbers: [15, 21] },
   { key: "enfants", numbers: [16] },
   { key: "dortoir", numbers: [11] },
+  { key: "sharedBathroom", numbers: [17] },
 ];
 
 export const galleryCategories = GALLERY_GROUPS.map((group) => ({
