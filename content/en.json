@@ -73,6 +73,10 @@
       "cta": "[EN] Réserver mon séjour"
     }
   },
+  "calendar": {
+    "reserveButton": "[EN] Réserver",
+    "clearButton": "[EN] Effacer les dates"
+  },
   "practical": {
     "kicker": "[EN] Bon à savoir",
     "title": "[EN] Informations pratiques",

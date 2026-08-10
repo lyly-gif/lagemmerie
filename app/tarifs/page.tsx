@@ -41,7 +41,10 @@ export default async function TarifsPage() {
         <p className="mb-6 max-w-md text-sm leading-relaxed text-forest-800/80">
           {r.calendarIntro}
         </p>
-        <HostawayCalendarWidget />
+        <HostawayCalendarWidget
+          reserveButtonText={dict.calendar.reserveButton}
+          clearButtonText={dict.calendar.clearButton}
+        />
       </Reveal>
 
       {/* Pourquoi réserver en direct */}

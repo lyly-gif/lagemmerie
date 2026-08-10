@@ -73,6 +73,10 @@
       "cta": "[NL] Réserver mon séjour"
     }
   },
+  "calendar": {
+    "reserveButton": "[NL] Réserver",
+    "clearButton": "[NL] Effacer les dates"
+  },
   "practical": {
     "kicker": "[NL] Bon à savoir",
     "title": "[NL] Informations pratiques",

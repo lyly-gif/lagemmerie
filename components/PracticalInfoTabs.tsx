@@ -71,7 +71,10 @@ export function PracticalInfoTabs({ dict }: { dict: Content }) {
         <p className="mb-6 max-w-md text-sm leading-relaxed text-forest-800/80">
           {p.availability.intro}
         </p>
-        <HostawayCalendarWidget />
+        <HostawayCalendarWidget
+          reserveButtonText={dict.calendar.reserveButton}
+          clearButtonText={dict.calendar.clearButton}
+        />
       </div>
     </div>
   );

@@ -55,6 +55,10 @@
       "cta": "Réserver mon séjour"
     }
   },
+  "calendar": {
+    "reserveButton": "Réserver",
+    "clearButton": "Effacer les dates"
+  },
   "practical": {
     "kicker": "Bon à savoir",
     "title": "Informations pratiques",
