@@ -26,6 +26,9 @@ export function Footer({ dict }: { dict: Content }) {
             <Link href="/espaces" className="w-fit hover:text-bronze-400">
               {dict.nav.spaces}
             </Link>
+            <Link href="/labenne-ocean" className="w-fit hover:text-bronze-400">
+              {dict.nav.labenneOcean}
+            </Link>
             <Link href="/galerie" className="w-fit hover:text-bronze-400">
               {dict.nav.gallery}
             </Link>

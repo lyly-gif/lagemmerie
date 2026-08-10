@@ -8,6 +8,7 @@
   "nav": {
     "home": "Accueil",
     "spaces": "Les 5 espaces de vie",
+    "labenneOcean": "Labenne-Océan",
     "gallery": "Galerie",
     "rates": "Tarifs & réservation",
     "shop": "Côté produits",
@@ -164,6 +165,81 @@
       "title": "Les salles de bain",
       "intro": "Une salle de bain à cabine de douche dans la chambre 1, une salle de bain commune à baignoire et douche partagée par le reste de la maison.",
       "galleryNumbers": [23, 42, 17, 53, 54]
+    }
+  },
+  "labenneOcean": {
+    "kicker": "L'environnement",
+    "title": "Labenne-Océan, entre pins et grande plage de sable",
+    "intro": "À 400 m de la maison, une station balnéaire des Landes restée à taille humaine — une plage immense, une forêt de pins et une poignée d'activités pour occuper chaque génération, sans jamais s'éloigner du calme.",
+    "beach": {
+      "kicker": "À 400 m",
+      "title": "La plage centrale de Labenne-Océan",
+      "intro": "Environ 3 km de sable et une vue à 180° sur l'océan depuis l'esplanade — les dunes des Landes au nord, les premiers reliefs de la Côte basque et des Pyrénées au sud par temps clair.",
+      "facts": [
+        {
+          "title": "Surveillance",
+          "description": "Plage surveillée de mi-juin à mi-septembre — 11h-19h en juillet-août, 12h30-18h30 fin août et mi-septembre (horaires 2026)."
+        },
+        {
+          "title": "Sur l'esplanade",
+          "description": "Douches, sanitaires, bar-restauration, parc à vélos et aire de jeux pour les enfants."
+        }
+      ]
+    },
+    "activities": {
+      "kicker": "À proximité",
+      "title": "Activités & loisirs",
+      "intro": "De quoi remplir un séjour sans jamais reprendre la voiture pour aller loin — la plupart des activités se rejoignent en quelques minutes.",
+      "items": [
+        {
+          "icon": "surf",
+          "title": "Surf",
+          "description": "Écoles de surf sur la plage et SB3, l'un des plus grands surf shops d'Europe, sur place."
+        },
+        {
+          "icon": "bike",
+          "title": "Vélo",
+          "description": "La Vélodyssée relie dunes, forêt de pins et le port de Capbreton par une piste continue."
+        },
+        {
+          "icon": "treetop",
+          "title": "Accrobranche",
+          "description": "Un parc arboré parmi les plus grands d'Aquitaine, en forêt à quelques minutes."
+        },
+        {
+          "icon": "waterpark",
+          "title": "Parc aquatique",
+          "description": "Aquatic Landes, en forêt — toboggans et bassins pour toute la famille."
+        },
+        {
+          "icon": "nature",
+          "title": "Nature",
+          "description": "La réserve du Marais d'Orx : 1 000 ha, 247 espèces d'oiseaux, 6 km de sentier avec observatoires."
+        },
+        {
+          "icon": "canoe",
+          "title": "Canoë",
+          "description": "Descente tranquille sur le canal du Boudigau, au départ de Labenne."
+        },
+        {
+          "icon": "zoo",
+          "title": "Zoo de Labenne",
+          "description": "Plus de 200 animaux, à quelques minutes de la maison."
+        }
+      ]
+    },
+    "region": {
+      "kicker": "Dans la région",
+      "title": "Bien situés pour rayonner",
+      "facts": [
+        { "value": "6 km", "label": "Capbreton — ~7 min en voiture" },
+        { "value": "13 km", "label": "Bayonne — ~18 min en voiture" },
+        { "value": "20 km", "label": "Biarritz — ~29 min en voiture" },
+        { "value": "29 km", "label": "Aéroport de Biarritz — ~26 min en voiture" }
+      ]
+    },
+    "cta": {
+      "title": "Toujours entre pins et océan — vérifiez les disponibilités."
     }
   },
   "gallery": {

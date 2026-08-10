@@ -8,6 +8,7 @@
   "nav": {
     "home": "[ES] Accueil",
     "spaces": "[ES] Les 5 espaces de vie",
+    "labenneOcean": "[ES] Labenne-Océan",
     "gallery": "[ES] Galerie",
     "rates": "[ES] Tarifs & réservation",
     "shop": "[ES] Côté produits",
@@ -277,6 +278,93 @@
         53,
         54
       ]
+    }
+  },
+  "labenneOcean": {
+    "kicker": "[ES] L'environnement",
+    "title": "[ES] Labenne-Océan, entre pins et grande plage de sable",
+    "intro": "[ES] À 400 m de la maison, une station balnéaire des Landes re...",
+    "beach": {
+      "kicker": "[ES] À 400 m",
+      "title": "[ES] La plage centrale de Labenne-Océan",
+      "intro": "[ES] Environ 3 km de sable et une vue à 180° sur l'océan depui...",
+      "facts": [
+        {
+          "title": "[ES] Surveillance",
+          "description": "[ES] Plage surveillée de mi-juin à mi-septembre — 11h-19h en j..."
+        },
+        {
+          "title": "[ES] Sur l'esplanade",
+          "description": "[ES] Douches, sanitaires, bar-restauration, parc à vélos et ai..."
+        }
+      ]
+    },
+    "activities": {
+      "kicker": "[ES] À proximité",
+      "title": "[ES] Activités & loisirs",
+      "intro": "[ES] De quoi remplir un séjour sans jamais reprendre la voitur...",
+      "items": [
+        {
+          "icon": "surf",
+          "title": "[ES] Surf",
+          "description": "[ES] Écoles de surf sur la plage et SB3, l'un des plus grands ..."
+        },
+        {
+          "icon": "bike",
+          "title": "[ES] Vélo",
+          "description": "[ES] La Vélodyssée relie dunes, forêt de pins et le port de Ca..."
+        },
+        {
+          "icon": "treetop",
+          "title": "[ES] Accrobranche",
+          "description": "[ES] Un parc arboré parmi les plus grands d'Aquitaine, en forê..."
+        },
+        {
+          "icon": "waterpark",
+          "title": "[ES] Parc aquatique",
+          "description": "[ES] Aquatic Landes, en forêt — toboggans et bassins pour tout..."
+        },
+        {
+          "icon": "nature",
+          "title": "[ES] Nature",
+          "description": "[ES] La réserve du Marais d'Orx : 1 000 ha, 247 espèces d'oise..."
+        },
+        {
+          "icon": "canoe",
+          "title": "[ES] Canoë",
+          "description": "[ES] Descente tranquille sur le canal du Boudigau, au départ d..."
+        },
+        {
+          "icon": "zoo",
+          "title": "[ES] Zoo de Labenne",
+          "description": "[ES] Plus de 200 animaux, à quelques minutes de la maison."
+        }
+      ]
+    },
+    "region": {
+      "kicker": "[ES] Dans la région",
+      "title": "[ES] Bien situés pour rayonner",
+      "facts": [
+        {
+          "value": "[ES] 6 km",
+          "label": "[ES] Capbreton — ~7 min en voiture"
+        },
+        {
+          "value": "[ES] 13 km",
+          "label": "[ES] Bayonne — ~18 min en voiture"
+        },
+        {
+          "value": "[ES] 20 km",
+          "label": "[ES] Biarritz — ~29 min en voiture"
+        },
+        {
+          "value": "[ES] 29 km",
+          "label": "[ES] Aéroport de Biarritz — ~26 min en voiture"
+        }
+      ]
+    },
+    "cta": {
+      "title": "[ES] Toujours entre pins et océan — vérifiez les disponibilités."
     }
   },
   "gallery": {

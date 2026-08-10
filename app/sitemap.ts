@@ -5,6 +5,7 @@ const BASE_URL = "https://lagemmerie.com";
 const routes = [
   { path: "/", priority: 1, changeFrequency: "weekly" as const },
   { path: "/espaces", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/labenne-ocean", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/galerie", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/tarifs", priority: 0.9, changeFrequency: "weekly" as const },
   { path: "/contact", priority: 0.6, changeFrequency: "yearly" as const },

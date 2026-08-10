@@ -12,6 +12,11 @@ export const featured = {
   "salle-de-bain": "/images/featured/salle-de-bain.jpg",
   "detail-cuisine": "/images/featured/detail-cuisine.jpg",
   "rituel-accueil": "/images/featured/rituel-accueil.jpg",
+  "labenne-ocean-plage-dunes": "/images/featured/labenne-ocean-plage-dunes.jpg",
+  "labenne-ocean-plage-coucher-soleil-clotures":
+    "/images/featured/labenne-ocean-plage-coucher-soleil-clotures.jpg",
+  "labenne-ocean-plage-coucher-soleil-vagues":
+    "/images/featured/labenne-ocean-plage-coucher-soleil-vagues.jpg",
 } as const;
 
 export type FeaturedKey = keyof typeof featured;
