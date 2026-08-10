@@ -120,7 +120,7 @@
         "title": "Le pool house",
         "description": "Repas à l'ombre de la charpente, bar donnant sur l'eau — un lieu de vie indépendant de 40 m², à mi-chemin entre intérieur et jardin, pensé pour les repas, les siestes et les fins de journée prolongées.",
         "imageKey": "pool-house-dejeuner",
-        "galleryNumbers": [8, 9, 5, 7, 32]
+        "galleryNumbers": [8, 9, 7, 32]
       },
       {
         "number": "02",
@@ -128,7 +128,7 @@
         "title": "La piscine et sa terrasse",
         "description": "Chauffée à 27°C d'avril à octobre, elle mesure 4,50 × 12 m et se prolonge par une terrasse en bois clair équipée de transats, bordée d'un olivier centenaire — le cœur battant de la maison, de jour comme en soirée.",
         "imageKey": "hero-piscine-jour",
-        "galleryNumbers": [1, 4, 29, 30, 33, 34, 35]
+        "galleryNumbers": [1, 4, 29, 30, 33, 34, 35, 5]
       },
       {
         "number": "03",

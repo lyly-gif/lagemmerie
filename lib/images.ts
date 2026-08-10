@@ -110,9 +110,9 @@ function buildImages(numbers: number[]): GalleryImage[] {
 // - Cuisine loses 14 (l'escalier n'a rien à y faire) — direction Mezzanine.
 // - Mezzanine & salle TV gains 14 (l'escalier qui y mène).
 // - Chambre 1 / Chambre 2 swapped: 22 (tête de lit grise + TV + commode)
-//   is actually Chambre 1, and 21 (portes-fenêtres + tablette à magazines)
-//   is a second view of Chambre 2 alongside 15 — confirmed by the owner
-//   against the live /galerie tabs, correcting an earlier mix-up.
+//   and 21 (même chambre — banc en osier, table d'appoint ronde) are both
+//   Chambre 1, not Chambre 2 — confirmed by the owner against the live
+//   /galerie tabs, correcting an earlier mix-up.
 // - Salle de bain 17 (baignoire + douche) is not private to a bedroom —
 //   it's the shared/common bathroom, so it gets its own top-level tab
 //   instead of being nested under Chambre 2.
@@ -124,22 +124,27 @@ function buildImages(numbers: number[]): GalleryImage[] {
 // re-verified against each numbered file before wiring in (dossier "photos
 // maison Labenne"). exterieur_DSC9553a.jpg from that batch was already on
 // the site as 02.jpg (identical byte size + dimensions) — not re-added.
+//
+// Round 3 corrections: 5 (table + chaises rouges sous la pergola) is the
+// terrasse extérieure, not le pool house — direction La piscine & le
+// jardin. 21 (banc en osier, table d'appoint ronde) is Chambre 1, pas
+// Chambre 2 — même chambre que 22.
 const GALLERY_GROUPS: {
   key: string;
   numbers: number[];
   subsections?: { key: string; numbers: number[] }[];
 }[] = [
-  { key: "poolHouse", numbers: [8, 9, 5, 7, 10, 32] },
-  { key: "poolGarden", numbers: [1, 2, 4, 6, 29, 30, 31, 33, 34, 35] },
+  { key: "poolHouse", numbers: [8, 9, 7, 10, 32] },
+  { key: "poolGarden", numbers: [1, 2, 4, 6, 29, 30, 31, 33, 34, 35, 5] },
   { key: "livingKitchen", numbers: [19, 20, 26, 36] },
   { key: "lounge", numbers: [18, 24, 27, 37] },
   { key: "mezzanine", numbers: [12, 13, 14, 38, 39, 40, 41] },
   {
     key: "chambre1",
-    numbers: [22],
+    numbers: [22, 21],
     subsections: [{ key: "chambre1Bathroom", numbers: [23, 42] }],
   },
-  { key: "chambre2", numbers: [15, 21, 43, 44, 45] },
+  { key: "chambre2", numbers: [15, 43, 44, 45] },
   { key: "enfants", numbers: [16, 46, 47] },
   { key: "dortoir", numbers: [11, 48, 49, 50, 51, 52] },
   { key: "sharedBathroom", numbers: [17, 53, 54] },
