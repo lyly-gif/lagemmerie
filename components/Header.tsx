@@ -7,9 +7,9 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const links = (dict: Content) => [
   { href: "/espaces", label: dict.nav.spaces },
-  { href: "/labenne-ocean", label: dict.nav.labenneOcean },
   { href: "/galerie", label: dict.nav.gallery },
   { href: "/tarifs", label: dict.nav.rates },
+  { href: "/labenne-ocean", label: dict.nav.labenneOcean },
   { href: "/boutique", label: dict.nav.shop, teaser: true },
   { href: "/contact", label: dict.nav.contact },
 ];
