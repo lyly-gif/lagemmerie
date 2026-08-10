@@ -56,6 +56,29 @@ const GALLERY_DIMENSIONS: Record<string, { width: number; height: number }> = {
   "29": { width: 1820, height: 1365 },
   "30": { width: 1820, height: 1365 },
   "31": { width: 1820, height: 1365 },
+  "32": { width: 2047, height: 1365 },
+  "33": { width: 2048, height: 1365 },
+  "34": { width: 2048, height: 1365 },
+  "35": { width: 1365, height: 2048 },
+  "36": { width: 2048, height: 1365 },
+  "37": { width: 2048, height: 1365 },
+  "38": { width: 2047, height: 1365 },
+  "39": { width: 2048, height: 1365 },
+  "40": { width: 1365, height: 2048 },
+  "41": { width: 1365, height: 2048 },
+  "42": { width: 2048, height: 1365 },
+  "43": { width: 2048, height: 1365 },
+  "44": { width: 2047, height: 1365 },
+  "45": { width: 1365, height: 2048 },
+  "46": { width: 2048, height: 1365 },
+  "47": { width: 1365, height: 2048 },
+  "48": { width: 2048, height: 1365 },
+  "49": { width: 2048, height: 1365 },
+  "50": { width: 2048, height: 1365 },
+  "51": { width: 1365, height: 2048 },
+  "52": { width: 1365, height: 2048 },
+  "53": { width: 2048, height: 1365 },
+  "54": { width: 2048, height: 1365 },
 };
 
 export type GalleryImage = {
@@ -96,25 +119,30 @@ function buildImages(numbers: number[]): GalleryImage[] {
 // - 26 and 27 were swapped: 26 is the espresso-machine counter detail
 //   (Cuisine), 27 is the hallway/crédence shot (Le salon) — verified by
 //   reading the numbered files directly, not the renamed source folder.
+// Round 2 additions (23 new photos, numbered 32-54 following the existing
+// sequence) — mapped by the owner from the renamed source files, visually
+// re-verified against each numbered file before wiring in (dossier "photos
+// maison Labenne"). exterieur_DSC9553a.jpg from that batch was already on
+// the site as 02.jpg (identical byte size + dimensions) — not re-added.
 const GALLERY_GROUPS: {
   key: string;
   numbers: number[];
   subsections?: { key: string; numbers: number[] }[];
 }[] = [
-  { key: "poolHouse", numbers: [8, 9, 5, 7, 10] },
-  { key: "poolGarden", numbers: [1, 2, 4, 6, 29, 30, 31] },
-  { key: "livingKitchen", numbers: [19, 20, 26] },
-  { key: "lounge", numbers: [18, 24, 27] },
-  { key: "mezzanine", numbers: [12, 13, 14] },
+  { key: "poolHouse", numbers: [8, 9, 5, 7, 10, 32] },
+  { key: "poolGarden", numbers: [1, 2, 4, 6, 29, 30, 31, 33, 34, 35] },
+  { key: "livingKitchen", numbers: [19, 20, 26, 36] },
+  { key: "lounge", numbers: [18, 24, 27, 37] },
+  { key: "mezzanine", numbers: [12, 13, 14, 38, 39, 40, 41] },
   {
     key: "chambre1",
     numbers: [22],
-    subsections: [{ key: "chambre1Bathroom", numbers: [23] }],
+    subsections: [{ key: "chambre1Bathroom", numbers: [23, 42] }],
   },
-  { key: "chambre2", numbers: [15, 21] },
-  { key: "enfants", numbers: [16] },
-  { key: "dortoir", numbers: [11] },
-  { key: "sharedBathroom", numbers: [17] },
+  { key: "chambre2", numbers: [15, 21, 43, 44, 45] },
+  { key: "enfants", numbers: [16, 46, 47] },
+  { key: "dortoir", numbers: [11, 48, 49, 50, 51, 52] },
+  { key: "sharedBathroom", numbers: [17, 53, 54] },
 ];
 
 export const galleryCategories = GALLERY_GROUPS.map((group) => ({
