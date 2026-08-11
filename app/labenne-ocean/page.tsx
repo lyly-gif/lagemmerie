@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
 import { PhotoBanner } from "@/components/PhotoBanner";
@@ -7,37 +6,22 @@ import { LineIcon, type IconName } from "@/components/icons/LineIcon";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
+import { createLocalizedMetadata } from "@/lib/seo";
+import { localizedPath } from "@/lib/i18n-routing";
 
-const title = "Labenne-Océan : plage, activités et environnement";
-const description =
-  "La plage centrale de Labenne-Océan à 400 m, ses activités (surf, vélo, nature) et sa position dans les Landes — l'environnement de La Gemmerie.";
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: { title, description },
-  twitter: { title, description },
-};
-
-const bannerImages = [
-  {
-    src: featured["labenne-ocean-plage-dunes"],
-    alt: "Vue aérienne de la plage et des dunes de Labenne-Océan",
-  },
-  {
-    src: featured["labenne-ocean-plage-coucher-soleil-clotures"],
-    alt: "Coucher de soleil sur la plage de Labenne-Océan, ganivelles des dunes",
-  },
-  {
-    src: featured["labenne-ocean-plage-coucher-soleil-vagues"],
-    alt: "Vagues et reflets au coucher de soleil, plage de Labenne-Océan",
-  },
-];
+export async function generateMetadata() {
+  return createLocalizedMetadata(await getCurrentLocale(), "labenneOcean");
+}
 
 export default async function LabenneOceanPage() {
   const locale = await getCurrentLocale();
   const dict = getDictionary(locale);
   const l = dict.labenneOcean;
+  const bannerImages = [
+    { src: featured["labenne-ocean-plage-dunes"], alt: `${l.beach.title} — 1` },
+    { src: featured["labenne-ocean-plage-coucher-soleil-clotures"], alt: `${l.beach.title} — 2` },
+    { src: featured["labenne-ocean-plage-coucher-soleil-vagues"], alt: `${l.beach.title} — 3` },
+  ];
 
   return (
     <>
@@ -137,7 +121,7 @@ export default async function LabenneOceanPage() {
               {l.cta.title}
             </p>
             <Link
-              href="/tarifs"
+              href={localizedPath(locale, "/tarifs")}
               className="shrink-0 border border-bronze-600 bg-bronze-600 px-7 py-3 text-xs font-medium tracking-[0.14em] text-sand-50 uppercase transition-colors hover:bg-bronze-700"
             >
               {dict.home.ctaSecondary}

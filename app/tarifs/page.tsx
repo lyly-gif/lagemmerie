@@ -1,23 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
 import { HostawayCalendarWidget } from "@/components/HostawayCalendarWidget";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
+import { createLocalizedMetadata } from "@/lib/seo";
+import { localizedPath } from "@/lib/i18n-routing";
 
-const title = "Réserver à La Gemmerie — Réservation directe à Labenne-Océan";
-const description =
-  "Réservez votre séjour à La Gemmerie en direct, sans commission. Disponibilités réelles à Labenne-Océan (Landes).";
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: { title, description },
-  twitter: { title, description },
-};
+export async function generateMetadata() {
+  return createLocalizedMetadata(await getCurrentLocale(), "rates");
+}
 
 export default async function TarifsPage() {
   const locale = await getCurrentLocale();
@@ -26,7 +20,7 @@ export default async function TarifsPage() {
   const w = r.whyBookDirect;
 
   return (
-    <section className="mx-auto max-w-5xl px-6 pt-20 pb-24 md:px-10 md:pt-28 md:pb-32">
+    <section className="mx-auto max-w-5xl px-6 pt-16 pb-24 md:px-10 md:pt-20 md:pb-32">
       <Reveal>
         <Kicker>{r.kicker}</Kicker>
       </Reveal>
@@ -37,14 +31,43 @@ export default async function TarifsPage() {
         <p className="text-balance mt-6 max-w-xl leading-relaxed text-forest-800/80">{r.intro}</p>
       </Reveal>
 
-      <Reveal delay={280} className="mt-14">
+      <Reveal delay={280} className="mt-10">
         <p className="mb-6 max-w-md text-sm leading-relaxed text-forest-800/80">
           {r.calendarIntro}
         </p>
         <HostawayCalendarWidget
+          locale={locale}
           reserveButtonText={dict.calendar.reserveButton}
           clearButtonText={dict.calendar.clearButton}
+          guestLabel={dict.calendar.guestLabel}
+          guestPlaceholder={dict.calendar.guestPlaceholder}
+          guestHelp={dict.calendar.guestHelp}
+          guestError={dict.calendar.guestError}
+          loadingText={dict.calendar.loadingText}
+          partnerNote={dict.calendar.partnerNote}
         />
+      </Reveal>
+
+      <Reveal className="mt-16">
+        <div className="border border-line bg-sand-200/60 p-7 md:p-9">
+          <Kicker>{r.bookingJourney.kicker}</Kicker>
+          <h2 className="mt-4 font-display text-2xl text-forest-950 md:text-3xl">
+            {r.bookingJourney.title}
+          </h2>
+          <ol className="mt-7 grid gap-6 md:grid-cols-3">
+            {r.bookingJourney.steps.map((step, index) => (
+              <li key={step} className="flex gap-4 text-sm leading-relaxed text-forest-800/80">
+                <span className="font-display text-xl text-bronze-700 italic">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                {step}
+              </li>
+            ))}
+          </ol>
+          <p className="mt-7 border-t border-line pt-5 text-xs leading-relaxed text-forest-800/65">
+            {r.bookingJourney.terms}
+          </p>
+        </div>
       </Reveal>
 
       {/* Pourquoi réserver en direct */}
@@ -65,7 +88,7 @@ export default async function TarifsPage() {
           <div className="relative aspect-[4/5] overflow-hidden bg-forest-900">
             <Image
               src={featured["rituel-accueil"]}
-              alt="Rituel d'accueil La Gemmerie : plateau de bienvenue et serviette landaise"
+              alt={`${w.kicker} — ${dict.site.name}`}
               fill
               sizes="(min-width: 768px) 45vw, 100vw"
               className="object-cover"
@@ -78,7 +101,7 @@ export default async function TarifsPage() {
         <p className="text-sm text-forest-800/70">
           {r.footerNote}{" "}
           <Link
-            href="/contact"
+            href={localizedPath(locale, "/contact")}
             className="text-bronze-700 underline decoration-bronze-500/40 underline-offset-4 hover:text-bronze-800"
           >
             {r.footerCta}

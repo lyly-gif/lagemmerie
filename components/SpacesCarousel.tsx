@@ -4,8 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { featured, type FeaturedKey } from "@/lib/images";
+import type { Locale } from "@/lib/content";
+import { localizedPath } from "@/lib/i18n-routing";
 
 const AUTO_CROSSFADE_MS = 3200;
+const arrowLabels: Record<Locale, [string, string]> = {
+  fr: ["Précédent", "Suivant"],
+  en: ["Previous", "Next"],
+  de: ["Zurück", "Weiter"],
+  nl: ["Vorige", "Volgende"],
+  es: ["Anterior", "Siguiente"],
+};
 
 type SpaceItem = {
   number: string;
@@ -18,9 +27,11 @@ type SpaceItem = {
 export function SpacesCarousel({
   items,
   differentiatorTag,
+  locale,
 }: {
   items: SpaceItem[];
   differentiatorTag: string;
+  locale: Locale;
 }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [hovered, setHovered] = useState<number | null>(null);
@@ -28,11 +39,21 @@ export function SpacesCarousel({
   // hover there — so every card also crossfades on its own timer. A hover
   // still forces the alt photo immediately for mouse users.
   const [autoAlt, setAutoAlt] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
 
   useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReducedMotion(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    if (reducedMotion) return;
     const id = setInterval(() => setAutoAlt((v) => !v), AUTO_CROSSFADE_MS);
     return () => clearInterval(id);
-  }, []);
+  }, [reducedMotion]);
 
   function scrollByCard(direction: 1 | -1) {
     const track = trackRef.current;
@@ -46,7 +67,7 @@ export function SpacesCarousel({
       <div className="mb-6 flex justify-end gap-2">
         <button
           type="button"
-          aria-label="Précédent"
+          aria-label={arrowLabels[locale][0]}
           onClick={() => scrollByCard(-1)}
           className="flex h-[42px] w-[42px] items-center justify-center border border-bronze-500 text-bronze-700 transition-colors hover:bg-bronze-600 hover:text-sand-50"
         >
@@ -54,7 +75,7 @@ export function SpacesCarousel({
         </button>
         <button
           type="button"
-          aria-label="Suivant"
+          aria-label={arrowLabels[locale][1]}
           onClick={() => scrollByCard(1)}
           className="flex h-[42px] w-[42px] items-center justify-center border border-bronze-500 text-bronze-700 transition-colors hover:bg-bronze-600 hover:text-sand-50"
         >
@@ -81,7 +102,7 @@ export function SpacesCarousel({
           return (
           <Link
             key={item.number}
-            href={`/espaces#${item.slug}`}
+            href={`${localizedPath(locale, "/espaces")}#${item.slug}`}
             data-card
             onMouseEnter={() => setHovered(i)}
             onMouseLeave={() => setHovered(null)}

@@ -1,12 +1,12 @@
 import { LineIcon, type IconName } from "@/components/icons/LineIcon";
 import { HostawayCalendarWidget } from "@/components/HostawayCalendarWidget";
-import type { Content } from "@/lib/content";
+import type { Content, Locale } from "@/lib/content";
 
 // Renamed from the tabbed version it replaces, but kept as the default
 // export other files import — équipements, localisation et disponibilités
 // are now stacked and always visible instead of hidden behind clicks
 // (owner: "pour qu'ils soient directement visibles").
-export function PracticalInfoTabs({ dict }: { dict: Content }) {
+export function PracticalInfoTabs({ dict, locale }: { dict: Content; locale: Locale }) {
   const p = dict.practical;
 
   return (
@@ -23,9 +23,40 @@ export function PracticalInfoTabs({ dict }: { dict: Content }) {
             </div>
           ))}
         </div>
-        <p className="mt-8 inline-block border-b border-bronze-500 pb-0.5 text-xs font-medium tracking-[0.06em] text-bronze-700 uppercase">
-          {p.equipment.moreCta}
-        </p>
+        <details className="group mt-10 border-y border-line">
+          <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 text-xs font-medium tracking-[0.1em] text-bronze-700 uppercase focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze-600 [&::-webkit-details-marker]:hidden">
+            <span>{p.equipment.moreCta}</span>
+            <span
+              aria-hidden
+              className="relative h-5 w-5 shrink-0 transition-transform duration-300 group-open:rotate-45"
+            >
+              <span className="absolute top-1/2 left-0 h-px w-full bg-bronze-600" />
+              <span className="absolute top-0 left-1/2 h-full w-px bg-bronze-600" />
+            </span>
+          </summary>
+          <div className="grid gap-x-10 gap-y-8 border-t border-line/70 py-8 sm:grid-cols-2 lg:grid-cols-3">
+            {p.equipment.categories.map(
+              (category: { title: string; items: string[] }) => (
+                <section key={category.title}>
+                  <h3 className="font-display text-xl text-forest-950 italic">
+                    {category.title}
+                  </h3>
+                  <ul className="mt-4 space-y-2.5">
+                    {category.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex gap-3 text-[13px] leading-relaxed text-forest-800/75"
+                      >
+                        <span aria-hidden className="mt-[0.65em] h-px w-3 shrink-0 bg-bronze-500" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ),
+            )}
+          </div>
+        </details>
       </div>
 
       <div className="border-t border-line pt-14">
@@ -72,8 +103,15 @@ export function PracticalInfoTabs({ dict }: { dict: Content }) {
           {p.availability.intro}
         </p>
         <HostawayCalendarWidget
+          locale={locale}
           reserveButtonText={dict.calendar.reserveButton}
           clearButtonText={dict.calendar.clearButton}
+          guestLabel={dict.calendar.guestLabel}
+          guestPlaceholder={dict.calendar.guestPlaceholder}
+          guestHelp={dict.calendar.guestHelp}
+          guestError={dict.calendar.guestError}
+          loadingText={dict.calendar.loadingText}
+          partnerNote={dict.calendar.partnerNote}
         />
       </div>
     </div>

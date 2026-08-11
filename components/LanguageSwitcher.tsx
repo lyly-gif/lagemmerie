@@ -1,8 +1,8 @@
 "use client";
 
-import { useTransition } from "react";
-import { locales, localeLabels, type Locale } from "@/lib/content";
-import { setLocale } from "@/lib/actions";
+import { usePathname } from "next/navigation";
+import { locales, localeLabels, translatedLocales, type Locale } from "@/lib/content";
+import { localizedPath } from "@/lib/i18n-routing";
 
 export function LanguageSwitcher({
   current,
@@ -11,30 +11,43 @@ export function LanguageSwitcher({
   current: Locale;
   variant?: "light" | "dark";
 }) {
-  const [isPending, startTransition] = useTransition();
-
-  function switchTo(locale: Locale) {
-    if (locale === current) return;
-    startTransition(() => setLocale(locale));
-  }
-
+  const pathname = usePathname();
   const isDark = variant === "dark";
+  const languageLabels: Record<Locale, string> = {
+    fr: "Langues",
+    en: "Languages",
+    de: "Sprachen",
+    nl: "Talen",
+    es: "Idiomas",
+  };
 
   return (
     <div
-      className={`flex items-center gap-2.5 text-xs tracking-[0.1em] ${isPending ? "opacity-60" : ""}`}
+      aria-label={languageLabels[current]}
+      className="flex items-center gap-1 text-xs tracking-[0.1em]"
     >
       {locales.map((locale) => {
         const isCurrent = locale === current;
+        const isAvailable = (translatedLocales as readonly string[]).includes(locale);
         return (
-          <button
+          <a
             key={locale}
-            type="button"
-            onClick={() => switchTo(locale)}
-            aria-current={isCurrent}
+            href={isAvailable ? localizedPath(locale, pathname) : pathname}
+            hrefLang={locale}
+            aria-current={isCurrent ? "page" : undefined}
+            aria-label={
+              isAvailable
+                ? localeLabels[locale]
+                : `${localeLabels[locale]} — traduction en préparation`
+            }
+            title={isAvailable ? undefined : "Traduction en préparation"}
             className={
-              "relative pb-0.5 uppercase transition-colors " +
-              (isDark
+              "relative flex min-h-9 min-w-9 items-center justify-center uppercase transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze-600 " +
+              (!isAvailable
+                ? isDark
+                  ? "cursor-not-allowed text-sand-100/25"
+                  : "cursor-not-allowed text-forest-950/25"
+                : isDark
                 ? isCurrent
                   ? "text-sand-100"
                   : "text-sand-100/50 hover:text-sand-100"
@@ -52,7 +65,7 @@ export function LanguageSwitcher({
                 }
               />
             )}
-          </button>
+          </a>
         );
       })}
     </div>

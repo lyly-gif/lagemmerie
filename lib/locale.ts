@@ -1,11 +1,9 @@
-import { cookies } from "next/headers";
-import { defaultLocale, isLocale, type Locale } from "@/lib/content";
-import { LOCALE_COOKIE } from "@/lib/locale-shared";
-
-export { LOCALE_COOKIE };
+import { cookies, headers } from "next/headers";
+import { defaultLocale, isTranslatedLocale, type Locale } from "@/lib/content";
+import { LOCALE_COOKIE, LOCALE_HEADER } from "@/lib/i18n-routing";
 
 export async function getCurrentLocale(): Promise<Locale> {
-  const store = await cookies();
-  const value = store.get(LOCALE_COOKIE)?.value;
-  return isLocale(value) ? value : defaultLocale;
+  const [headerStore, cookieStore] = await Promise.all([headers(), cookies()]);
+  const value = headerStore.get(LOCALE_HEADER) ?? cookieStore.get(LOCALE_COOKIE)?.value;
+  return isTranslatedLocale(value) ? value : defaultLocale;
 }

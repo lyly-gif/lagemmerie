@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
 import { Gallery } from "@/components/Gallery";
@@ -6,17 +5,12 @@ import { GallerySideNav } from "@/components/GallerySideNav";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { galleryCategories } from "@/lib/images";
+import { createLocalizedMetadata } from "@/lib/seo";
+import { localizedPath } from "@/lib/i18n-routing";
 
-const title = "Galerie photo — La Gemmerie, Labenne-Océan";
-const description =
-  "La maison landaise et le pool house de La Gemmerie en images — Labenne-Océan, Landes.";
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: { title, description },
-  twitter: { title, description },
-};
+export async function generateMetadata() {
+  return createLocalizedMetadata(await getCurrentLocale(), "gallery");
+}
 
 export default async function GaleriePage() {
   const locale = await getCurrentLocale();
@@ -42,7 +36,7 @@ export default async function GaleriePage() {
       </Reveal>
 
       <div className="mt-14 md:flex md:items-start md:gap-16">
-        <GallerySideNav items={navItems} />
+        <GallerySideNav items={navItems} label={g.title} />
 
         <div className="flex flex-1 flex-col gap-16">
           {galleryCategories.map((category, i) => (
@@ -58,26 +52,35 @@ export default async function GaleriePage() {
                 </div>
               </Reveal>
               <div className="mt-6">
-                <Gallery images={category.images} />
+                <Gallery
+                  images={category.images}
+                  locale={locale}
+                  context={g.categories[category.key as keyof typeof g.categories]}
+                />
               </div>
               {category.subsections?.map((sub) => (
                 <div key={sub.key} className="mt-10">
                   <p className="mb-4 text-xs font-medium tracking-[0.14em] text-bronze-700 uppercase">
                     {g.categories[sub.key as keyof typeof g.categories]}
                   </p>
-                  <Gallery images={sub.images} />
+                  <Gallery
+                    images={sub.images}
+                    locale={locale}
+                    context={g.categories[sub.key as keyof typeof g.categories]}
+                  />
                 </div>
               ))}
             </div>
           ))}
         </div>
       </div>
-
-      <Reveal className="mt-14">
-        <div className="border border-bronze-500/30 bg-sand-200 px-6 py-5 text-sm text-forest-800/80">
-          {g.note}
-        </div>
-      </Reveal>
+      <div className="mt-20 flex flex-wrap items-center justify-between gap-6 border-t border-line pt-10">
+        <p className="font-display text-2xl text-forest-950">{dict.home.ctaBand.title}</p>
+        <Link href={localizedPath(locale, "/tarifs")} className="border border-bronze-600 bg-bronze-600 px-6 py-3 text-xs font-medium tracking-[0.12em] text-sand-50 uppercase hover:bg-bronze-700">
+          {dict.home.ctaSecondary}
+        </Link>
+      </div>
     </section>
   );
 }
+import Link from "next/link";

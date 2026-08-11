@@ -59,6 +59,11 @@ body {
   font-family: var(--font-body);
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-bronze-600);
+  outline-offset: 3px;
+}
+
 ::selection {
   background: var(--color-bronze-500);
   color: var(--color-sand-50);
@@ -90,6 +95,21 @@ body {
 
 .text-balance {
   text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .hairline {

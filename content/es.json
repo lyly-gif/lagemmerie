@@ -1,204 +1,218 @@
 {
-  "_note": "Estructura en español generada automáticamente — traducción humana pendiente (según el pliego de condiciones: no se permite traducción automática para el texto final). Cada cadena a continuación es un marcador de posición que refleja la estructura francesa.",
   "site": {
     "name": "La Gemmerie",
     "domain": "lagemmerie.com",
-    "metaTitleSuffix": "[ES] La Gemmerie — Labenne-Océan"
+    "metaTitleSuffix": "La Gemmerie — Labenne-Océan"
   },
   "nav": {
-    "home": "[ES] Accueil",
-    "spaces": "[ES] Les 5 espaces de vie",
-    "labenneOcean": "[ES] Labenne-Océan",
-    "gallery": "[ES] Galerie",
-    "rates": "[ES] Tarifs & réservation",
-    "shop": "[ES] Côté produits",
-    "contact": "[ES] Contact & accès",
-    "bookCta": "[ES] Réserver"
+    "home": "Inicio",
+    "spaces": "Los 5 espacios",
+    "labenneOcean": "Labenne-Océan",
+    "gallery": "Galería",
+    "rates": "Tarifas y reserva",
+    "shop": "La colección",
+    "soonLabel": "próximamente",
+    "contact": "Contacto y acceso",
+    "bookCta": "Reservar"
   },
   "footer": {
-    "tagline": "[ES] Entre pins et océan, une maison pour se retrouver et s'év...",
-    "address": "[ES] Labenne-Océan · Landes",
-    "rights": "[ES] Tous droits réservés.",
-    "phaseTwoNote": "[ES] Collection linge & bougies — bientôt disponible."
+    "tagline": "Entre pinos y océano, una casa para reunirse y desconectar.",
+    "address": "Labenne-Océan · Landas",
+    "rights": "Todos los derechos reservados.",
+    "phaseTwoNote": "Descubrir la colección"
   },
   "home": {
-    "kicker": "[ES] Labenne-Océan · Landes",
-    "title": "[ES] Une maison landaise, un pool house, une piscine chauffée.",
-    "subtitle": "[ES] Entre pins et océan, une propriété pensée pour les famill...",
-    "ctaPrimary": "[ES] Voir toutes les photos",
-    "ctaSecondary": "[ES] Vérifier les disponibilités",
+    "kicker": "Labenne-Océan · Landas",
+    "title": "Una casa tradicional de las Landas, un pool house y una piscina climatizada.",
+    "subtitle": "Entre pinos y océano, una propiedad pensada para familias y amigos: intimidad para cada uno y el placer de estar juntos.",
+    "ctaPrimary": "Ver todas las fotos",
+    "ctaSecondary": "Consultar disponibilidad",
     "manifesto": {
-      "kicker": "[ES] Le nom",
-      "title": "[ES] La Gemmerie",
+      "kicker": "El nombre",
+      "title": "La Gemmerie",
       "paragraphs": [
-        "[ES] Ici, gemmer voulait dire inciser le pin pour en recueilli...",
-        "[ES] La Gemmerie en garde le nom, et une autre lecture : celle...",
-        "[ES] Une maison qui tient des deux — le geste artisanal d'un c..."
+        "Aquí, gemmer significaba practicar una incisión en el pino para recoger su resina: un gesto lento y preciso, transmitido durante generaciones en las Landas.",
+        "La Gemmerie conserva ese nombre y suma otra lectura: la de una piedra preciosa, rara y trabajada con esmero.",
+        "Una casa que reúne ambas ideas: el gesto artesanal y una exigencia discreta."
       ]
     },
     "facts": [
       {
-        "label": "[ES] Capacité",
-        "value": "[ES] 8 personnes"
+        "label": "Capacidad",
+        "value": "8 huéspedes"
       },
       {
-        "label": "[ES] Chambres",
-        "value": "[ES] 4"
+        "label": "Dormitorios",
+        "value": "4"
       },
       {
-        "label": "[ES] Maison landaise",
-        "value": "[ES] ≈ 150 m²"
+        "label": "Casa landesa",
+        "value": "≈ 150 m²"
       },
       {
-        "label": "[ES] Pool house",
-        "value": "[ES] ≈ 40 m²"
+        "label": "Pool house",
+        "value": "≈ 40 m²"
       },
       {
-        "label": "[ES] Salles de bain",
-        "value": "[ES] 2"
+        "label": "Baños",
+        "value": "2"
       },
       {
-        "label": "[ES] Chauffée",
-        "value": "[ES] Piscine"
+        "label": "Climatizada",
+        "value": "Piscina"
       }
     ],
     "spacesPreview": {
-      "kicker": "[ES] Le différenciateur",
-      "title": "[ES] Les 5 espaces de vie",
-      "intro": "[ES] 150 m² de maison landaise, 40 m² de pool house indépendan...",
-      "cta": "[ES] Voir les 5 espaces",
-      "differentiatorTag": "[ES] Le différenciateur"
+      "kicker": "Lo que la distingue",
+      "title": "Los 5 espacios",
+      "intro": "150 m² de casa landesa, un pool house independiente de 40 m² y una piscina climatizada de abril a octubre: espacios para preservar la independencia de cada uno y disfrutar juntos.",
+      "cta": "Descubrir los 5 espacios",
+      "differentiatorTag": "Lo que la distingue"
     },
     "ctaBand": {
-      "title": "[ES] Un séjour à La Gemmerie se réserve en direct — sans commi...",
-      "cta": "[ES] Réserver mon séjour"
+      "title": "Elija sus fechas y continúe en el espacio seguro de nuestra conserjería.",
+      "cta": "Ver disponibilidad"
     }
   },
   "calendar": {
-    "reserveButton": "[ES] Réserver",
-    "clearButton": "[ES] Effacer les dates"
+    "reserveButton": "Ver tarifa y continuar",
+    "clearButton": "Borrar fechas",
+    "guestLabel": "Huéspedes",
+    "guestPlaceholder": "Seleccionar",
+    "guestHelp": "De 1 a 8 huéspedes",
+    "guestError": "Seleccione el número de huéspedes antes de continuar.",
+    "loadingText": "Cargando disponibilidad…",
+    "partnerNote": "Tras elegir sus fechas, accederá al espacio seguro de Première Vue, nuestra conserjería colaboradora."
   },
   "practical": {
-    "kicker": "[ES] Bon à savoir",
-    "title": "[ES] Informations pratiques",
+    "kicker": "Información útil",
+    "title": "Información práctica",
     "tabs": {
-      "equip": "[ES] Équipements",
-      "loc": "[ES] Localisation",
-      "cal": "[ES] Disponibilités"
+      "equip": "Equipamiento",
+      "loc": "Ubicación",
+      "cal": "Disponibilidad"
     },
     "equipment": {
       "items": [
         {
           "icon": "pool",
-          "label": "[ES] Piscine chauffée (27°C, avril–octobre)"
+          "label": "Piscina climatizada (27 °C, abril–octubre)"
         },
         {
           "icon": "wifi",
-          "label": "[ES] Wifi dans toute la maison"
+          "label": "Wifi en toda la casa"
         },
         {
           "icon": "kitchen",
-          "label": "[ES] Cuisine équipée + cuisine d'été"
+          "label": "Cocina equipada, cocina exterior y barbacoa"
         },
         {
           "icon": "laundry",
-          "label": "[ES] Lave-linge & sèche-linge"
+          "label": "Lavadora y secadora"
         },
         {
           "icon": "linens",
-          "label": "[ES] Linge de lit & serviettes fournis"
+          "label": "Ropa de cama y toallas incluidas"
         },
         {
           "icon": "cleaning",
-          "label": "[ES] Ménage inclus avant l'arrivée"
+          "label": "Camas preparadas y limpieza final"
         },
         {
           "icon": "home",
-          "label": "[ES] Parking privé sur la propriété"
+          "label": "Aparcamiento privado en la propiedad"
         },
         {
           "icon": "tv",
-          "label": "[ES] Salon TV sous combles"
+          "label": "Sala de TV abuhardillada"
         },
         {
           "icon": "smokeDetector",
-          "label": "[ES] Détecteurs fumée & monoxyde installés"
+          "label": "Detectores de humo y monóxido"
         },
         {
           "icon": "poolSafety",
-          "label": "[ES] Volet de sécurité piscine"
+          "label": "Cubierta de seguridad para la piscina"
         },
         {
           "icon": "families",
-          "label": "[ES] Idéal familles à plusieurs foyers"
+          "label": "Ideal para familias de varios hogares"
         },
         {
           "icon": "garden",
-          "label": "[ES] Terrain clos et arboré, 1 330 m²"
+          "label": "Parcela cerrada y arbolada de 1.330 m²"
         }
       ],
-      "moreCta": "[ES] Voir tous les équipements"
+      "moreCta": "Descubrir todo el equipamiento",
+      "categories": [
+        { "title": "Confort", "items": ["Wifi en toda la casa", "Calefacción", "Espacio de trabajo", "Televisión", "Lavadora y secadora", "Ropa de cama y toallas", "Agua caliente"] },
+        { "title": "Cocina y comedor", "items": ["Cocina equipada", "Cocina exterior", "Lavavajillas", "Horno y microondas", "Tostadora y hervidor", "Frigorífico y congelador", "Isla y gran mesa de comedor", "Copas de vino"] },
+        { "title": "Exterior", "items": ["Piscina climatizada", "Barbacoa y utensilios", "Jardín y patio cerrados", "Aparcamiento privado gratuito"] },
+        { "title": "Familias", "items": ["Adecuado para niños", "Adecuado para bebés", "Cuna"] },
+        { "title": "Baño", "items": ["Ducha e inodoro", "Gel de ducha", "Toallas incluidas"] },
+        { "title": "Seguridad", "items": ["Detectores de humo", "Detector de monóxido de carbono", "Cubierta de seguridad para la piscina"] }
+      ]
     },
     "location": {
       "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
-      "mapLabel": "[ES] Labenne-Océan, Landes",
+      "mapLabel": "Labenne-Océan, Landas",
       "facts": [
         {
-          "title": "[ES] Proximité immédiate",
-          "description": "[ES] À quelques minutes à pied des plages et des commerces de ..."
+          "title": "Todo muy cerca",
+          "description": "Las playas y tiendas de Labenne-Océan están a pocos minutos a pie."
         },
         {
-          "title": "[ES] 400 m",
-          "description": "[ES] Distance à pied jusqu'à la plage"
+          "title": "400 m",
+          "description": "Distancia a pie hasta la playa"
         },
         {
-          "title": "[ES] Terrain clos, 1 330 m²",
-          "description": "[ES] Quartier résidentiel calme de Labenne-Océan"
+          "title": "Parcela cerrada, 1.330 m²",
+          "description": "Tranquilo barrio residencial de Labenne-Océan"
         }
       ],
-      "note": "[ES] La carte indique la zone du quartier ; l'adresse exacte e..."
+      "note": "El mapa indica la zona; la dirección exacta se comunica tras confirmar la reserva."
     },
     "availability": {
-      "intro": "[ES] Disponibilités réelles et réservation directe, sans commi..."
+      "intro": "Disponibilidad sincronizada con nuestra conserjería colaboradora Première Vue."
     }
   },
   "spaces": {
-    "kicker": "[ES] Le différenciateur",
-    "title": "[ES] Les 5 espaces de vie",
-    "intro": "[ES] Le point commun des familles qui choisissent La Gemmerie ...",
-    "architectureNote": "[ES] Charpente et tomettes, larges baies vitrées sur le jardin...",
+    "kicker": "Lo que la distingue",
+    "title": "Los 5 espacios",
+    "intro": "Varias generaciones, ritmos distintos y un solo hogar. Cada espacio está pensado para reunirse o disfrutar de un momento propio.",
+    "architectureNote": "Vigas vistas y baldosas de terracota, amplios ventanales al jardín y estufa de leña para entretiempo: una arquitectura regional respetada, no recreada.",
     "facts": [
       {
-        "label": "[ES] Capacité",
-        "value": "[ES] 8 personnes"
+        "label": "Capacidad",
+        "value": "8 huéspedes"
       },
       {
-        "label": "[ES] Chambres",
-        "value": "[ES] 4"
+        "label": "Dormitorios",
+        "value": "4"
       },
       {
-        "label": "[ES] Maison landaise",
-        "value": "[ES] ≈ 150 m²"
+        "label": "Casa landesa",
+        "value": "≈ 150 m²"
       },
       {
-        "label": "[ES] Pool house",
-        "value": "[ES] ≈ 40 m²"
+        "label": "Pool house",
+        "value": "≈ 40 m²"
       },
       {
-        "label": "[ES] Salles de bain",
-        "value": "[ES] 2"
+        "label": "Baños",
+        "value": "2"
       },
       {
-        "label": "[ES] Chauffée",
-        "value": "[ES] Piscine"
+        "label": "Climatizada",
+        "value": "Piscina"
       }
     ],
     "items": [
       {
         "number": "01",
         "slug": "pool-house",
-        "title": "[ES] Le pool house",
-        "description": "[ES] Repas à l'ombre de la charpente, bar donnant sur l'eau — ...",
+        "title": "El pool house",
+        "description": "Comidas a la sombra de la estructura de madera y bar frente al agua: 40 m² independientes entre interior y jardín, para comer, descansar y alargar las tardes.",
         "imageKey": "pool-house-dejeuner",
         "galleryNumbers": [
           8,
@@ -210,8 +224,8 @@
       {
         "number": "02",
         "slug": "piscine",
-        "title": "[ES] La piscine et sa terrasse",
-        "description": "[ES] Chauffée à 27°C d'avril à octobre, elle mesure 4,50 × 12 ...",
+        "title": "La piscina y su terraza",
+        "description": "Climatizada a 27 °C de abril a octubre, mide 4,5 × 12 m y se abre a una terraza de madera clara con tumbonas y un olivo centenario: el corazón de la casa.",
         "imageKey": "hero-piscine-jour",
         "galleryNumbers": [
           1,
@@ -227,8 +241,8 @@
       {
         "number": "03",
         "slug": "sejour-cuisine",
-        "title": "[ES] Séjour et cuisine",
-        "description": "[ES] Cuisine entièrement équipée, poêle à bois, grande table c...",
+        "title": "Salón-comedor y cocina",
+        "description": "Cocina completamente equipada, estufa de leña y gran mesa común: el centro de la casa, pensado para comer ocho.",
         "imageKey": "sejour-cuisine",
         "galleryNumbers": [
           19,
@@ -240,8 +254,8 @@
       {
         "number": "04",
         "slug": "salon",
-        "title": "[ES] Le salon",
-        "description": "[ES] Canapé profond et poêle à bois, en retrait de la cuisine ...",
+        "title": "El salón",
+        "description": "Sofá profundo y estufa de leña, apartado de la cocina: un rincón íntimo para leer, descansar o alargar la noche.",
         "imageKey": "salon",
         "galleryNumbers": [
           18,
@@ -253,8 +267,8 @@
       {
         "number": "05",
         "slug": "chambres",
-        "title": "[ES] Les chambres",
-        "description": "[ES] Suite parentale, chambres secondaires et dortoir dédié au...",
+        "title": "Los dormitorios",
+        "description": "Suite principal, dormitorios secundarios y habitación infantil compartida: cada generación tiene su espacio sin alejarse de las demás.",
         "imageKey": "chambre-parentale",
         "galleryNumbers": [
           11,
@@ -268,9 +282,9 @@
       }
     ],
     "bathrooms": {
-      "kicker": "[ES] Bon à savoir",
-      "title": "[ES] Les salles de bain",
-      "intro": "[ES] Une salle de bain à cabine de douche dans la chambre 1, u...",
+      "kicker": "Información útil",
+      "title": "Los baños",
+      "intro": "Un baño con ducha en el dormitorio 1 y un baño común con bañera y ducha para el resto de la casa.",
       "galleryNumbers": [
         23,
         42,
@@ -281,167 +295,175 @@
     }
   },
   "labenneOcean": {
-    "kicker": "[ES] L'environnement",
-    "title": "[ES] Labenne-Océan, entre pins et grande plage de sable",
-    "intro": "[ES] À 400 m de la maison, une station balnéaire des Landes re...",
+    "kicker": "El entorno",
+    "title": "Labenne-Océan, entre pinos y una gran playa de arena",
+    "intro": "A 400 m de la casa, un destino costero de las Landas a escala humana: playa inmensa, pinar y actividades para todas las edades, sin renunciar a la calma.",
     "beach": {
-      "kicker": "[ES] À 400 m",
-      "title": "[ES] La plage centrale de Labenne-Océan",
-      "intro": "[ES] Environ 3 km de sable et une vue à 180° sur l'océan depui...",
+      "kicker": "A 400 m",
+      "title": "La playa central de Labenne-Océan",
+      "intro": "Unos 3 km de arena y vistas de 180° al océano: dunas al norte y, en días claros, la costa vasca y los Pirineos al sur.",
       "facts": [
         {
-          "title": "[ES] Surveillance",
-          "description": "[ES] Plage surveillée de mi-juin à mi-septembre — 11h-19h en j..."
+          "title": "Vigilancia",
+          "description": "Playa vigilada de mediados de junio a mediados de septiembre: 11–19 h en julio y agosto, 12:30–18:30 h a finales de agosto y mediados de septiembre (horarios 2026)."
         },
         {
-          "title": "[ES] Sur l'esplanade",
-          "description": "[ES] Douches, sanitaires, bar-restauration, parc à vélos et ai..."
+          "title": "En el paseo marítimo",
+          "description": "Duchas, aseos, restauración, aparcabicis y zona de juegos infantil."
         }
       ]
     },
     "activities": {
-      "kicker": "[ES] À proximité",
-      "title": "[ES] Activités & loisirs",
-      "intro": "[ES] De quoi remplir un séjour sans jamais reprendre la voitur...",
+      "kicker": "Muy cerca",
+      "title": "Actividades y ocio",
+      "intro": "Mucho que hacer sin largos desplazamientos: la mayoría de actividades están a pocos minutos.",
       "items": [
         {
           "icon": "surf",
-          "title": "[ES] Surf",
-          "description": "[ES] Écoles de surf sur la plage et SB3, l'un des plus grands ..."
+          "title": "Surf",
+          "description": "Escuelas en la playa y SB3, una de las mayores tiendas de surf de Europa."
         },
         {
           "icon": "bike",
-          "title": "[ES] Vélo",
-          "description": "[ES] La Vélodyssée relie dunes, forêt de pins et le port de Ca..."
+          "title": "Bicicleta",
+          "description": "La Vélodyssée une dunas, pinar y el puerto de Capbreton por un carril continuo."
         },
         {
           "icon": "treetop",
-          "title": "[ES] Accrobranche",
-          "description": "[ES] Un parc arboré parmi les plus grands d'Aquitaine, en forê..."
+          "title": "Parque de aventura",
+          "description": "Uno de los mayores parques entre árboles de Aquitania, a pocos minutos."
         },
         {
           "icon": "waterpark",
-          "title": "[ES] Parc aquatique",
-          "description": "[ES] Aquatic Landes, en forêt — toboggans et bassins pour tout..."
+          "title": "Parque acuático",
+          "description": "Aquatic Landes, en el bosque: toboganes y piscinas para toda la familia."
         },
         {
           "icon": "nature",
-          "title": "[ES] Nature",
-          "description": "[ES] La réserve du Marais d'Orx : 1 000 ha, 247 espèces d'oise..."
+          "title": "Naturaleza",
+          "description": "Reserva del Marais d’Orx: 1.000 ha, 247 especies de aves y 6 km de sendero con observatorios."
         },
         {
           "icon": "canoe",
-          "title": "[ES] Canoë",
-          "description": "[ES] Descente tranquille sur le canal du Boudigau, au départ d..."
+          "title": "Canoa",
+          "description": "Paseo tranquilo por el canal del Boudigau desde Labenne."
         },
         {
           "icon": "zoo",
-          "title": "[ES] Zoo de Labenne",
-          "description": "[ES] Plus de 200 animaux, à quelques minutes de la maison."
+          "title": "Zoo de Labenne",
+          "description": "Más de 200 animales, a pocos minutos de la casa."
         }
       ]
     },
     "region": {
-      "kicker": "[ES] Dans la région",
-      "title": "[ES] Bien situés pour rayonner",
+      "kicker": "En la región",
+      "title": "Una ubicación ideal para explorar",
       "facts": [
         {
-          "value": "[ES] 6 km",
-          "label": "[ES] Capbreton — ~7 min en voiture"
+          "value": "6 km",
+          "label": "Capbreton — ~7 min en coche"
         },
         {
-          "value": "[ES] 13 km",
-          "label": "[ES] Bayonne — ~18 min en voiture"
+          "value": "13 km",
+          "label": "Bayona — ~18 min en coche"
         },
         {
-          "value": "[ES] 20 km",
-          "label": "[ES] Biarritz — ~29 min en voiture"
+          "value": "20 km",
+          "label": "Biarritz — ~29 min en coche"
         },
         {
-          "value": "[ES] 29 km",
-          "label": "[ES] Aéroport de Biarritz — ~26 min en voiture"
+          "value": "29 km",
+          "label": "Aeropuerto de Biarritz — ~26 min en coche"
         }
       ]
     },
     "cta": {
-      "title": "[ES] Toujours entre pins et océan — vérifiez les disponibilités."
+      "title": "Siempre entre pinos y océano: consulte la disponibilidad."
     }
   },
   "gallery": {
-    "kicker": "[ES] En images",
-    "title": "[ES] Galerie",
-    "intro": "[ES] La maison et le pool house, tels qu'ils sont — espace par...",
-    "note": "[ES] Photos d'intérieur et de nuit (piscine illuminée) en cour...",
+    "kicker": "En imágenes",
+    "title": "Galería",
+    "intro": "La casa y el pool house tal como son, espacio a espacio.",
     "categories": {
-      "poolHouse": "[ES] Le pool house",
-      "poolGarden": "[ES] La piscine & le jardin",
-      "livingKitchen": "[ES] Cuisine",
-      "lounge": "[ES] Le salon",
-      "mezzanine": "[ES] Mezzanine & salle TV",
-      "chambre1": "[ES] Chambre 1",
-      "chambre1Bathroom": "[ES] Salle de bain",
-      "chambre2": "[ES] Chambre 2",
-      "enfants": "[ES] Chambres d'enfants",
-      "dortoir": "[ES] Dortoir",
-      "sharedBathroom": "[ES] Salle de bain commune"
+      "poolHouse": "El pool house",
+      "poolGarden": "Piscina y jardín",
+      "livingKitchen": "Cocina",
+      "lounge": "El salón",
+      "mezzanine": "Altillo y sala de TV",
+      "chambre1": "Dormitorio 1",
+      "chambre1Bathroom": "Baño",
+      "chambre2": "Dormitorio 2",
+      "enfants": "Dormitorios infantiles",
+      "dortoir": "Dormitorio compartido",
+      "sharedBathroom": "Baño común"
     }
   },
   "rates": {
-    "kicker": "[ES] Séjourner",
-    "title": "[ES] Réservez votre séjour",
-    "intro": "[ES] Consultez les disponibilités réelles ci-dessous et réserv...",
-    "calendarIntro": "[ES] Sélectionnez vos dates pour voir le tarif exact du séjour.",
+    "kicker": "Alojarse",
+    "title": "Prepare su estancia",
+    "intro": "Consulte la disponibilidad y acceda al espacio seguro de Première Vue para ver el precio detallado y enviar su solicitud.",
+    "calendarIntro": "Seleccione fechas y número de huéspedes.",
+    "bookingJourney": {
+      "kicker": "Su reserva",
+      "title": "Un proceso sencillo, acompañado por Première Vue",
+      "steps": [
+        "Elija fechas y número de huéspedes.",
+        "Revise los detalles en el espacio seguro de Première Vue.",
+        "Envíe su solicitud: la conserjería confirma la estancia y organiza su llegada."
+      ],
+      "terms": "La limpieza, tasa turística, cancelación y fianza reembolsable se detallan antes de confirmar."
+    },
     "whyBookDirect": {
-      "kicker": "[ES] Pourquoi réserver en direct",
-      "title": "[ES] Réserver directement auprès de La Gemmerie, c'est :",
+      "kicker": "Por qué empezar en nuestra web",
+      "title": "Una solicitud sin comisión de grandes plataformas, con:",
       "items": [
-        "[ES] un tarif sans commission de plateforme, donc le meilleur ...",
-        "[ES] un contact direct avec la conciergerie pour organiser vot...",
-        "[ES] le rituel d'accueil La Gemmerie offert à chaque séjour ré..."
+        "disponibilidad sincronizada",
+        "un contacto identificado en Première Vue para su solicitud y llegada",
+        "el ritual de bienvenida de La Gemmerie: bandeja de bienvenida y, a la mañana siguiente, un dulce landés con una nota manuscrita"
       ]
     },
-    "footerNote": "[ES] Une question sur la maison, sa capacité ou son accès ?",
-    "footerCta": "[ES] Écrivez-nous directement"
+    "footerNote": "¿Alguna pregunta sobre la casa, capacidad o acceso?",
+    "footerCta": "Escríbanos directamente"
   },
   "contact": {
-    "kicker": "[ES] Nous trouver",
-    "title": "[ES] Contact & accès",
+    "kicker": "Cómo llegar",
+    "title": "Contacto y acceso",
     "location": {
-      "title": "[ES] Labenne-Océan, Landes",
-      "description": "[ES] Au cœur d'un quartier résidentiel calme et boisé, sur un ...",
-      "beachDistance": "[ES] 400 m à pied jusqu'à la plage"
+      "title": "Labenne-Océan, Landas",
+      "description": "En un tranquilo barrio residencial arbolado, en una parcela cerrada de 1.330 m².",
+      "beachDistance": "400 m a pie hasta la playa"
     },
     "access": {
-      "title": "[ES] Accès",
-      "description": "[ES] Détails d'accès (voiture, gare la plus proche, aéroport) ..."
+      "title": "Acceso",
+      "description": "Acceso en coche por la A63, en tren por la estación de Labenne y en avión por Biarritz. La dirección y las indicaciones se comunican tras confirmar la estancia."
     },
-    "contactTitle": "[ES] Une question ?",
-    "contactDescription": "[ES] Écrivez-nous directement, nous répondons personnellement ...",
+    "contactTitle": "¿Alguna pregunta?",
+    "contactDescription": "Escríbanos; respondemos personalmente a cada mensaje.",
     "contactEmail": "contact@lagemmerie.com"
   },
   "shop": {
-    "kicker": "[ES] Phase 2 — bientôt",
-    "title": "[ES] La Gemmerie côté produits",
-    "comingSoon": "[ES] Bientôt disponible",
-    "intro": "[ES] Une collection d'objets pensés dans le prolongement de la...",
+    "kicker": "Prolongar la experiencia",
+    "title": "La colección La Gemmerie",
+    "comingSoon": "En preparación",
+    "intro": "Como prolongación de la casa, La Gemmerie imagina objetos sensibles y duraderos inspirados en los materiales, colores y oficios de las Landas.",
     "collections": [
       {
-        "title": "[ES] Linge de maison",
-        "description": "[ES] Réalisé avec La Serviette Paris : d'un côté des serviette..."
+        "title": "Ropa de hogar",
+        "description": "Toallas de playa y baño con materiales agradables, una paleta singular y detalles discretos."
       },
       {
-        "title": "[ES] Bougies",
-        "description": "[ES] Collection en développement."
+        "title": "Velas",
+        "description": "Una búsqueda olfativa en torno al pino, la resina calentada por el sol y las tardes junto al océano."
       }
     ],
-    "note": "[ES] Page teaser — activation complète prévue en phase 2, sans...",
     "notify": {
-      "title": "[ES] Être averti·e du lancement",
-      "emailLabel": "[ES] E-mail",
-      "submit": "[ES] M'avertir au lancement",
-      "reassurance": "[ES] Un seul e-mail, au lancement de la collection. Aucune sol...",
-      "successTitle": "[ES] C'est noté.",
-      "successMessage": "[ES] Nous vous écrirons dès le lancement de la collection ling..."
+      "title": "Avisarme del lanzamiento",
+      "emailLabel": "Correo electrónico",
+      "submit": "Escríbanos",
+      "reassurance": "Este botón abre su correo. Envíenos su solicitud y le responderemos personalmente cuando se lance la colección.",
+      "successTitle": "Anotado.",
+      "successMessage": "Le escribiremos cuando se lance la colección de textiles y velas."
     }
   }
 }

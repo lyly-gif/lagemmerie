@@ -1,22 +1,17 @@
 import Image from "next/image";
-import type { Metadata } from "next";
+import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
 import { Gallery } from "@/components/Gallery";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured, galleryImagesByNumbers, type FeaturedKey } from "@/lib/images";
+import { createLocalizedMetadata } from "@/lib/seo";
+import { localizedPath } from "@/lib/i18n-routing";
 
-const title = "Grande maison pour plusieurs familles dans les Landes";
-const description =
-  "5 espaces de vie pensés pour recevoir plusieurs familles ou un groupe d'amis en toute intimité, à Labenne-Océan (Landes).";
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: { title, description },
-  twitter: { title, description },
-};
+export async function generateMetadata() {
+  return createLocalizedMetadata(await getCurrentLocale(), "spaces");
+}
 
 export default async function EspacesPage() {
   const locale = await getCurrentLocale();
@@ -86,7 +81,7 @@ export default async function EspacesPage() {
 
       {signature.galleryNumbers?.length > 0 && (
         <div className="mx-auto max-w-7xl px-6 pt-10 md:px-10">
-          <Gallery images={galleryImagesByNumbers(signature.galleryNumbers)} />
+          <Gallery images={galleryImagesByNumbers(signature.galleryNumbers)} locale={locale} context={signature.title} />
         </div>
       )}
 
@@ -129,7 +124,7 @@ export default async function EspacesPage() {
 
               {item.galleryNumbers?.length > 0 && (
                 <Reveal delay={160} className="mt-10">
-                  <Gallery images={galleryImagesByNumbers(item.galleryNumbers)} />
+                  <Gallery images={galleryImagesByNumbers(item.galleryNumbers)} locale={locale} context={item.title} />
                 </Reveal>
               )}
             </section>
@@ -154,11 +149,22 @@ export default async function EspacesPage() {
               </p>
             </Reveal>
             <Reveal delay={120} className="mt-10">
-              <Gallery images={galleryImagesByNumbers(s.bathrooms.galleryNumbers)} />
+              <Gallery images={galleryImagesByNumbers(s.bathrooms.galleryNumbers)} locale={locale} context={s.bathrooms.title} />
             </Reveal>
           </div>
         </section>
       )}
+      <section className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-6 px-6 py-16 md:flex-row md:items-center md:px-10 md:py-20">
+        <p className="font-display text-2xl text-forest-950">{dict.gallery.intro}</p>
+        <div className="flex flex-wrap gap-3">
+          <Link href={localizedPath(locale, "/galerie")} className="border border-bronze-600 px-5 py-3 text-xs font-medium tracking-[0.12em] text-bronze-700 uppercase hover:bg-bronze-600 hover:text-sand-50">
+            {dict.home.ctaPrimary}
+          </Link>
+          <Link href={localizedPath(locale, "/tarifs")} className="border border-bronze-600 bg-bronze-600 px-5 py-3 text-xs font-medium tracking-[0.12em] text-sand-50 uppercase hover:bg-bronze-700">
+            {dict.home.ctaSecondary}
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

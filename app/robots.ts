@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  const isPreview = process.env.VERCEL_ENV === "preview";
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
+    rules: isPreview
+      ? { userAgent: "*", disallow: "/" }
+      : { userAgent: "*", allow: "/" },
     sitemap: "https://lagemmerie.com/sitemap.xml",
   };
 }

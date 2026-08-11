@@ -1,5 +1,4 @@
 {
-  "_note": "Brouillon éditorial FR généré à l'initialisation du site. Le manifeste et les textes définitifs existent dans le document V5 (cahier des charges, section 3) — à substituer avant mise en ligne.",
   "site": {
     "name": "La Gemmerie",
     "domain": "lagemmerie.com",
@@ -12,6 +11,7 @@
     "gallery": "Galerie",
     "rates": "Tarifs & réservation",
     "shop": "Côté produits",
+    "soonLabel": "bientôt",
     "contact": "Contact & accès",
     "bookCta": "Réserver"
   },
@@ -19,7 +19,7 @@
     "tagline": "Entre pins et océan, une maison pour se retrouver et s'évader.",
     "address": "Labenne-Océan · Landes",
     "rights": "Tous droits réservés.",
-    "phaseTwoNote": "Collection linge & bougies — bientôt disponible."
+    "phaseTwoNote": "Découvrir l'univers Côté produits"
   },
   "home": {
     "kicker": "Labenne-Océan · Landes",
@@ -52,13 +52,19 @@
       "differentiatorTag": "Le différenciateur"
     },
     "ctaBand": {
-      "title": "Un séjour à La Gemmerie se réserve en direct — sans commission de plateforme.",
-      "cta": "Réserver mon séjour"
+      "title": "Choisissez vos dates, puis poursuivez sur l'espace sécurisé de notre conciergerie.",
+      "cta": "Voir les disponibilités"
     }
   },
   "calendar": {
-    "reserveButton": "Réserver",
-    "clearButton": "Effacer les dates"
+    "reserveButton": "Voir le tarif et poursuivre",
+    "clearButton": "Effacer les dates",
+    "guestLabel": "Voyageurs",
+    "guestPlaceholder": "Sélectionner",
+    "guestHelp": "De 1 à 8 personnes",
+    "guestError": "Choisissez le nombre de voyageurs avant de poursuivre.",
+    "loadingText": "Chargement des disponibilités…",
+    "partnerNote": "Après avoir choisi vos dates, vous serez redirigé vers l'espace sécurisé de Première Vue, notre conciergerie partenaire."
   },
   "practical": {
     "kicker": "Bon à savoir",
@@ -72,10 +78,10 @@
       "items": [
         { "icon": "pool", "label": "Piscine chauffée (27°C, avril–octobre)" },
         { "icon": "wifi", "label": "Wifi dans toute la maison" },
-        { "icon": "kitchen", "label": "Cuisine équipée + cuisine d'été" },
+        { "icon": "kitchen", "label": "Cuisine équipée, cuisine d'été & barbecue" },
         { "icon": "laundry", "label": "Lave-linge & sèche-linge" },
         { "icon": "linens", "label": "Linge de lit & serviettes fournis" },
-        { "icon": "cleaning", "label": "Ménage inclus avant l'arrivée" },
+        { "icon": "cleaning", "label": "Lits préparés et ménage de fin de séjour" },
         { "icon": "home", "label": "Parking privé sur la propriété" },
         { "icon": "tv", "label": "Salon TV sous combles" },
         { "icon": "smokeDetector", "label": "Détecteurs fumée & monoxyde installés" },
@@ -83,7 +89,33 @@
         { "icon": "families", "label": "Idéal familles à plusieurs foyers" },
         { "icon": "garden", "label": "Terrain clos et arboré, 1 330 m²" }
       ],
-      "moreCta": "Voir tous les équipements"
+      "moreCta": "Découvrir tous les équipements",
+      "categories": [
+        {
+          "title": "Confort",
+          "items": ["Wifi dans toute la maison", "Chauffage", "Espace de travail", "Télévision", "Lave-linge et sèche-linge", "Linge de lit et serviettes", "Eau chaude"]
+        },
+        {
+          "title": "Cuisine & repas",
+          "items": ["Cuisine équipée", "Cuisine extérieure", "Lave-vaisselle", "Four et micro-ondes", "Grille-pain et bouilloire", "Réfrigérateur et congélateur", "Îlot et grande table", "Verres à vin"]
+        },
+        {
+          "title": "Extérieurs",
+          "items": ["Piscine chauffée", "Barbecue et ustensiles", "Jardin et cour clôturés", "Parking privé gratuit"]
+        },
+        {
+          "title": "Familles",
+          "items": ["Adapté aux enfants", "Adapté aux nourrissons", "Lit bébé"]
+        },
+        {
+          "title": "Salle de bain",
+          "items": ["Douche et toilettes", "Gel douche", "Serviettes fournies"]
+        },
+        {
+          "title": "Sécurité",
+          "items": ["Détecteurs de fumée", "Détecteur de monoxyde de carbone", "Volet de sécurité piscine"]
+        }
+      ]
     },
     "location": {
       "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
@@ -102,7 +134,7 @@
       "note": "La carte indique la zone du quartier ; l'adresse exacte est communiquée après confirmation de réservation."
     },
     "availability": {
-      "intro": "Disponibilités réelles et réservation directe, sans commission de plateforme."
+      "intro": "Disponibilités synchronisées avec notre conciergerie partenaire Première Vue."
     }
   },
   "spaces": {
@@ -246,7 +278,6 @@
     "kicker": "En images",
     "title": "Galerie",
     "intro": "La maison et le pool house, tels qu'ils sont — espace par espace.",
-    "note": "Photos d'intérieur et de nuit (piscine illuminée) en cours de production — la galerie sera complétée à leur réception.",
     "categories": {
       "poolHouse": "Le pool house",
       "poolGarden": "La piscine & le jardin",
@@ -263,16 +294,26 @@
   },
   "rates": {
     "kicker": "Séjourner",
-    "title": "Réservez votre séjour",
-    "intro": "Consultez les disponibilités réelles ci-dessous et réservez directement auprès de La Gemmerie — sans commission de plateforme, sans intermédiaire.",
-    "calendarIntro": "Sélectionnez vos dates pour voir le tarif exact du séjour.",
+    "title": "Préparez votre séjour",
+    "intro": "Consultez les disponibilités de La Gemmerie, puis accédez à l'espace sécurisé de notre conciergerie partenaire Première Vue pour voir le tarif détaillé et envoyer votre demande.",
+    "calendarIntro": "Sélectionnez vos dates et le nombre de voyageurs pour poursuivre.",
+    "bookingJourney": {
+      "kicker": "Votre réservation",
+      "title": "Un parcours simple, accompagné par Première Vue",
+      "steps": [
+        "Choisissez vos dates et le nombre de voyageurs.",
+        "Consultez le détail du séjour sur l'espace sécurisé Première Vue.",
+        "Envoyez votre demande : la conciergerie confirme le séjour et organise votre arrivée."
+      ],
+      "terms": "Les frais de ménage, la taxe de séjour, les conditions d'annulation et le dépôt de garantie remboursable sont détaillés avant validation sur l'espace Première Vue."
+    },
     "whyBookDirect": {
-      "kicker": "Pourquoi réserver en direct",
-      "title": "Réserver directement auprès de La Gemmerie, c'est :",
+      "kicker": "Pourquoi passer par notre site",
+      "title": "Une demande sans commission de grande plateforme, avec :",
       "items": [
-        "un tarif sans commission de plateforme, donc le meilleur prix possible pour le même séjour",
-        "un contact direct avec la conciergerie pour organiser votre arrivée",
-        "le rituel d'accueil La Gemmerie offert à chaque séjour réservé en direct — un plateau de bienvenue à votre arrivée, puis une pâtisserie landaise le lendemain matin, accompagnée d'un mot écrit à la main"
+        "des disponibilités synchronisées avec le calendrier de la conciergerie",
+        "un contact identifié avec Première Vue pour votre demande et votre arrivée",
+        "le rituel d'accueil La Gemmerie — un plateau de bienvenue à votre arrivée, puis une pâtisserie landaise le lendemain matin, accompagnée d'un mot écrit à la main"
       ]
     },
     "footerNote": "Une question sur la maison, sa capacité ou son accès ?",
@@ -288,33 +329,32 @@
     },
     "access": {
       "title": "Accès",
-      "description": "Détails d'accès (voiture, gare la plus proche, aéroport) à préciser avant mise en ligne."
+      "description": "La maison est accessible en voiture depuis l'A63, en train via la gare de Labenne et en avion via l'aéroport de Biarritz. L'adresse précise et les indications d'arrivée sont communiquées après confirmation du séjour."
     },
     "contactTitle": "Une question ?",
     "contactDescription": "Écrivez-nous directement, nous répondons personnellement à chaque message.",
     "contactEmail": "contact@lagemmerie.com"
   },
   "shop": {
-    "kicker": "Phase 2 — bientôt",
+    "kicker": "Prolonger l'expérience",
     "title": "La Gemmerie côté produits",
-    "comingSoon": "Bientôt disponible",
-    "intro": "Une collection d'objets pensés dans le prolongement de la maison — sans blanc, sans écru, sans nom de ville affiché.",
+    "comingSoon": "En préparation",
+    "intro": "Dans le prolongement de la maison, La Gemmerie imagine une collection d'objets sensibles et durables, inspirés par les matières, les couleurs et les gestes des Landes.",
     "collections": [
       {
         "title": "Linge de maison",
-        "description": "Réalisé avec La Serviette Paris : d'un côté des serviettes de plage décoratives, de l'autre un linge de bain minimaliste — deux registres, une même exigence."
+        "description": "Serviettes de plage et linge de bain sont envisagés dans un même esprit : des matières agréables, une palette singulière et des détails discrets."
       },
       {
         "title": "Bougies",
-        "description": "Collection en développement."
+        "description": "Une recherche olfactive autour du pin, de la résine chauffée au soleil et des fins de journée près de l'océan."
       }
     ],
-    "note": "Page teaser — activation complète prévue en phase 2, sans refonte de la navigation.",
     "notify": {
       "title": "Être averti·e du lancement",
       "emailLabel": "E-mail",
-      "submit": "M'avertir au lancement",
-      "reassurance": "Un seul e-mail, au lancement de la collection. Aucune sollicitation avant cela.",
+      "submit": "Nous écrire",
+      "reassurance": "Ce bouton ouvre votre messagerie : envoyez-nous simplement votre demande et nous vous répondrons personnellement au lancement.",
       "successTitle": "C'est noté.",
       "successMessage": "Nous vous écrirons dès le lancement de la collection linge & bougies."
     }

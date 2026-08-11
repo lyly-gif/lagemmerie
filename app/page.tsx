@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
@@ -10,51 +9,33 @@ import { PracticalInfoTabs } from "@/components/PracticalInfoTabs";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
+import { localizedPath } from "@/lib/i18n-routing";
+import { createLocalizedMetadata } from "@/lib/seo";
 
-const ogTitle = "La Gemmerie — Maison de vacances avec piscine chauffée à Labenne-Océan";
-const description =
-  "Maison landaise 8 personnes avec piscine chauffée à Labenne-Océan (Landes). Quiet luxury, 5 espaces de vie, réservation en direct.";
-
-export const metadata: Metadata = {
-  // Absolute: bypasses the "%s — La Gemmerie" template so the brand name
-  // leads on the homepage specifically (SEO mapping, tarifs-et-seo-la-gemmerie.md §2).
-  title: { absolute: ogTitle },
-  description,
-  openGraph: { title: ogTitle, description },
-  twitter: { title: ogTitle, description },
-};
-
-const heroImages = [
-  {
-    src: featured["hero-piscine-jour"],
-    alt: "Piscine chauffée et terrasse en bois de La Gemmerie, Labenne-Océan",
-  },
-  {
-    src: featured["piscine-oliviers"],
-    alt: "Piscine et olivier centenaire, jardin de La Gemmerie",
-  },
-  {
-    src: featured["sejour-cuisine"],
-    alt: "Séjour et cuisine ouverte de la maison landaise, poêle à bois",
-  },
-];
-
-const bannerImages = [
-  { src: featured["pool-house-dejeuner"], alt: "Déjeuner sur la terrasse du pool house" },
-  { src: featured["chambre-secondaire"], alt: "Chambre secondaire de la maison landaise" },
-  { src: featured["salle-de-bain"], alt: "Salle de bain de la maison landaise" },
-];
+export async function generateMetadata() {
+  return createLocalizedMetadata(await getCurrentLocale(), "home");
+}
 
 export default async function HomePage() {
   const locale = await getCurrentLocale();
   const dict = getDictionary(locale);
+  const heroImages = [
+    { src: featured["hero-piscine-jour"], alt: `${dict.spaces.items[1].title} — La Gemmerie` },
+    { src: featured["piscine-oliviers"], alt: `${dict.gallery.categories.poolGarden} — La Gemmerie` },
+    { src: featured["sejour-cuisine"], alt: `${dict.spaces.items[2].title} — La Gemmerie` },
+  ];
+  const bannerImages = [
+    { src: featured["pool-house-dejeuner"], alt: `${dict.spaces.items[0].title} — La Gemmerie` },
+    { src: featured["chambre-secondaire"], alt: `${dict.spaces.items[4].title} — La Gemmerie` },
+    { src: featured["salle-de-bain"], alt: `${dict.spaces.bathrooms.title} — La Gemmerie` },
+  ];
 
   return (
     <>
       {/* Hero — cahier des charges: night-lit pool shot still pending (§3);
           slideshow rotates day photography in the meantime. */}
       <section className="relative flex min-h-[92vh] items-end overflow-hidden bg-forest-950">
-        <HeroSlideshow images={heroImages} />
+        <HeroSlideshow images={heroImages} locale={locale} />
         <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/25 to-forest-950/10" />
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 md:px-10 md:pb-24">
@@ -76,13 +57,13 @@ export default async function HomePage() {
           <Reveal delay={360}>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link
-                href="/galerie"
+                href={localizedPath(locale, "/galerie")}
                 className="border border-sand-100/40 px-6 py-3 text-xs font-medium tracking-[0.14em] text-sand-100 uppercase transition-colors hover:border-sand-100 hover:bg-sand-100 hover:text-forest-950"
               >
                 {dict.home.ctaPrimary}
               </Link>
               <Link
-                href="/tarifs"
+                href={localizedPath(locale, "/tarifs")}
                 className="border border-bronze-500 bg-bronze-600 px-6 py-3 text-xs font-medium tracking-[0.14em] text-sand-50 uppercase transition-colors hover:bg-bronze-700"
               >
                 {dict.home.ctaSecondary}
@@ -159,12 +140,16 @@ export default async function HomePage() {
           <SpacesCarousel
             items={dict.spaces.items}
             differentiatorTag={dict.home.spacesPreview.differentiatorTag}
+            locale={locale}
           />
         </Reveal>
       </section>
 
       {/* Informations pratiques */}
-      <section className="mx-auto max-w-[1200px] px-6 py-24 md:px-10 md:py-28">
+      <section
+        id="informations-pratiques"
+        className="mx-auto max-w-[1200px] scroll-mt-24 px-6 py-24 md:px-10 md:py-28"
+      >
         <Reveal>
           <Kicker>{dict.practical.kicker}</Kicker>
           <h2 className="mt-3.5 font-display text-3xl text-forest-950 md:text-4xl">
@@ -172,7 +157,7 @@ export default async function HomePage() {
           </h2>
         </Reveal>
         <Reveal delay={100} className="mt-9">
-          <PracticalInfoTabs dict={dict} />
+          <PracticalInfoTabs dict={dict} locale={locale} />
         </Reveal>
       </section>
 
@@ -184,7 +169,7 @@ export default async function HomePage() {
               {dict.home.ctaBand.title}
             </p>
             <Link
-              href="/tarifs"
+              href={localizedPath(locale, "/tarifs")}
               className="shrink-0 border border-bronze-600 bg-bronze-600 px-7 py-3 text-xs font-medium tracking-[0.14em] text-sand-50 uppercase transition-colors hover:bg-bronze-700"
             >
               {dict.home.ctaBand.cta}

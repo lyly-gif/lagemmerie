@@ -13,7 +13,7 @@ import { getDictionary } from "@/lib/content";
 // in high-end hospitality branding — with cleaner strokes at this size.
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
   style: ["normal", "italic"],
   variable: "--font-playfair",
   display: "swap",
@@ -28,11 +28,12 @@ const karla = Karla({
 export const metadata: Metadata = {
   metadataBase: new URL("https://lagemmerie.com"),
   title: {
-    default: "La Gemmerie — maison landaise & piscine chauffée à Labenne-Océan",
-    template: "%s — La Gemmerie",
+    default: "La Gemmerie | Maison avec piscine à Labenne-Océan",
+    template: "%s",
   },
   description:
-    "Maison landaise de 150 m² et pool house indépendant, piscine chauffée à l'année, à Labenne-Océan dans les Landes. Location saisonnière pour 8 personnes.",
+    "Maison landaise pour 8 personnes avec pool house et piscine chauffée d'avril à octobre, à 400 m de l'océan à Labenne.",
+  robots: { index: true, follow: true },
   // No `keywords`: dropped per SEO audit — the tag carries no ranking
   // weight and was identical across every page anyway. Differentiation now
   // lives in each page's title/description (tarifs-et-seo-la-gemmerie.md §2).
@@ -40,54 +41,53 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     siteName: "La Gemmerie",
-    url: "https://lagemmerie.com",
-    title: "La Gemmerie — maison landaise & piscine chauffée à Labenne-Océan",
+    url: "/",
+    title: "La Gemmerie | Maison avec piscine à Labenne-Océan",
     description:
-      "Maison landaise de 150 m² et pool house indépendant, piscine chauffée à l'année, à Labenne-Océan dans les Landes. Location saisonnière pour 8 personnes.",
+      "Maison landaise pour 8 personnes avec pool house et piscine chauffée d'avril à octobre, à 400 m de l'océan à Labenne.",
     images: [
       {
-        url: "/images/featured/hero-piscine-jour.jpg",
-        width: 2048,
-        height: 1365,
+        url: "/images/featured/la-gemmerie-social.jpg",
+        width: 1200,
+        height: 630,
         alt: "Piscine chauffée et terrasse en bois de La Gemmerie, Labenne-Océan",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "La Gemmerie — maison landaise & piscine chauffée à Labenne-Océan",
+    title: "La Gemmerie | Maison avec piscine à Labenne-Océan",
     description:
-      "Maison landaise de 150 m² et pool house indépendant, piscine chauffée à l'année, à Labenne-Océan dans les Landes. Location saisonnière pour 8 personnes.",
-    images: ["/images/featured/hero-piscine-jour.jpg"],
+      "Maison landaise pour 8 personnes avec pool house et piscine chauffée d'avril à octobre, à 400 m de l'océan à Labenne.",
+    images: ["/images/featured/la-gemmerie-social.jpg"],
   },
 };
 
-// Street address still pending (cahier des charges §8) — locality-level
-// address only until it's confirmed. Update once figée.
-const lodgingBusinessJsonLd = {
+// Brand-level structured data only: the property address and coordinates
+// deliberately remain private until the owner decides otherwise.
+const siteJsonLd = {
   "@context": "https://schema.org",
-  "@type": "LodgingBusiness",
-  name: "La Gemmerie",
-  description:
-    "Maison landaise avec pool house indépendant et piscine chauffée à l'année, pour 8 personnes, à Labenne-Océan (Landes).",
-  url: "https://lagemmerie.com",
-  image: "https://lagemmerie.com/images/featured/hero-piscine-jour.jpg",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Labenne-Océan",
-    addressRegion: "Nouvelle-Aquitaine",
-    postalCode: "40530",
-    addressCountry: "FR",
-  },
-  amenityFeature: [
+  "@graph": [
     {
-      "@type": "LocationFeatureSpecification",
-      name: "Piscine chauffée",
-      value: true,
+      "@type": "Organization",
+      "@id": "https://lagemmerie.com/#organization",
+      name: "La Gemmerie",
+      url: "https://lagemmerie.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://lagemmerie.com/images/brand/la-gemmerie-alternative-gemme-horizontal.svg",
+      },
+      email: "contact@lagemmerie.com",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://lagemmerie.com/#website",
+      url: "https://lagemmerie.com",
+      name: "La Gemmerie",
+      inLanguage: ["fr", "en", "de", "nl", "es"],
+      publisher: { "@id": "https://lagemmerie.com/#organization" },
     },
   ],
-  numberOfRooms: 4,
-  maximumAttendeeCapacity: 8,
 };
 
 export default async function RootLayout(props: LayoutProps<"/">) {
@@ -99,12 +99,12 @@ export default async function RootLayout(props: LayoutProps<"/">) {
       <body className="bg-sand-100 text-forest-950 antialiased">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingBusinessJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
         <Header locale={locale} dict={dict} />
         <main>{props.children}</main>
-        <Footer dict={dict} />
-        <StickyBookCta dict={dict} />
+        <Footer dict={dict} locale={locale} />
+        <StickyBookCta dict={dict} locale={locale} />
       </body>
     </html>
   );

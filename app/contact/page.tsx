@@ -1,21 +1,16 @@
 import Image from "next/image";
-import type { Metadata } from "next";
+import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
+import { createLocalizedMetadata } from "@/lib/seo";
+import { localizedPath } from "@/lib/i18n-routing";
 
-const title = "Contact & accès — La Gemmerie, Labenne-Océan";
-const description =
-  "Comment rejoindre La Gemmerie à Labenne-Océan (Landes) : accès, distance à la plage, contact direct.";
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: { title, description },
-  twitter: { title, description },
-};
+export async function generateMetadata() {
+  return createLocalizedMetadata(await getCurrentLocale(), "contact");
+}
 
 export default async function ContactPage() {
   const locale = await getCurrentLocale();
@@ -54,6 +49,14 @@ export default async function ContactPage() {
           >
             {c.contactEmail}
           </a>
+          <div>
+            <Link
+              href={localizedPath(locale, "/tarifs")}
+              className="mt-6 inline-flex border border-bronze-600 bg-bronze-600 px-5 py-3 text-xs font-medium tracking-[0.12em] text-sand-50 uppercase hover:bg-bronze-700"
+            >
+              {dict.home.ctaSecondary}
+            </Link>
+          </div>
         </Reveal>
       </div>
 
@@ -61,7 +64,7 @@ export default async function ContactPage() {
         <div className="relative aspect-[4/5] overflow-hidden bg-forest-900 md:sticky md:top-24">
           <Image
             src={featured["piscine-oliviers"]}
-            alt="Jardin et terrasse de La Gemmerie, Labenne-Océan"
+            alt={`${c.location.title} — ${dict.site.name}`}
             fill
             sizes="(min-width: 768px) 45vw, 100vw"
             className="object-cover"

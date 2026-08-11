@@ -1,204 +1,218 @@
 {
-  "_note": "Nederlandse structuur automatisch opgezet — menselijke vertaling volgt nog (conform het lastenboek: geen automatische vertaling voor de definitieve tekst). Elke tekst hieronder is een placeholder die de Franse structuur volgt.",
   "site": {
     "name": "La Gemmerie",
     "domain": "lagemmerie.com",
-    "metaTitleSuffix": "[NL] La Gemmerie — Labenne-Océan"
+    "metaTitleSuffix": "La Gemmerie — Labenne-Océan"
   },
   "nav": {
-    "home": "[NL] Accueil",
-    "spaces": "[NL] Les 5 espaces de vie",
-    "labenneOcean": "[NL] Labenne-Océan",
-    "gallery": "[NL] Galerie",
-    "rates": "[NL] Tarifs & réservation",
-    "shop": "[NL] Côté produits",
-    "contact": "[NL] Contact & accès",
-    "bookCta": "[NL] Réserver"
+    "home": "Home",
+    "spaces": "De 5 leefruimtes",
+    "labenneOcean": "Labenne-Océan",
+    "gallery": "Galerij",
+    "rates": "Tarieven & boeken",
+    "shop": "De collectie",
+    "soonLabel": "binnenkort",
+    "contact": "Contact & route",
+    "bookCta": "Boeken"
   },
   "footer": {
-    "tagline": "[NL] Entre pins et océan, une maison pour se retrouver et s'év...",
-    "address": "[NL] Labenne-Océan · Landes",
-    "rights": "[NL] Tous droits réservés.",
-    "phaseTwoNote": "[NL] Collection linge & bougies — bientôt disponible."
+    "tagline": "Tussen dennen en oceaan, een huis om samen te zijn en tot rust te komen.",
+    "address": "Labenne-Océan · Landes",
+    "rights": "Alle rechten voorbehouden.",
+    "phaseTwoNote": "Ontdek de collectie"
   },
   "home": {
-    "kicker": "[NL] Labenne-Océan · Landes",
-    "title": "[NL] Une maison landaise, un pool house, une piscine chauffée.",
-    "subtitle": "[NL] Entre pins et océan, une propriété pensée pour les famill...",
-    "ctaPrimary": "[NL] Voir toutes les photos",
-    "ctaSecondary": "[NL] Vérifier les disponibilités",
+    "kicker": "Labenne-Océan · Landes",
+    "title": "Een traditioneel huis uit de Landes, een poolhouse en een verwarmd zwembad.",
+    "subtitle": "Tussen dennen en oceaan, ontworpen voor familie en vrienden — privacy voor iedereen, met alle ruimte om samen te genieten.",
+    "ctaPrimary": "Bekijk alle foto’s",
+    "ctaSecondary": "Controleer beschikbaarheid",
     "manifesto": {
-      "kicker": "[NL] Le nom",
-      "title": "[NL] La Gemmerie",
+      "kicker": "De naam",
+      "title": "La Gemmerie",
       "paragraphs": [
-        "[NL] Ici, gemmer voulait dire inciser le pin pour en recueilli...",
-        "[NL] La Gemmerie en garde le nom, et une autre lecture : celle...",
-        "[NL] Une maison qui tient des deux — le geste artisanal d'un c..."
+        "Hier betekende gemmer ooit het insnijden van een den om hars te winnen — een langzaam, precies ambacht dat in de Landes generaties lang werd doorgegeven.",
+        "La Gemmerie bewaart die naam en verwijst tegelijk naar een edelsteen: zeldzaam en met zorg gevormd.",
+        "Een huis dat beide verenigt — ambachtelijke aandacht en ingetogen verfijning."
       ]
     },
     "facts": [
       {
-        "label": "[NL] Capacité",
-        "value": "[NL] 8 personnes"
+        "label": "Capaciteit",
+        "value": "8 gasten"
       },
       {
-        "label": "[NL] Chambres",
-        "value": "[NL] 4"
+        "label": "Slaapkamers",
+        "value": "4"
       },
       {
-        "label": "[NL] Maison landaise",
-        "value": "[NL] ≈ 150 m²"
+        "label": "Landes-huis",
+        "value": "≈ 150 m²"
       },
       {
-        "label": "[NL] Pool house",
-        "value": "[NL] ≈ 40 m²"
+        "label": "Poolhouse",
+        "value": "≈ 40 m²"
       },
       {
-        "label": "[NL] Salles de bain",
-        "value": "[NL] 2"
+        "label": "Badkamers",
+        "value": "2"
       },
       {
-        "label": "[NL] Chauffée",
-        "value": "[NL] Piscine"
+        "label": "Verwarmd",
+        "value": "Zwembad"
       }
     ],
     "spacesPreview": {
-      "kicker": "[NL] Le différenciateur",
-      "title": "[NL] Les 5 espaces de vie",
-      "intro": "[NL] 150 m² de maison landaise, 40 m² de pool house indépendan...",
-      "cta": "[NL] Voir les 5 espaces",
-      "differentiatorTag": "[NL] Le différenciateur"
+      "kicker": "Wat het bijzonder maakt",
+      "title": "De 5 leefruimtes",
+      "intro": "Een Landes-huis van 150 m², een zelfstandig poolhouse van 40 m² en een verwarmd zwembad van april tot oktober — mooie ruimtes voor ieders eigen ritme én fijne momenten samen.",
+      "cta": "Ontdek de 5 ruimtes",
+      "differentiatorTag": "Wat het bijzonder maakt"
     },
     "ctaBand": {
-      "title": "[NL] Un séjour à La Gemmerie se réserve en direct — sans commi...",
-      "cta": "[NL] Réserver mon séjour"
+      "title": "Kies uw data en ga verder in de beveiligde boekingsomgeving van onze conciërgepartner.",
+      "cta": "Bekijk beschikbaarheid"
     }
   },
   "calendar": {
-    "reserveButton": "[NL] Réserver",
-    "clearButton": "[NL] Effacer les dates"
+    "reserveButton": "Bekijk prijs en ga verder",
+    "clearButton": "Data wissen",
+    "guestLabel": "Gasten",
+    "guestPlaceholder": "Selecteren",
+    "guestHelp": "1 tot 8 gasten",
+    "guestError": "Kies het aantal gasten voordat u verdergaat.",
+    "loadingText": "Beschikbaarheid laden…",
+    "partnerNote": "Na het kiezen van uw data wordt u doorgestuurd naar de beveiligde Engelstalige omgeving van Première Vue, onze conciërgepartner."
   },
   "practical": {
-    "kicker": "[NL] Bon à savoir",
-    "title": "[NL] Informations pratiques",
+    "kicker": "Goed om te weten",
+    "title": "Praktische informatie",
     "tabs": {
-      "equip": "[NL] Équipements",
-      "loc": "[NL] Localisation",
-      "cal": "[NL] Disponibilités"
+      "equip": "Voorzieningen",
+      "loc": "Ligging",
+      "cal": "Beschikbaarheid"
     },
     "equipment": {
       "items": [
         {
           "icon": "pool",
-          "label": "[NL] Piscine chauffée (27°C, avril–octobre)"
+          "label": "Verwarmd zwembad (27 °C, april–oktober)"
         },
         {
           "icon": "wifi",
-          "label": "[NL] Wifi dans toute la maison"
+          "label": "Wifi in het hele huis"
         },
         {
           "icon": "kitchen",
-          "label": "[NL] Cuisine équipée + cuisine d'été"
+          "label": "Uitgeruste keuken, buitenkeuken & barbecue"
         },
         {
           "icon": "laundry",
-          "label": "[NL] Lave-linge & sèche-linge"
+          "label": "Wasmachine & droger"
         },
         {
           "icon": "linens",
-          "label": "[NL] Linge de lit & serviettes fournis"
+          "label": "Beddengoed & handdoeken inbegrepen"
         },
         {
           "icon": "cleaning",
-          "label": "[NL] Ménage inclus avant l'arrivée"
+          "label": "Opgemaakte bedden en eindschoonmaak"
         },
         {
           "icon": "home",
-          "label": "[NL] Parking privé sur la propriété"
+          "label": "Privéparking op het terrein"
         },
         {
           "icon": "tv",
-          "label": "[NL] Salon TV sous combles"
+          "label": "Tv-lounge op de vide"
         },
         {
           "icon": "smokeDetector",
-          "label": "[NL] Détecteurs fumée & monoxyde installés"
+          "label": "Rook- & koolmonoxidemelders"
         },
         {
           "icon": "poolSafety",
-          "label": "[NL] Volet de sécurité piscine"
+          "label": "Veiligheidsafdekking zwembad"
         },
         {
           "icon": "families",
-          "label": "[NL] Idéal familles à plusieurs foyers"
+          "label": "Ideaal voor families uit meerdere huishoudens"
         },
         {
           "icon": "garden",
-          "label": "[NL] Terrain clos et arboré, 1 330 m²"
+          "label": "Omheinde, groene tuin van 1.330 m²"
         }
       ],
-      "moreCta": "[NL] Voir tous les équipements"
+      "moreCta": "Ontdek alle voorzieningen",
+      "categories": [
+        { "title": "Comfort", "items": ["Wifi in het hele huis", "Verwarming", "Werkplek", "Televisie", "Wasmachine en droger", "Beddengoed en handdoeken", "Warm water"] },
+        { "title": "Keuken & eten", "items": ["Uitgeruste keuken", "Buitenkeuken", "Vaatwasser", "Oven en magnetron", "Broodrooster en waterkoker", "Koelkast en vriezer", "Kookeiland en grote eettafel", "Wijnglazen"] },
+        { "title": "Buiten", "items": ["Verwarmd zwembad", "Barbecue en benodigdheden", "Omheinde tuin en binnenplaats", "Gratis privéparking"] },
+        { "title": "Gezinnen", "items": ["Kindvriendelijk", "Geschikt voor baby’s", "Babybedje"] },
+        { "title": "Badkamer", "items": ["Douche en toilet", "Douchegel", "Handdoeken inbegrepen"] },
+        { "title": "Veiligheid", "items": ["Rookmelders", "Koolmonoxidemelder", "Veiligheidsafdekking voor het zwembad"] }
+      ]
     },
     "location": {
       "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
-      "mapLabel": "[NL] Labenne-Océan, Landes",
+      "mapLabel": "Labenne-Océan, Landes",
       "facts": [
         {
-          "title": "[NL] Proximité immédiate",
-          "description": "[NL] À quelques minutes à pied des plages et des commerces de ..."
+          "title": "Alles dichtbij",
+          "description": "Strand en winkels van Labenne-Océan liggen op enkele minuten lopen."
         },
         {
-          "title": "[NL] 400 m",
-          "description": "[NL] Distance à pied jusqu'à la plage"
+          "title": "400 m",
+          "description": "Loopafstand tot het strand"
         },
         {
-          "title": "[NL] Terrain clos, 1 330 m²",
-          "description": "[NL] Quartier résidentiel calme de Labenne-Océan"
+          "title": "Omheind terrein, 1.330 m²",
+          "description": "Rustige woonwijk in Labenne-Océan"
         }
       ],
-      "note": "[NL] La carte indique la zone du quartier ; l'adresse exacte e..."
+      "note": "De kaart toont de buurt; het exacte adres ontvangt u na bevestiging van de boeking."
     },
     "availability": {
-      "intro": "[NL] Disponibilités réelles et réservation directe, sans commi..."
+      "intro": "De beschikbaarheid is gesynchroniseerd met onze conciërgepartner Première Vue."
     }
   },
   "spaces": {
-    "kicker": "[NL] Le différenciateur",
-    "title": "[NL] Les 5 espaces de vie",
-    "intro": "[NL] Le point commun des familles qui choisissent La Gemmerie ...",
-    "architectureNote": "[NL] Charpente et tomettes, larges baies vitrées sur le jardin...",
+    "kicker": "Wat het bijzonder maakt",
+    "title": "De 5 leefruimtes",
+    "intro": "Meerdere generaties, verschillende ritmes, één huis. Elke ruimte nodigt uit om samen te zijn — of u even terug te trekken.",
+    "architectureNote": "Zichtbare balken en terracottategels, brede puien naar de tuin en een houtkachel voor het voor- en naseizoen — regionale architectuur met respect behouden.",
     "facts": [
       {
-        "label": "[NL] Capacité",
-        "value": "[NL] 8 personnes"
+        "label": "Capaciteit",
+        "value": "8 gasten"
       },
       {
-        "label": "[NL] Chambres",
-        "value": "[NL] 4"
+        "label": "Slaapkamers",
+        "value": "4"
       },
       {
-        "label": "[NL] Maison landaise",
-        "value": "[NL] ≈ 150 m²"
+        "label": "Landes-huis",
+        "value": "≈ 150 m²"
       },
       {
-        "label": "[NL] Pool house",
-        "value": "[NL] ≈ 40 m²"
+        "label": "Poolhouse",
+        "value": "≈ 40 m²"
       },
       {
-        "label": "[NL] Salles de bain",
-        "value": "[NL] 2"
+        "label": "Badkamers",
+        "value": "2"
       },
       {
-        "label": "[NL] Chauffée",
-        "value": "[NL] Piscine"
+        "label": "Verwarmd",
+        "value": "Zwembad"
       }
     ],
     "items": [
       {
         "number": "01",
         "slug": "pool-house",
-        "title": "[NL] Le pool house",
-        "description": "[NL] Repas à l'ombre de la charpente, bar donnant sur l'eau — ...",
+        "title": "Het poolhouse",
+        "description": "Eten onder de houten balken, een bar aan het water — 40 m² zelfstandige leefruimte tussen huis en tuin, voor maaltijden, siësta’s en lange avonden.",
         "imageKey": "pool-house-dejeuner",
         "galleryNumbers": [
           8,
@@ -210,8 +224,8 @@
       {
         "number": "02",
         "slug": "piscine",
-        "title": "[NL] La piscine et sa terrasse",
-        "description": "[NL] Chauffée à 27°C d'avril à octobre, elle mesure 4,50 × 12 ...",
+        "title": "Het zwembad en terras",
+        "description": "Van april tot oktober verwarmd tot 27 °C, 4,5 × 12 m groot, met een licht houten terras, ligbedden en een eeuwenoude olijfboom — het kloppend hart van het huis.",
         "imageKey": "hero-piscine-jour",
         "galleryNumbers": [
           1,
@@ -227,8 +241,8 @@
       {
         "number": "03",
         "slug": "sejour-cuisine",
-        "title": "[NL] Séjour et cuisine",
-        "description": "[NL] Cuisine entièrement équipée, poêle à bois, grande table c...",
+        "title": "Woonruimte en keuken",
+        "description": "Volledig uitgeruste keuken, houtkachel en grote tafel — het hart van het huis, gemaakt voor diners met acht.",
         "imageKey": "sejour-cuisine",
         "galleryNumbers": [
           19,
@@ -240,8 +254,8 @@
       {
         "number": "04",
         "slug": "salon",
-        "title": "[NL] Le salon",
-        "description": "[NL] Canapé profond et poêle à bois, en retrait de la cuisine ...",
+        "title": "De salon",
+        "description": "Een diepe bank en houtkachel, apart van de keuken — een intieme plek om te lezen, ontspannen of de avond te verlengen.",
         "imageKey": "salon",
         "galleryNumbers": [
           18,
@@ -253,8 +267,8 @@
       {
         "number": "05",
         "slug": "chambres",
-        "title": "[NL] Les chambres",
-        "description": "[NL] Suite parentale, chambres secondaires et dortoir dédié au...",
+        "title": "De slaapkamers",
+        "description": "Oudersuite, extra slaapkamers en een kinderslaapzaal — elke generatie een eigen plek, zonder ver van elkaar te zijn.",
         "imageKey": "chambre-parentale",
         "galleryNumbers": [
           11,
@@ -268,9 +282,9 @@
       }
     ],
     "bathrooms": {
-      "kicker": "[NL] Bon à savoir",
-      "title": "[NL] Les salles de bain",
-      "intro": "[NL] Une salle de bain à cabine de douche dans la chambre 1, u...",
+      "kicker": "Goed om te weten",
+      "title": "De badkamers",
+      "intro": "Een eigen doucheruimte bij slaapkamer 1 en een gedeelde badkamer met bad en douche voor de rest van het huis.",
       "galleryNumbers": [
         23,
         42,
@@ -281,167 +295,175 @@
     }
   },
   "labenneOcean": {
-    "kicker": "[NL] L'environnement",
-    "title": "[NL] Labenne-Océan, entre pins et grande plage de sable",
-    "intro": "[NL] À 400 m de la maison, une station balnéaire des Landes re...",
+    "kicker": "De omgeving",
+    "title": "Labenne-Océan, tussen dennenbos en breed zandstrand",
+    "intro": "Op 400 m van het huis ligt een kleinschalige badplaats in de Landes — met een eindeloos strand, dennenbos en activiteiten voor elke generatie, terwijl de rust behouden blijft.",
     "beach": {
-      "kicker": "[NL] À 400 m",
-      "title": "[NL] La plage centrale de Labenne-Océan",
-      "intro": "[NL] Environ 3 km de sable et une vue à 180° sur l'océan depui...",
+      "kicker": "Op 400 m",
+      "title": "Het centrale strand van Labenne-Océan",
+      "intro": "Ongeveer 3 km zand en 180° uitzicht over zee — duinen in het noorden en bij helder weer de Baskische kust en Pyreneeën in het zuiden.",
       "facts": [
         {
-          "title": "[NL] Surveillance",
-          "description": "[NL] Plage surveillée de mi-juin à mi-septembre — 11h-19h en j..."
+          "title": "Bewaakt strand",
+          "description": "Bewaakt van half juni tot half september — 11–19 uur in juli en augustus, 12.30–18.30 uur eind augustus en half september (tijden 2026)."
         },
         {
-          "title": "[NL] Sur l'esplanade",
-          "description": "[NL] Douches, sanitaires, bar-restauration, parc à vélos et ai..."
+          "title": "Op de boulevard",
+          "description": "Douches, toiletten, horeca, fietsenstalling en kinderspeelplaats."
         }
       ]
     },
     "activities": {
-      "kicker": "[NL] À proximité",
-      "title": "[NL] Activités & loisirs",
-      "intro": "[NL] De quoi remplir un séjour sans jamais reprendre la voitur...",
+      "kicker": "Vlakbij",
+      "title": "Activiteiten & vrije tijd",
+      "intro": "Genoeg te doen zonder ver te rijden — de meeste activiteiten zijn binnen enkele minuten bereikbaar.",
       "items": [
         {
           "icon": "surf",
-          "title": "[NL] Surf",
-          "description": "[NL] Écoles de surf sur la plage et SB3, l'un des plus grands ..."
+          "title": "Surfen",
+          "description": "Surfscholen op het strand en SB3, een van Europa’s grootste surfshops."
         },
         {
           "icon": "bike",
-          "title": "[NL] Vélo",
-          "description": "[NL] La Vélodyssée relie dunes, forêt de pins et le port de Ca..."
+          "title": "Fietsen",
+          "description": "De Vélodyssée verbindt duinen, dennenbos en de haven van Capbreton via één fietspad."
         },
         {
           "icon": "treetop",
-          "title": "[NL] Accrobranche",
-          "description": "[NL] Un parc arboré parmi les plus grands d'Aquitaine, en forê..."
+          "title": "Klimpark",
+          "description": "Een van de grootste boomklimparken van Aquitanië, op enkele minuten."
         },
         {
           "icon": "waterpark",
-          "title": "[NL] Parc aquatique",
-          "description": "[NL] Aquatic Landes, en forêt — toboggans et bassins pour tout..."
+          "title": "Waterpark",
+          "description": "Aquatic Landes in het bos — glijbanen en baden voor het hele gezin."
         },
         {
           "icon": "nature",
-          "title": "[NL] Nature",
-          "description": "[NL] La réserve du Marais d'Orx : 1 000 ha, 247 espèces d'oise..."
+          "title": "Natuur",
+          "description": "Natuurreservaat Marais d’Orx: 1.000 ha, 247 vogelsoorten en 6 km wandelpad met kijkhutten."
         },
         {
           "icon": "canoe",
-          "title": "[NL] Canoë",
-          "description": "[NL] Descente tranquille sur le canal du Boudigau, au départ d..."
+          "title": "Kanoën",
+          "description": "Een rustige tocht over het Boudigau-kanaal vanuit Labenne."
         },
         {
           "icon": "zoo",
-          "title": "[NL] Zoo de Labenne",
-          "description": "[NL] Plus de 200 animaux, à quelques minutes de la maison."
+          "title": "Zoo de Labenne",
+          "description": "Meer dan 200 dieren, op enkele minuten van het huis."
         }
       ]
     },
     "region": {
-      "kicker": "[NL] Dans la région",
-      "title": "[NL] Bien situés pour rayonner",
+      "kicker": "In de regio",
+      "title": "Perfect gelegen om eropuit te gaan",
       "facts": [
         {
-          "value": "[NL] 6 km",
-          "label": "[NL] Capbreton — ~7 min en voiture"
+          "value": "6 km",
+          "label": "Capbreton — ~7 min met de auto"
         },
         {
-          "value": "[NL] 13 km",
-          "label": "[NL] Bayonne — ~18 min en voiture"
+          "value": "13 km",
+          "label": "Bayonne — ~18 min met de auto"
         },
         {
-          "value": "[NL] 20 km",
-          "label": "[NL] Biarritz — ~29 min en voiture"
+          "value": "20 km",
+          "label": "Biarritz — ~29 min met de auto"
         },
         {
-          "value": "[NL] 29 km",
-          "label": "[NL] Aéroport de Biarritz — ~26 min en voiture"
+          "value": "29 km",
+          "label": "Luchthaven Biarritz — ~26 min met de auto"
         }
       ]
     },
     "cta": {
-      "title": "[NL] Toujours entre pins et océan — vérifiez les disponibilités."
+      "title": "Altijd tussen dennen en oceaan — bekijk de beschikbaarheid."
     }
   },
   "gallery": {
-    "kicker": "[NL] En images",
-    "title": "[NL] Galerie",
-    "intro": "[NL] La maison et le pool house, tels qu'ils sont — espace par...",
-    "note": "[NL] Photos d'intérieur et de nuit (piscine illuminée) en cour...",
+    "kicker": "In beeld",
+    "title": "Galerij",
+    "intro": "Het huis en poolhouse zoals ze zijn — ruimte voor ruimte.",
     "categories": {
-      "poolHouse": "[NL] Le pool house",
-      "poolGarden": "[NL] La piscine & le jardin",
-      "livingKitchen": "[NL] Cuisine",
-      "lounge": "[NL] Le salon",
-      "mezzanine": "[NL] Mezzanine & salle TV",
-      "chambre1": "[NL] Chambre 1",
-      "chambre1Bathroom": "[NL] Salle de bain",
-      "chambre2": "[NL] Chambre 2",
-      "enfants": "[NL] Chambres d'enfants",
-      "dortoir": "[NL] Dortoir",
-      "sharedBathroom": "[NL] Salle de bain commune"
+      "poolHouse": "Het poolhouse",
+      "poolGarden": "Zwembad & tuin",
+      "livingKitchen": "Keuken",
+      "lounge": "De salon",
+      "mezzanine": "Vide & tv-lounge",
+      "chambre1": "Slaapkamer 1",
+      "chambre1Bathroom": "Badkamer",
+      "chambre2": "Slaapkamer 2",
+      "enfants": "Kinderkamers",
+      "dortoir": "Slaapzaal",
+      "sharedBathroom": "Gedeelde badkamer"
     }
   },
   "rates": {
-    "kicker": "[NL] Séjourner",
-    "title": "[NL] Réservez votre séjour",
-    "intro": "[NL] Consultez les disponibilités réelles ci-dessous et réserv...",
-    "calendarIntro": "[NL] Sélectionnez vos dates pour voir le tarif exact du séjour.",
+    "kicker": "Verblijven",
+    "title": "Plan uw verblijf",
+    "intro": "Bekijk de beschikbaarheid en ga vervolgens naar de beveiligde omgeving van Première Vue voor de volledige prijs en uw aanvraag.",
+    "calendarIntro": "Kies uw data en aantal gasten.",
+    "bookingJourney": {
+      "kicker": "Uw boeking",
+      "title": "Een eenvoudig proces, begeleid door Première Vue",
+      "steps": [
+        "Kies uw data en aantal gasten.",
+        "Bekijk de details in de beveiligde Première Vue-omgeving.",
+        "Verstuur uw aanvraag: de conciërge bevestigt uw verblijf en regelt uw aankomst."
+      ],
+      "terms": "Schoonmaakkosten, toeristenbelasting, annuleringsvoorwaarden en terugbetaalbare waarborg worden vóór bevestiging getoond."
+    },
     "whyBookDirect": {
-      "kicker": "[NL] Pourquoi réserver en direct",
-      "title": "[NL] Réserver directement auprès de La Gemmerie, c'est :",
+      "kicker": "Waarom via onze site",
+      "title": "Een aanvraag zonder commissie van grote platforms, met:",
       "items": [
-        "[NL] un tarif sans commission de plateforme, donc le meilleur ...",
-        "[NL] un contact direct avec la conciergerie pour organiser vot...",
-        "[NL] le rituel d'accueil La Gemmerie offert à chaque séjour ré..."
+        "gesynchroniseerde beschikbaarheid",
+        "een vast contact bij Première Vue voor aanvraag en aankomst",
+        "het welkomstritueel van La Gemmerie — een welkomstplateau en de volgende ochtend een specialiteit uit de Landes met handgeschreven kaart"
       ]
     },
-    "footerNote": "[NL] Une question sur la maison, sa capacité ou son accès ?",
-    "footerCta": "[NL] Écrivez-nous directement"
+    "footerNote": "Een vraag over het huis, de capaciteit of bereikbaarheid?",
+    "footerCta": "Schrijf ons rechtstreeks"
   },
   "contact": {
-    "kicker": "[NL] Nous trouver",
-    "title": "[NL] Contact & accès",
+    "kicker": "Vind ons",
+    "title": "Contact & route",
     "location": {
-      "title": "[NL] Labenne-Océan, Landes",
-      "description": "[NL] Au cœur d'un quartier résidentiel calme et boisé, sur un ...",
-      "beachDistance": "[NL] 400 m à pied jusqu'à la plage"
+      "title": "Labenne-Océan, Landes",
+      "description": "In een rustige, groene woonwijk op een omheind terrein van 1.330 m².",
+      "beachDistance": "400 m lopen naar het strand"
     },
     "access": {
-      "title": "[NL] Accès",
-      "description": "[NL] Détails d'accès (voiture, gare la plus proche, aéroport) ..."
+      "title": "Bereikbaarheid",
+      "description": "Bereikbaar met de auto via de A63, per trein via station Labenne en per vliegtuig via Biarritz. Adres en aankomstinformatie volgen na bevestiging."
     },
-    "contactTitle": "[NL] Une question ?",
-    "contactDescription": "[NL] Écrivez-nous directement, nous répondons personnellement ...",
+    "contactTitle": "Een vraag?",
+    "contactDescription": "Schrijf ons; we beantwoorden elk bericht persoonlijk.",
     "contactEmail": "contact@lagemmerie.com"
   },
   "shop": {
-    "kicker": "[NL] Phase 2 — bientôt",
-    "title": "[NL] La Gemmerie côté produits",
-    "comingSoon": "[NL] Bientôt disponible",
-    "intro": "[NL] Une collection d'objets pensés dans le prolongement de la...",
+    "kicker": "Neem de ervaring mee naar huis",
+    "title": "De La Gemmerie-collectie",
+    "comingSoon": "In voorbereiding",
+    "intro": "In het verlengde van het huis werkt La Gemmerie aan duurzame, bijzondere objecten, geïnspireerd door materialen, kleuren en ambachten uit de Landes.",
     "collections": [
       {
-        "title": "[NL] Linge de maison",
-        "description": "[NL] Réalisé avec La Serviette Paris : d'un côté des serviette..."
+        "title": "Huislinnen",
+        "description": "Strand- en badtextiel met aangename materialen, een eigen kleurenpalet en verfijnde details."
       },
       {
-        "title": "[NL] Bougies",
-        "description": "[NL] Collection en développement."
+        "title": "Kaarsen",
+        "description": "Een geurwereld van dennen, zonverwarmde hars en avonden aan de oceaan."
       }
     ],
-    "note": "[NL] Page teaser — activation complète prévue en phase 2, sans...",
     "notify": {
-      "title": "[NL] Être averti·e du lancement",
-      "emailLabel": "[NL] E-mail",
-      "submit": "[NL] M'avertir au lancement",
-      "reassurance": "[NL] Un seul e-mail, au lancement de la collection. Aucune sol...",
-      "successTitle": "[NL] C'est noté.",
-      "successMessage": "[NL] Nous vous écrirons dès le lancement de la collection ling..."
+      "title": "Hoor wanneer we lanceren",
+      "emailLabel": "E-mail",
+      "submit": "Mail ons",
+      "reassurance": "Deze knop opent uw e-mailapp. Stuur ons uw verzoek; bij de lancering antwoorden we u persoonlijk.",
+      "successTitle": "Genoteerd.",
+      "successMessage": "We schrijven zodra de linnen- en kaarsencollectie verschijnt."
     }
   }
 }
