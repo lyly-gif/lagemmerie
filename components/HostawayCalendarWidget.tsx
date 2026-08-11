@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Script from "next/script";
+import { useEffect, useRef, useState } from "react";
 import type { Locale } from "@/lib/content";
 
 const WIDGET_SRC = "https://d2q3n06xhbi0am.cloudfront.net/calendar.js";
@@ -49,6 +48,7 @@ export function HostawayCalendarWidget({
 }: HostawayCalendarWidgetProps) {
   const [loaded, setLoaded] = useState(false);
   const [loadFallback, setLoadFallback] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (loaded) return;
@@ -56,29 +56,68 @@ export function HostawayCalendarWidget({
     return () => window.clearTimeout(timer);
   }, [loaded]);
 
-  function initWidget() {
-    const root = document.getElementById("hostaway-calendar-widget");
-    if (!root || !window.hostawayCalendarWidget) return;
+  useEffect(() => {
+    // The vendor bundle only renders correctly the first time it runs in a
+    // given browser session. After a client-side route change (e.g.
+    // /tarifs -> /), Next's <Script strategy="afterInteractive"> reuses the
+    // already-loaded script and never re-executes it, so
+    // window.hostawayCalendarWidget() silently produces an empty container
+    // on the second page — no console error, just a blank gap where the
+    // calendar should be. Injecting a fresh <script> tag on every mount
+    // forces the vendor code to re-run from scratch instead of reusing
+    // whatever internal state broke the second render.
+    let cancelled = false;
 
-    root.replaceChildren();
-    window.hostawayCalendarWidget({
-      baseUrl: `https://premierevue.holidayfuture.com/${locale === "en" || locale === "nl" ? "" : `${locale}/`}`,
-      listingId: 577024,
-      numberOfMonths: window.matchMedia("(max-width: 767px)").matches ? 1 : 2,
-      openInNewTab: false,
-      font: "Karla",
-      rounded: false,
-      button: { action: "checkout", text: reserveButtonText },
-      clearButtonText,
-      color: {
-        mainColor: "#a47c4f",
-        frameColor: "#0f1d15",
-        textColor: "#1f3327",
-      },
-    });
-    setLoaded(true);
-    setLoadFallback(false);
-  }
+    const script = document.createElement("script");
+    script.src = WIDGET_SRC;
+    script.async = true;
+    script.onload = () => {
+      if (cancelled) return;
+      const root = containerRef.current;
+      if (!root || !window.hostawayCalendarWidget) {
+        setLoadFallback(true);
+        return;
+      }
+      root.replaceChildren();
+      window.hostawayCalendarWidget({
+        baseUrl: `https://premierevue.holidayfuture.com/${locale === "en" || locale === "nl" ? "" : `${locale}/`}`,
+        listingId: 577024,
+        numberOfMonths: window.matchMedia("(max-width: 767px)").matches ? 1 : 2,
+        openInNewTab: false,
+        font: "Karla",
+        rounded: false,
+        button: { action: "checkout", text: reserveButtonText },
+        clearButtonText,
+        color: {
+          mainColor: "#a47c4f",
+          frameColor: "#0f1d15",
+          textColor: "#1f3327",
+        },
+      });
+      // The vendor call above can fail silently (no throw, no console
+      // output) — confirm something actually rendered before declaring
+      // success, otherwise surface the fallback link instead of a blank gap.
+      window.setTimeout(() => {
+        if (cancelled) return;
+        if (root.children.length > 0) {
+          setLoaded(true);
+          setLoadFallback(false);
+        } else {
+          setLoadFallback(true);
+        }
+      }, 500);
+    };
+    script.onerror = () => {
+      if (!cancelled) setLoadFallback(true);
+    };
+    document.body.appendChild(script);
+
+    return () => {
+      cancelled = true;
+      document.body.removeChild(script);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- config values are stable per render tree; only re-run on real remount
+  }, []);
 
   return (
     <div>
@@ -101,14 +140,12 @@ export function HostawayCalendarWidget({
           )}
         </div>
       )}
-      <div id="hostaway-calendar-widget" className={loaded ? undefined : "hidden"} />
-      <p className="mt-5 max-w-2xl text-xs leading-relaxed text-forest-800/65">{partnerNote}</p>
-      <Script
-        src={WIDGET_SRC}
-        strategy="afterInteractive"
-        onReady={initWidget}
-        onError={() => setLoadFallback(true)}
+      <div
+        id="hostaway-calendar-widget"
+        ref={containerRef}
+        className={loaded ? undefined : "hidden"}
       />
+      <p className="mt-5 max-w-2xl text-xs leading-relaxed text-forest-800/65">{partnerNote}</p>
     </div>
   );
 }
