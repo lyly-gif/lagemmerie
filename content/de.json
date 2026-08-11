@@ -82,7 +82,8 @@
     "guestHelp": "1 bis 8 Gäste",
     "guestError": "Bitte wählen Sie vor dem Fortfahren die Anzahl der Gäste.",
     "loadingText": "Verfügbarkeit wird geladen…",
-    "partnerNote": "Nach Auswahl Ihrer Reisedaten werden Sie zum sicheren Bereich von Première Vue, unserem Concierge-Partner, weitergeleitet."
+    "partnerNote": "Sie werden zum sicheren Bereich unseres Concierge-Partners Première Vue weitergeleitet, um Ihre Anfrage abzuschließen.",
+    "termsNote": "Reinigungsgebühr, Kurtaxe, Stornobedingungen und rückzahlbare Kaution werden vor der Bestätigung angezeigt."
   },
   "practical": {
     "kicker": "Gut zu wissen",
@@ -173,7 +174,7 @@
       "note": "Die Karte zeigt die Lage im Viertel; die genaue Adresse erhalten Sie nach Bestätigung der Buchung."
     },
     "availability": {
-      "intro": "Die Verfügbarkeit wird mit unserem Concierge-Partner Première Vue synchronisiert."
+      "intro": "Echte Verfügbarkeit, live aktualisiert."
     }
   },
   "spaces": {
@@ -402,24 +403,14 @@
   "rates": {
     "kicker": "Aufenthalt",
     "title": "Planen Sie Ihren Aufenthalt",
-    "intro": "Prüfen Sie die Verfügbarkeit und wechseln Sie anschließend zum sicheren Bereich von Première Vue, um den Gesamtpreis anzusehen und Ihre Anfrage zu senden.",
-    "calendarIntro": "Wählen Sie Ihre Reisedaten. Die Gästezahl bestätigen Sie anschließend bei Première Vue.",
-    "bookingJourney": {
-      "kicker": "Ihre Buchung",
-      "title": "Ein einfacher Ablauf, begleitet von Première Vue",
-      "steps": [
-        "Wählen Sie Ihre Reisedaten im Kalender.",
-        "Prüfen Sie die Details im sicheren Bereich von Première Vue.",
-        "Senden Sie Ihre Anfrage: Der Concierge bestätigt den Aufenthalt und organisiert Ihre Anreise."
-      ],
-      "terms": "Reinigungsgebühr, Kurtaxe, Stornierungsbedingungen und erstattbare Kaution werden vor Bestätigung bei Première Vue ausgewiesen."
-    },
+    "intro": "Wählen Sie unten Ihre Reisedaten, um den genauen Preis zu sehen und Ihre Anfrage zu senden.",
+    "calendarIntro": "Der Kalender zeigt die echte Verfügbarkeit des Hauses.",
     "whyBookDirect": {
       "kicker": "Warum über unsere Website",
       "title": "Eine Anfrage ohne Provision großer Plattformen, mit:",
       "items": [
         "synchronisierter Verfügbarkeit",
-        "einem festen Ansprechpartner bei Première Vue für Anfrage und Anreise",
+        "einem festen Ansprechpartner für Anfrage und Anreise",
         "dem Begrüßungsritual von La Gemmerie – Willkommenstablett bei Ankunft und am nächsten Morgen eine Spezialität der Landes mit handgeschriebener Karte"
       ]
     },

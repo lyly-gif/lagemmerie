@@ -82,7 +82,8 @@
     "guestHelp": "1 to 8 guests",
     "guestError": "Please select the number of guests before continuing.",
     "loadingText": "Loading availability…",
-    "partnerNote": "Once you have selected your dates, you will be redirected to the secure website of Première Vue, our concierge partner."
+    "partnerNote": "You will be redirected to the secure website of our concierge partner, Première Vue, to finalise your request.",
+    "termsNote": "Cleaning fee, tourist tax, cancellation terms and refundable deposit are detailed before you confirm."
   },
   "practical": {
     "kicker": "Good to know",
@@ -173,7 +174,7 @@
       "note": "The map shows the neighbourhood; the exact address is shared once your booking is confirmed."
     },
     "availability": {
-      "intro": "Availability is synchronised with our concierge partner Première Vue."
+      "intro": "Real availability, updated live."
     }
   },
   "spaces": {
@@ -402,24 +403,14 @@
   "rates": {
     "kicker": "Stay",
     "title": "Plan your stay",
-    "intro": "Check La Gemmerie’s availability, then visit the secure Première Vue website to see the full price and send your request.",
-    "calendarIntro": "Select your dates to continue. The number of guests is confirmed on the Première Vue website.",
-    "bookingJourney": {
-      "kicker": "Your booking",
-      "title": "A simple journey, supported by Première Vue",
-      "steps": [
-        "Choose your dates in the calendar.",
-        "Review your stay on the secure Première Vue website.",
-        "Send your request: the concierge confirms your stay and arranges your arrival."
-      ],
-      "terms": "Cleaning fees, tourist tax, cancellation terms and the refundable security deposit are shown before confirmation on the Première Vue website."
-    },
+    "intro": "Select your dates below to see the exact rate and send your stay request.",
+    "calendarIntro": "The calendar shows the house's real availability.",
     "whyBookDirect": {
       "kicker": "Why start on our website",
       "title": "A request without major-platform commission, with:",
       "items": [
         "availability synchronised with the concierge calendar",
-        "a named Première Vue contact for your request and arrival",
+        "a named contact for your request and arrival",
         "the La Gemmerie welcome ritual — a welcome tray on arrival, followed by a Landes pastry the next morning with a handwritten note"
       ]
     },

@@ -64,7 +64,8 @@
     "guestHelp": "De 1 à 8 personnes",
     "guestError": "Choisissez le nombre de voyageurs avant de poursuivre.",
     "loadingText": "Chargement des disponibilités…",
-    "partnerNote": "Après avoir choisi vos dates, vous serez redirigé vers l'espace sécurisé de Première Vue, notre conciergerie partenaire."
+    "partnerNote": "Vous serez redirigé vers l'espace sécurisé de notre conciergerie partenaire, Première Vue, pour finaliser votre demande.",
+    "termsNote": "Frais de ménage, taxe de séjour, conditions d'annulation et dépôt de garantie sont détaillés avant validation."
   },
   "practical": {
     "kicker": "Bon à savoir",
@@ -134,7 +135,7 @@
       "note": "La carte indique la zone du quartier ; l'adresse exacte est communiquée après confirmation de réservation."
     },
     "availability": {
-      "intro": "Disponibilités synchronisées avec notre conciergerie partenaire Première Vue."
+      "intro": "Disponibilités réelles, mises à jour en direct."
     }
   },
   "spaces": {
@@ -295,24 +296,14 @@
   "rates": {
     "kicker": "Séjourner",
     "title": "Préparez votre séjour",
-    "intro": "Consultez les disponibilités de La Gemmerie, puis accédez à l'espace sécurisé de notre conciergerie partenaire Première Vue pour voir le tarif détaillé et envoyer votre demande.",
-    "calendarIntro": "Sélectionnez vos dates pour poursuivre. Le nombre de voyageurs sera confirmé sur l'espace Première Vue.",
-    "bookingJourney": {
-      "kicker": "Votre réservation",
-      "title": "Un parcours simple, accompagné par Première Vue",
-      "steps": [
-        "Choisissez vos dates sur le calendrier.",
-        "Consultez le détail du séjour sur l'espace sécurisé Première Vue.",
-        "Envoyez votre demande : la conciergerie confirme le séjour et organise votre arrivée."
-      ],
-      "terms": "Les frais de ménage, la taxe de séjour, les conditions d'annulation et le dépôt de garantie remboursable sont détaillés avant validation sur l'espace Première Vue."
-    },
+    "intro": "Sélectionnez vos dates ci-dessous pour voir le tarif exact et envoyer votre demande de séjour.",
+    "calendarIntro": "Le calendrier affiche les disponibilités réelles de la maison.",
     "whyBookDirect": {
       "kicker": "Pourquoi passer par notre site",
       "title": "Une demande sans commission de grande plateforme, avec :",
       "items": [
         "des disponibilités synchronisées avec le calendrier de la conciergerie",
-        "un contact identifié avec Première Vue pour votre demande et votre arrivée",
+        "un contact identifié pour votre demande et votre arrivée",
         "le rituel d'accueil La Gemmerie — un plateau de bienvenue à votre arrivée, puis une pâtisserie landaise le lendemain matin, accompagnée d'un mot écrit à la main"
       ]
     },

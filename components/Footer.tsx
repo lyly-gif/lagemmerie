@@ -3,11 +3,11 @@ import type { Content, Locale } from "@/lib/content";
 import { localizedPath } from "@/lib/i18n-routing";
 
 const bookingCopy: Record<Locale, { note: string; privacy: string; terms: string; path: string }> = {
-  fr: { note: "Demandes de séjour et paiements sécurisés gérés par notre conciergerie partenaire Première Vue.", privacy: "Confidentialité de la réservation", terms: "CGV de la réservation", path: "fr/" },
-  en: { note: "Stay requests and secure payments are managed by our concierge partner Première Vue.", privacy: "Booking privacy", terms: "Booking terms", path: "" },
-  de: { note: "Aufenthaltsanfragen und sichere Zahlungen werden von unserem Concierge-Partner Première Vue verwaltet.", privacy: "Datenschutz bei der Buchung", terms: "Buchungsbedingungen", path: "de/" },
-  nl: { note: "Verblijfsaanvragen en beveiligde betalingen worden beheerd door onze conciërgepartner Première Vue.", privacy: "Privacy bij boeken", terms: "Boekingsvoorwaarden", path: "" },
-  es: { note: "Las solicitudes y los pagos seguros son gestionados por nuestra conserjería colaboradora Première Vue.", privacy: "Privacidad de la reserva", terms: "Condiciones de reserva", path: "es/" },
+  fr: { note: "Réservation gérée par notre conciergerie partenaire.", privacy: "Confidentialité de la réservation", terms: "CGV de la réservation", path: "fr/" },
+  en: { note: "Booking managed by our concierge partner.", privacy: "Booking privacy", terms: "Booking terms", path: "" },
+  de: { note: "Buchung durch unseren Concierge-Partner.", privacy: "Datenschutz bei der Buchung", terms: "Buchungsbedingungen", path: "de/" },
+  nl: { note: "Boeking beheerd door onze conciërgepartner.", privacy: "Privacy bij boeken", terms: "Boekingsvoorwaarden", path: "" },
+  es: { note: "Reserva gestionada por nuestra conserjería colaboradora.", privacy: "Privacidad de la reserva", terms: "Condiciones de reserva", path: "es/" },
 };
 
 export function Footer({ dict, locale }: { dict: Content; locale: Locale }) {

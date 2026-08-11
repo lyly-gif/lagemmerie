@@ -82,7 +82,8 @@
     "guestHelp": "De 1 a 8 huéspedes",
     "guestError": "Seleccione el número de huéspedes antes de continuar.",
     "loadingText": "Cargando disponibilidad…",
-    "partnerNote": "Tras elegir sus fechas, accederá al espacio seguro de Première Vue, nuestra conserjería colaboradora."
+    "partnerNote": "Será redirigido al espacio seguro de nuestra conserjería colaboradora, Première Vue, para finalizar su solicitud.",
+    "termsNote": "Los gastos de limpieza, la tasa turística, las condiciones de cancelación y la fianza reembolsable se detallan antes de confirmar."
   },
   "practical": {
     "kicker": "Información útil",
@@ -173,7 +174,7 @@
       "note": "El mapa indica la zona; la dirección exacta se comunica tras confirmar la reserva."
     },
     "availability": {
-      "intro": "Disponibilidad sincronizada con nuestra conserjería colaboradora Première Vue."
+      "intro": "Disponibilidad real, actualizada al instante."
     }
   },
   "spaces": {
@@ -402,24 +403,14 @@
   "rates": {
     "kicker": "Alojarse",
     "title": "Prepare su estancia",
-    "intro": "Consulte la disponibilidad y acceda al espacio seguro de Première Vue para ver el precio detallado y enviar su solicitud.",
-    "calendarIntro": "Seleccione sus fechas. El número de huéspedes se confirma después en Première Vue.",
-    "bookingJourney": {
-      "kicker": "Su reserva",
-      "title": "Un proceso sencillo, acompañado por Première Vue",
-      "steps": [
-        "Elija sus fechas en el calendario.",
-        "Revise los detalles en el espacio seguro de Première Vue.",
-        "Envíe su solicitud: la conserjería confirma la estancia y organiza su llegada."
-      ],
-      "terms": "La limpieza, tasa turística, cancelación y fianza reembolsable se detallan antes de confirmar."
-    },
+    "intro": "Seleccione sus fechas a continuación para ver la tarifa exacta y enviar su solicitud de estancia.",
+    "calendarIntro": "El calendario muestra la disponibilidad real de la casa.",
     "whyBookDirect": {
       "kicker": "Por qué empezar en nuestra web",
       "title": "Una solicitud sin comisión de grandes plataformas, con:",
       "items": [
         "disponibilidad sincronizada",
-        "un contacto identificado en Première Vue para su solicitud y llegada",
+        "un contacto identificado para su solicitud y llegada",
         "el ritual de bienvenida de La Gemmerie: bandeja de bienvenida y, a la mañana siguiente, un dulce landés con una nota manuscrita"
       ]
     },

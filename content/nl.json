@@ -82,7 +82,8 @@
     "guestHelp": "1 tot 8 gasten",
     "guestError": "Kies het aantal gasten voordat u verdergaat.",
     "loadingText": "Beschikbaarheid laden…",
-    "partnerNote": "Na het kiezen van uw data wordt u doorgestuurd naar de beveiligde Engelstalige omgeving van Première Vue, onze conciërgepartner."
+    "partnerNote": "U wordt doorgestuurd naar de beveiligde (Engelstalige) omgeving van onze conciërgepartner Première Vue om uw aanvraag af te ronden.",
+    "termsNote": "Schoonmaakkosten, toeristenbelasting, annuleringsvoorwaarden en terugbetaalbare borg worden getoond vóór bevestiging."
   },
   "practical": {
     "kicker": "Goed om te weten",
@@ -173,7 +174,7 @@
       "note": "De kaart toont de buurt; het exacte adres ontvangt u na bevestiging van de boeking."
     },
     "availability": {
-      "intro": "De beschikbaarheid is gesynchroniseerd met onze conciërgepartner Première Vue."
+      "intro": "Actuele beschikbaarheid, live bijgewerkt."
     }
   },
   "spaces": {
@@ -402,24 +403,14 @@
   "rates": {
     "kicker": "Verblijven",
     "title": "Plan uw verblijf",
-    "intro": "Bekijk de beschikbaarheid en ga vervolgens naar de beveiligde omgeving van Première Vue voor de volledige prijs en uw aanvraag.",
-    "calendarIntro": "Kies uw data. Het aantal gasten bevestigt u vervolgens bij Première Vue.",
-    "bookingJourney": {
-      "kicker": "Uw boeking",
-      "title": "Een eenvoudig proces, begeleid door Première Vue",
-      "steps": [
-        "Kies uw data in de kalender.",
-        "Bekijk de details in de beveiligde Première Vue-omgeving.",
-        "Verstuur uw aanvraag: de conciërge bevestigt uw verblijf en regelt uw aankomst."
-      ],
-      "terms": "Schoonmaakkosten, toeristenbelasting, annuleringsvoorwaarden en terugbetaalbare waarborg worden vóór bevestiging getoond."
-    },
+    "intro": "Kies hieronder uw data om de exacte prijs te zien en uw aanvraag te versturen.",
+    "calendarIntro": "De kalender toont de echte beschikbaarheid van het huis.",
     "whyBookDirect": {
       "kicker": "Waarom via onze site",
       "title": "Een aanvraag zonder commissie van grote platforms, met:",
       "items": [
         "gesynchroniseerde beschikbaarheid",
-        "een vast contact bij Première Vue voor aanvraag en aankomst",
+        "een vast contact voor aanvraag en aankomst",
         "het welkomstritueel van La Gemmerie — een welkomstplateau en de volgende ochtend een specialiteit uit de Landes met handgeschreven kaart"
       ]
     },

@@ -42,28 +42,9 @@ export default async function TarifsPage() {
           loadingText={dict.calendar.loadingText}
           partnerNote={dict.calendar.partnerNote}
         />
-      </Reveal>
-
-      <Reveal className="mt-16">
-        <div className="border border-line bg-sand-200/60 p-7 md:p-9">
-          <Kicker>{r.bookingJourney.kicker}</Kicker>
-          <h2 className="mt-4 font-display text-2xl text-forest-950 md:text-3xl">
-            {r.bookingJourney.title}
-          </h2>
-          <ol className="mt-7 grid gap-6 md:grid-cols-3">
-            {r.bookingJourney.steps.map((step, index) => (
-              <li key={step} className="flex gap-4 text-sm leading-relaxed text-forest-800/80">
-                <span className="font-display text-xl text-bronze-700 italic">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                {step}
-              </li>
-            ))}
-          </ol>
-          <p className="mt-7 border-t border-line pt-5 text-xs leading-relaxed text-forest-800/65">
-            {r.bookingJourney.terms}
-          </p>
-        </div>
+        <p className="mt-3 max-w-2xl text-xs leading-relaxed text-forest-800/60">
+          {dict.calendar.termsNote}
+        </p>
       </Reveal>
 
       {/* Pourquoi réserver en direct */}
