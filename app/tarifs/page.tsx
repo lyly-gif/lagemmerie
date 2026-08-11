@@ -39,10 +39,6 @@ export default async function TarifsPage() {
           locale={locale}
           reserveButtonText={dict.calendar.reserveButton}
           clearButtonText={dict.calendar.clearButton}
-          guestLabel={dict.calendar.guestLabel}
-          guestPlaceholder={dict.calendar.guestPlaceholder}
-          guestHelp={dict.calendar.guestHelp}
-          guestError={dict.calendar.guestError}
           loadingText={dict.calendar.loadingText}
           partnerNote={dict.calendar.partnerNote}
         />
