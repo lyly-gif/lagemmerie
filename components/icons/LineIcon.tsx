@@ -27,16 +27,20 @@ const paths: Record<string, React.ReactNode> = {
     </>
   ),
   kitchen: (
-    <path
-      d="M5 21h14M6 21V10M18 21V10M4 10h16M6 10c0-3 2.5-6 6-6s6 3 6 6"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <>
+      <rect x="4" y="6" width="16" height="14" rx="1" />
+      <g fill="currentColor" stroke="none">
+        <circle cx="9" cy="11" r="1.3" />
+        <circle cx="15" cy="11" r="1.3" />
+        <circle cx="9" cy="16" r="1.3" />
+        <circle cx="15" cy="16" r="1.3" />
+      </g>
+    </>
   ),
   linens: (
     <>
-      <rect x="3" y="8" width="18" height="10" rx="1" />
-      <path d="M3 12h18M7 8V6a2 2 0 012-2h6a2 2 0 012 2v2" strokeLinecap="round" />
+      <rect x="4" y="7" width="16" height="4" rx="1" />
+      <rect x="4" y="14" width="16" height="4" rx="1" />
     </>
   ),
   families: (
@@ -53,8 +57,13 @@ const paths: Record<string, React.ReactNode> = {
   ),
   laundry: (
     <>
-      <rect x="3" y="6" width="18" height="14" rx="1" />
-      <circle cx="12" cy="14" r="4" />
+      <rect x="4" y="3" width="16" height="18" rx="2" />
+      <g fill="currentColor" stroke="none">
+        <circle cx="8" cy="6" r="0.7" />
+        <circle cx="11" cy="6" r="0.7" />
+      </g>
+      <circle cx="12" cy="14" r="4.3" />
+      <path d="M10 12.6a2.3 2.3 0 002.7 3.7" strokeLinecap="round" />
     </>
   ),
   cleaning: (
@@ -71,20 +80,24 @@ const paths: Record<string, React.ReactNode> = {
   ),
   smokeDetector: (
     <>
-      <rect x="4" y="10" width="16" height="9" rx="1" />
-      <path d="M8 10V7a4 4 0 018 0v3" strokeLinecap="round" />
+      <circle cx="12" cy="12" r="7" />
+      <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none" />
+      <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22" strokeLinecap="round" />
     </>
   ),
   poolSafety: (
-    <path
-      d="M4 12h16M4 12a8 8 0 0116 0M4 12a8 8 0 0016 0"
-      strokeLinecap="round"
-    />
+    <>
+      <path d="M4 20V8M9 20V8M14 20V8M19 20V8" strokeLinecap="round" />
+      <path d="M2 8h19" strokeLinecap="round" />
+    </>
   ),
   garden: (
     <>
-      <circle cx="12" cy="12" r="9" />
-      <path d="M8 12h8M8 9h8M8 15h5" strokeLinecap="round" />
+      <path
+        d="M12 21C7 21 4 17 4 11c0-3 1.5-6 4-8 3 2 8 5 8 11 0 4-2 7-4 7z"
+        strokeLinejoin="round"
+      />
+      <path d="M12 21V9" strokeLinecap="round" />
     </>
   ),
   surf: (

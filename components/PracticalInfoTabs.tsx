@@ -15,9 +15,12 @@ export function PracticalInfoTabs({ dict, locale }: { dict: Content; locale: Loc
         <p className="mb-6 text-xs font-medium tracking-[0.14em] text-bronze-700 uppercase">
           {p.tabs.equip}
         </p>
-        <div className="grid grid-cols-2 gap-x-4 gap-y-6 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
           {p.equipment.items.map((item: { icon: string; label: string }) => (
-            <div key={item.label} className="flex items-center gap-3 text-sm text-forest-800">
+            <div
+              key={item.label}
+              className="flex items-center gap-3 border border-line/70 bg-sand-50/60 px-4 py-3.5 text-sm text-forest-800"
+            >
               <LineIcon name={item.icon as IconName} className="h-5 w-5 shrink-0 text-bronze-600" />
               {item.label}
             </div>

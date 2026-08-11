@@ -1,3 +1,5 @@
+import { statSync } from "node:fs";
+import path from "node:path";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
@@ -8,12 +10,39 @@ import { NameSymbol } from "@/components/NameSymbol";
 import { PracticalInfoTabs } from "@/components/PracticalInfoTabs";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
-import { featured } from "@/lib/images";
+import { featured, type FeaturedKey } from "@/lib/images";
 import { localizedPath } from "@/lib/i18n-routing";
 import { createLocalizedMetadata } from "@/lib/seo";
 
 export async function generateMetadata() {
   return createLocalizedMetadata(await getCurrentLocale(), "home");
+}
+
+// Picks the first gallery photo that isn't a byte-identical copy of the
+// featured base photo (compared by file size — cheap and exact for our
+// untouched JPEGs). A fixed index (e.g. galleryNumbers[1]) isn't reliable:
+// which index duplicates the featured shot varies per space, and swapping
+// a photo for an identical copy of itself reads as "the hover does
+// nothing" (recurring bug — see SpacesCarousel history).
+const PUBLIC_DIR = path.join(process.cwd(), "public");
+
+function fileSize(publicPath: string): number | null {
+  try {
+    return statSync(path.join(PUBLIC_DIR, publicPath)).size;
+  } catch {
+    return null;
+  }
+}
+
+function pickHoverSrc(featuredSrc: string, galleryNumbers?: number[]): string | null {
+  if (!galleryNumbers?.length) return null;
+  const baseSize = fileSize(featuredSrc);
+  for (const n of galleryNumbers) {
+    const src = `/images/gallery/${String(n).padStart(2, "0")}.jpg`;
+    if (fileSize(src) !== baseSize) return src;
+  }
+  const [first] = galleryNumbers;
+  return `/images/gallery/${String(first).padStart(2, "0")}.jpg`;
 }
 
 export default async function HomePage() {
@@ -27,7 +56,7 @@ export default async function HomePage() {
   const bannerImages = [
     { src: featured["pool-house-dejeuner"], alt: `${dict.spaces.items[0].title} — La Gemmerie` },
     { src: featured["chambre-secondaire"], alt: `${dict.spaces.items[4].title} — La Gemmerie` },
-    { src: featured["salle-de-bain"], alt: `${dict.spaces.bathrooms.title} — La Gemmerie` },
+    { src: featured["facade-exterieure"], alt: "Façade de la maison landaise — La Gemmerie" },
   ];
 
   return (
@@ -81,13 +110,13 @@ export default async function HomePage() {
           pratiques). */}
       <section className="grain bg-forest-950 px-6 py-14 text-sand-100 md:px-10 md:py-16">
         <Reveal className="mx-auto flex max-w-4xl flex-col items-center gap-8 text-center md:flex-row md:items-center md:gap-12 md:text-left">
-          <NameSymbol className="h-20 w-auto shrink-0 md:h-28" />
+          <NameSymbol className="h-28 w-auto shrink-0 md:h-44" />
           <div>
             <Kicker tone="sand" className="justify-center md:justify-start">
               {dict.home.manifesto.kicker}
             </Kicker>
-            <h2 className="mt-3 font-display text-2xl md:text-4xl">
-              La <span className="text-bronze-400">Gemmerie</span>
+            <h2 className="mt-3 font-display text-2xl text-bronze-400 md:text-4xl">
+              La Gemmerie
             </h2>
             <div className="mt-4 flex flex-col gap-2.5">
               {dict.home.manifesto.paragraphs.map((p) => (
@@ -102,7 +131,7 @@ export default async function HomePage() {
 
       {/* Chiffres clés — bande autonome, sortie de la section narrative */}
       <section className="border-y border-line/60 bg-sand-200 py-10">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 md:grid-cols-3 md:px-10">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 text-center md:grid-cols-3 md:px-10">
           {dict.home.facts.map((fact) => (
             <div key={fact.label}>
               <p className="font-display text-2xl text-bronze-700 italic md:text-3xl">
@@ -138,7 +167,13 @@ export default async function HomePage() {
 
         <Reveal delay={200} className="px-6 md:px-10">
           <SpacesCarousel
-            items={dict.spaces.items}
+            items={dict.spaces.items.map((item) => ({
+              ...item,
+              hoverSrc: pickHoverSrc(
+                featured[item.imageKey as FeaturedKey],
+                item.galleryNumbers
+              ),
+            }))}
             differentiatorTag={dict.home.spacesPreview.differentiatorTag}
             locale={locale}
           />

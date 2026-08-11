@@ -21,7 +21,7 @@ type SpaceItem = {
   slug: string;
   title: string;
   imageKey: string;
-  galleryNumbers: number[];
+  hoverSrc: string | null;
 };
 
 export function SpacesCarousel({
@@ -89,15 +89,7 @@ export function SpacesCarousel({
         style={{ scrollSnapType: "x mandatory" }}
       >
         {items.map((item, i) => {
-          // galleryNumbers[0] is frequently the exact same photo as the
-          // "featured" image already shown as the base (that's usually how
-          // the featured shot was chosen in the first place) — swapping a
-          // photo for an identical copy of itself reads as "nothing
-          // happened". [1] is reliably a different shot.
-          const hoverNumber = item.galleryNumbers?.[1] ?? item.galleryNumbers?.[0];
-          const hoverSrc = hoverNumber
-            ? `/images/gallery/${String(hoverNumber).padStart(2, "0")}.jpg`
-            : null;
+          const hoverSrc = item.hoverSrc;
           const showAlt = !!hoverSrc && (hovered === i || (hovered === null && autoAlt));
           return (
           <Link
