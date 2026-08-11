@@ -296,12 +296,12 @@
     "kicker": "Séjourner",
     "title": "Préparez votre séjour",
     "intro": "Consultez les disponibilités de La Gemmerie, puis accédez à l'espace sécurisé de notre conciergerie partenaire Première Vue pour voir le tarif détaillé et envoyer votre demande.",
-    "calendarIntro": "Sélectionnez vos dates et le nombre de voyageurs pour poursuivre.",
+    "calendarIntro": "Sélectionnez vos dates pour poursuivre. Le nombre de voyageurs sera confirmé sur l'espace Première Vue.",
     "bookingJourney": {
       "kicker": "Votre réservation",
       "title": "Un parcours simple, accompagné par Première Vue",
       "steps": [
-        "Choisissez vos dates et le nombre de voyageurs.",
+        "Choisissez vos dates sur le calendrier.",
         "Consultez le détail du séjour sur l'espace sécurisé Première Vue.",
         "Envoyez votre demande : la conciergerie confirme le séjour et organise votre arrivée."
       ],

@@ -403,12 +403,12 @@
     "kicker": "Verblijven",
     "title": "Plan uw verblijf",
     "intro": "Bekijk de beschikbaarheid en ga vervolgens naar de beveiligde omgeving van Première Vue voor de volledige prijs en uw aanvraag.",
-    "calendarIntro": "Kies uw data en aantal gasten.",
+    "calendarIntro": "Kies uw data. Het aantal gasten bevestigt u vervolgens bij Première Vue.",
     "bookingJourney": {
       "kicker": "Uw boeking",
       "title": "Een eenvoudig proces, begeleid door Première Vue",
       "steps": [
-        "Kies uw data en aantal gasten.",
+        "Kies uw data in de kalender.",
         "Bekijk de details in de beveiligde Première Vue-omgeving.",
         "Verstuur uw aanvraag: de conciërge bevestigt uw verblijf en regelt uw aankomst."
       ],

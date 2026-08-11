@@ -403,12 +403,12 @@
     "kicker": "Alojarse",
     "title": "Prepare su estancia",
     "intro": "Consulte la disponibilidad y acceda al espacio seguro de Première Vue para ver el precio detallado y enviar su solicitud.",
-    "calendarIntro": "Seleccione fechas y número de huéspedes.",
+    "calendarIntro": "Seleccione sus fechas. El número de huéspedes se confirma después en Première Vue.",
     "bookingJourney": {
       "kicker": "Su reserva",
       "title": "Un proceso sencillo, acompañado por Première Vue",
       "steps": [
-        "Elija fechas y número de huéspedes.",
+        "Elija sus fechas en el calendario.",
         "Revise los detalles en el espacio seguro de Première Vue.",
         "Envíe su solicitud: la conserjería confirma la estancia y organiza su llegada."
       ],

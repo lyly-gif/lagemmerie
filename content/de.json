@@ -403,12 +403,12 @@
     "kicker": "Aufenthalt",
     "title": "Planen Sie Ihren Aufenthalt",
     "intro": "Prüfen Sie die Verfügbarkeit und wechseln Sie anschließend zum sicheren Bereich von Première Vue, um den Gesamtpreis anzusehen und Ihre Anfrage zu senden.",
-    "calendarIntro": "Wählen Sie Reisedaten und Gästezahl.",
+    "calendarIntro": "Wählen Sie Ihre Reisedaten. Die Gästezahl bestätigen Sie anschließend bei Première Vue.",
     "bookingJourney": {
       "kicker": "Ihre Buchung",
       "title": "Ein einfacher Ablauf, begleitet von Première Vue",
       "steps": [
-        "Wählen Sie Reisedaten und Gästezahl.",
+        "Wählen Sie Ihre Reisedaten im Kalender.",
         "Prüfen Sie die Details im sicheren Bereich von Première Vue.",
         "Senden Sie Ihre Anfrage: Der Concierge bestätigt den Aufenthalt und organisiert Ihre Anreise."
       ],

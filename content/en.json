@@ -403,12 +403,12 @@
     "kicker": "Stay",
     "title": "Plan your stay",
     "intro": "Check La Gemmerie’s availability, then visit the secure Première Vue website to see the full price and send your request.",
-    "calendarIntro": "Select your dates and number of guests to continue.",
+    "calendarIntro": "Select your dates to continue. The number of guests is confirmed on the Première Vue website.",
     "bookingJourney": {
       "kicker": "Your booking",
       "title": "A simple journey, supported by Première Vue",
       "steps": [
-        "Choose your dates and number of guests.",
+        "Choose your dates in the calendar.",
         "Review your stay on the secure Première Vue website.",
         "Send your request: the concierge confirms your stay and arranges your arrival."
       ],
