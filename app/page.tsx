@@ -174,7 +174,6 @@ export default async function HomePage() {
                 item.galleryNumbers
               ),
             }))}
-            differentiatorTag={dict.home.spacesPreview.differentiatorTag}
             locale={locale}
           />
         </Reveal>

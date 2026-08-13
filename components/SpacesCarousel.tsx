@@ -26,11 +26,9 @@ type SpaceItem = {
 
 export function SpacesCarousel({
   items,
-  differentiatorTag,
   locale,
 }: {
   items: SpaceItem[];
-  differentiatorTag: string;
   locale: Locale;
 }) {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -122,11 +120,6 @@ export function SpacesCarousel({
                   showAlt ? "opacity-100" : "opacity-0"
                 }`}
               />
-            )}
-            {i === 0 && (
-              <span className="absolute top-4 left-4 bg-bronze-600 px-2.5 py-1.5 text-[10px] tracking-[0.1em] text-sand-50 uppercase">
-                {differentiatorTag}
-              </span>
             )}
             <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-forest-950/85 via-forest-950/10 to-transparent p-5">
               <span className="font-display text-sm text-bronze-400 italic">{item.number}</span>
