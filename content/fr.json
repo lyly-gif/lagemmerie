@@ -47,7 +47,7 @@
     "spacesPreview": {
       "kicker": "Le différenciateur",
       "title": "Les 5 espaces de vie",
-      "intro": "150 m² de maison landaise, 40 m² de pool house indépendant, une piscine chauffée d'avril à octobre - de jolis espaces pour préserver l'indépendance de chacun et permettre les moments de plaisir partagés.",
+      "intro": "150 m² de maison landaise, 40 m² de pool house indépendant, une piscine chauffée d'avril à octobre — de jolis espaces pour préserver l'indépendance de chacun et permettre les moments de plaisir partagés.",
       "cta": "Voir les 5 espaces",
       "differentiatorTag": "Le différenciateur"
     },
@@ -142,7 +142,7 @@
     "kicker": "Le différenciateur",
     "title": "Les 5 espaces de vie",
     "intro": "Le point commun des familles qui choisissent La Gemmerie : plusieurs générations, plusieurs rythmes, un seul toit. Chaque espace a été pensé pour qu'on puisse s'y retrouver — ou s'y retirer.",
-    "architectureNote": "Charpente et tomettes, larges baies vitrées sur le jardin, poêle à bois pour les ailes de saison — une architecture régionale respectée plutôt que reconstituée.",
+    "architectureNote": "Charpente et tomettes, larges baies vitrées sur le jardin, poêle à bois pour les soirées fraîches — une architecture régionale respectée plutôt que reconstituée.",
     "facts": [
       { "label": "Capacité", "value": "8 personnes" },
       { "label": "Chambres", "value": "4" },
@@ -278,7 +278,7 @@
   "gallery": {
     "kicker": "En images",
     "title": "Galerie",
-    "intro": "La maison et le pool house, tels qu'ils sont — espace par espace.",
+    "intro": "De la piscine aux chambres, un aperçu complet de la maison.",
     "categories": {
       "poolHouse": "Le pool house",
       "poolGarden": "La piscine & le jardin",

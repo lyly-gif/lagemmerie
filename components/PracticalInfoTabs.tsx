@@ -26,7 +26,7 @@ export function PracticalInfoTabs({ dict, locale }: { dict: Content; locale: Loc
             </div>
           ))}
         </div>
-        <details className="group mt-10 border-y border-line">
+        <details className="group mt-10 border-t border-line">
           <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 text-xs font-medium tracking-[0.1em] text-bronze-700 uppercase focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze-600 [&::-webkit-details-marker]:hidden">
             <span>{p.equipment.moreCta}</span>
             <span
