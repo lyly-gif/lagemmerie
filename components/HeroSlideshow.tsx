@@ -59,7 +59,7 @@ export function HeroSlideshow({
         </div>
       ))}
 
-      <div className="absolute right-4 bottom-10 z-10 flex items-center gap-1 md:right-8 md:bottom-16">
+      <div className="absolute right-4 bottom-10 z-10 flex items-center gap-2 md:right-8 md:bottom-16 md:gap-1">
         {images.map((img, i) => (
           <button
             key={img.src}
@@ -67,9 +67,9 @@ export function HeroSlideshow({
             aria-label={`${controls[locale].photo} ${i + 1}`}
             aria-current={i === current}
             onClick={() => setCurrent(i)}
-            className="flex h-11 w-10 items-center justify-center focus-visible:outline-2 focus-visible:outline-sand-50"
+            className="flex h-11 w-11 items-center justify-center focus-visible:outline-2 focus-visible:outline-sand-50 md:w-10"
           >
-            <span className={`h-[3px] w-[26px] transition-colors ${i === current ? "bg-bronze-400" : "bg-sand-100/35"}`} />
+            <span className={`h-1 w-8 transition-colors md:h-[3px] md:w-[26px] ${i === current ? "bg-bronze-400" : "bg-sand-100/35"}`} />
           </button>
         ))}
         <button
