@@ -95,7 +95,7 @@ export default async function EspacesPage() {
               className="mx-auto max-w-7xl scroll-mt-20 px-6 py-16 md:px-10 md:py-20"
             >
               <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
-                <Reveal className={reversed ? "md:order-2" : "order-2 md:order-1"}>
+                <Reveal className={reversed ? "md:order-2" : "md:order-1"}>
                   <p className="font-display text-6xl text-bronze-500/50 italic md:text-7xl">
                     {item.number}
                   </p>
@@ -108,7 +108,7 @@ export default async function EspacesPage() {
                 </Reveal>
                 <Reveal
                   delay={120}
-                  className={reversed ? "md:order-1" : "order-1 md:order-2"}
+                  className={reversed ? "md:order-1" : "md:order-2"}
                 >
                   <div className="relative aspect-[4/5] overflow-hidden bg-forest-900">
                     <Image
