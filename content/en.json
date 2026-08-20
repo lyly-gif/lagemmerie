@@ -63,7 +63,7 @@
       }
     ],
     "spacesPreview": {
-      "kicker": "What sets it apart",
+      "kicker": "The layout",
       "title": "The 5 living spaces",
       "intro": "A 150 m² Landes home, an independent 40 m² pool house and a heated pool from April to October — beautiful spaces that give everyone room of their own and make shared moments effortless.",
       "cta": "Explore the 5 spaces"
@@ -154,7 +154,7 @@
       ]
     },
     "location": {
-      "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
+      "mapQuery": "43.5987208,-1.4709293",
       "mapLabel": "Labenne Ocean, Landes",
       "facts": [
         {
@@ -177,7 +177,7 @@
     }
   },
   "spaces": {
-    "kicker": "What sets it apart",
+    "kicker": "The layout",
     "title": "The 5 living spaces",
     "intro": "Families who choose La Gemmerie often share one thing: several generations, different rhythms, one home. Every space is designed for being together — or taking a moment for yourself.",
     "architectureNote": "Exposed beams and terracotta tiles, wide glass doors opening onto the garden, a wood-burning stove for the quieter seasons — regional architecture respected, never recreated.",

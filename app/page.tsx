@@ -51,7 +51,7 @@ export default async function HomePage() {
   const heroImages = [
     { src: featured["hero-piscine-jour"], alt: `${dict.spaces.items[1].title} — La Gemmerie` },
     { src: featured["piscine-oliviers"], alt: `${dict.gallery.categories.poolGarden} — La Gemmerie` },
-    { src: featured["salon"], alt: `${dict.spaces.items[3].title} — La Gemmerie` },
+    { src: "/images/gallery/18.jpg", alt: `${dict.spaces.items[3].title} — La Gemmerie` },
   ];
   const bannerImages = [
     { src: featured["pool-house-dejeuner"], alt: `${dict.spaces.items[0].title} — La Gemmerie` },

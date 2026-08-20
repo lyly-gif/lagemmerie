@@ -37,6 +37,11 @@ type HostawayCalendarWidgetProps = {
   clearButtonText: string;
   loadingText: string;
   partnerNote: string;
+  // The home page shows this same sentence higher up, right under the
+  // section intro, instead of below the calendar (owner: wanted it read
+  // before the widget, not after) — so it renders it itself and asks the
+  // widget not to repeat it.
+  showPartnerNote?: boolean;
 };
 
 export function HostawayCalendarWidget({
@@ -45,6 +50,7 @@ export function HostawayCalendarWidget({
   clearButtonText,
   loadingText,
   partnerNote,
+  showPartnerNote = true,
 }: HostawayCalendarWidgetProps) {
   const [loaded, setLoaded] = useState(false);
   const [loadFallback, setLoadFallback] = useState(false);
@@ -145,7 +151,9 @@ export function HostawayCalendarWidget({
         ref={containerRef}
         className={loaded ? undefined : "hidden"}
       />
-      <p className="mt-5 max-w-2xl text-xs leading-relaxed text-forest-800/65">{partnerNote}</p>
+      {showPartnerNote && (
+        <p className="mt-5 max-w-2xl text-xs leading-relaxed text-forest-800/65">{partnerNote}</p>
+      )}
     </div>
   );
 }

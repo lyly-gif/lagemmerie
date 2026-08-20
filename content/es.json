@@ -63,7 +63,7 @@
       }
     ],
     "spacesPreview": {
-      "kicker": "Lo que la distingue",
+      "kicker": "La distribución",
       "title": "Los 5 espacios",
       "intro": "150 m² de casa landesa, un pool house independiente de 40 m² y una piscina climatizada de abril a octubre: espacios para preservar la independencia de cada uno y disfrutar juntos.",
       "cta": "Descubrir los 5 espacios"
@@ -154,7 +154,7 @@
       ]
     },
     "location": {
-      "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
+      "mapQuery": "43.5987208,-1.4709293",
       "mapLabel": "Labenne-Océan, Landas",
       "facts": [
         {
@@ -177,7 +177,7 @@
     }
   },
   "spaces": {
-    "kicker": "Lo que la distingue",
+    "kicker": "La distribución",
     "title": "Los 5 espacios",
     "intro": "Varias generaciones, ritmos distintos y un solo hogar. Cada espacio está pensado para reunirse o disfrutar de un momento propio.",
     "architectureNote": "Vigas vistas y baldosas de terracota, amplios ventanales al jardín y estufa de leña para entretiempo: una arquitectura regional respetada, no recreada.",

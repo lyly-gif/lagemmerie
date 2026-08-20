@@ -63,7 +63,7 @@
       }
     ],
     "spacesPreview": {
-      "kicker": "Wat het bijzonder maakt",
+      "kicker": "De indeling",
       "title": "De 5 leefruimtes",
       "intro": "Een Landes-huis van 150 m², een zelfstandig poolhouse van 40 m² en een verwarmd zwembad van april tot oktober — mooie ruimtes voor ieders eigen ritme én fijne momenten samen.",
       "cta": "Ontdek de 5 ruimtes"
@@ -154,7 +154,7 @@
       ]
     },
     "location": {
-      "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
+      "mapQuery": "43.5987208,-1.4709293",
       "mapLabel": "Labenne-Océan, Landes",
       "facts": [
         {
@@ -177,7 +177,7 @@
     }
   },
   "spaces": {
-    "kicker": "Wat het bijzonder maakt",
+    "kicker": "De indeling",
     "title": "De 5 leefruimtes",
     "intro": "Meerdere generaties, verschillende ritmes, één huis. Elke ruimte nodigt uit om samen te zijn — of u even terug te trekken.",
     "architectureNote": "Zichtbare balken en terracottategels, brede puien naar de tuin en een houtkachel voor het voor- en naseizoen — regionale architectuur met respect behouden.",

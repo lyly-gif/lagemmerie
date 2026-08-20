@@ -55,7 +55,6 @@ export function Footer({ dict, locale }: { dict: Content; locale: Locale }) {
 
           <div className="flex flex-col gap-2 text-sm text-sand-100/70">
             <p>{dict.footer.address}</p>
-            <p>{dict.site.domain}</p>
             <Link href={localizedPath(locale, "/boutique")} className="mt-3 w-fit text-xs text-bronze-400/80 hover:text-bronze-400">
               {dict.footer.phaseTwoNote}
             </Link>

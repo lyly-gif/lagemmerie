@@ -63,7 +63,7 @@
       }
     ],
     "spacesPreview": {
-      "kicker": "Das Besondere",
+      "kicker": "Die Aufteilung",
       "title": "Die 5 Wohnbereiche",
       "intro": "150 m² traditionelles Landes-Haus, ein unabhängiges Poolhaus mit 40 m² und ein von April bis Oktober beheizter Pool – schöne Räume für persönliche Freiheit und unbeschwerte gemeinsame Momente.",
       "cta": "Die 5 Bereiche entdecken"
@@ -154,7 +154,7 @@
       ]
     },
     "location": {
-      "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
+      "mapQuery": "43.5987208,-1.4709293",
       "mapLabel": "Labenne-Océan, Landes",
       "facts": [
         {
@@ -177,7 +177,7 @@
     }
   },
   "spaces": {
-    "kicker": "Das Besondere",
+    "kicker": "Die Aufteilung",
     "title": "Die 5 Wohnbereiche",
     "intro": "Mehrere Generationen, verschiedene Rhythmen, ein gemeinsames Haus: Dafür wird La Gemmerie gewählt. Jeder Bereich lädt zum Zusammensein ein – oder zum Rückzug.",
     "architectureNote": "Sichtbares Gebälk und Terrakottafliesen, breite Glasfronten zum Garten, ein Holzofen für die Nebensaison – regionale Architektur, respektiert statt nachgeahmt.",

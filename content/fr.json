@@ -45,7 +45,7 @@
       { "label": "Chauffée", "value": "Piscine" }
     ],
     "spacesPreview": {
-      "kicker": "Le différenciateur",
+      "kicker": "L'agencement",
       "title": "Les 5 espaces de vie",
       "intro": "150 m² de maison landaise, 40 m² de pool house indépendant, une piscine chauffée d'avril à octobre — de jolis espaces pour préserver l'indépendance de chacun et permettre les moments de plaisir partagés.",
       "cta": "Voir les 5 espaces"
@@ -118,7 +118,7 @@
       ]
     },
     "location": {
-      "mapQuery": "Labenne-Oc%C3%A9an%2C+40530+Labenne%2C+France",
+      "mapQuery": "43.5987208,-1.4709293",
       "mapLabel": "Labenne-Océan, Landes",
       "facts": [
         {
@@ -138,7 +138,7 @@
     }
   },
   "spaces": {
-    "kicker": "Le différenciateur",
+    "kicker": "L'agencement",
     "title": "Les 5 espaces de vie",
     "intro": "Le point commun des familles qui choisissent La Gemmerie : plusieurs générations, plusieurs rythmes, un seul toit. Chaque espace a été pensé pour qu'on puisse s'y retrouver — ou s'y retirer.",
     "architectureNote": "Charpente et tomettes, larges baies vitrées sur le jardin, poêle à bois pour les soirées fraîches — une architecture régionale respectée plutôt que reconstituée.",

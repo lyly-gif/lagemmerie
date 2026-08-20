@@ -102,8 +102,11 @@ export function PracticalInfoTabs({ dict, locale }: { dict: Content; locale: Loc
         <p className="mb-6 text-xs font-medium tracking-[0.14em] text-bronze-700 uppercase">
           {p.tabs.cal}
         </p>
-        <p className="mb-6 max-w-md text-sm leading-relaxed text-forest-800/80">
+        <p className="mb-2 max-w-md text-sm leading-relaxed text-forest-800/80">
           {p.availability.intro}
+        </p>
+        <p className="mb-6 max-w-md text-xs leading-relaxed text-forest-800/65">
+          {dict.calendar.partnerNote}
         </p>
         <HostawayCalendarWidget
           locale={locale}
@@ -111,6 +114,7 @@ export function PracticalInfoTabs({ dict, locale }: { dict: Content; locale: Loc
           clearButtonText={dict.calendar.clearButton}
           loadingText={dict.calendar.loadingText}
           partnerNote={dict.calendar.partnerNote}
+          showPartnerNote={false}
         />
       </div>
     </div>
