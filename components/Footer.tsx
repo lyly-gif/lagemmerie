@@ -61,6 +61,12 @@ export function Footer({ dict, locale }: { dict: Content; locale: Locale }) {
             <p className="mt-4 max-w-xs text-xs leading-relaxed text-sand-100/50">
               {booking.note}
             </p>
+            <a
+              href={`mailto:${dict.contact.contactEmail}`}
+              className="w-fit text-xs text-sand-100/60 hover:text-bronze-400"
+            >
+              {dict.contact.contactEmail}
+            </a>
           </div>
         </div>
 
