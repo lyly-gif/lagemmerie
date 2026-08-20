@@ -90,7 +90,8 @@
     "tabs": {
       "equip": "Amenities",
       "loc": "Location",
-      "cal": "Availability"
+      "cal": "Availability",
+      "rules": "House rules"
     },
     "equipment": {
       "items": [
@@ -174,6 +175,20 @@
     },
     "availability": {
       "intro": "Real availability, updated live."
+    },
+    "houseRules": {
+      "items": [
+        { "icon": "checkin", "label": "Check-in: 4 PM" },
+        { "icon": "checkout", "label": "Check-out: 10 AM" },
+        { "icon": "noPets", "label": "No pets" },
+        { "icon": "noSmoking", "label": "No smoking indoors" },
+        { "icon": "noParties", "label": "No parties or events" }
+      ],
+      "cancellationTitle": "Cancellation policy",
+      "cancellationItems": [
+        { "title": "100%", "description": "Refunded up to 14 days before arrival" },
+        { "title": "50%", "description": "Refunded up to 7 days before arrival" }
+      ]
     }
   },
   "spaces": {

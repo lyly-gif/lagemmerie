@@ -156,6 +156,46 @@ const paths: Record<string, React.ReactNode> = {
       <circle cx="14.5" cy="6.5" r="1.4" />
     </g>
   ),
+  checkin: (
+    <>
+      <path d="M5 21V10l7-6 7 6v11" strokeLinejoin="round" />
+      <path d="M12 13v6m0 0l-2.5-2.5M12 19l2.5-2.5" strokeLinecap="round" strokeLinejoin="round" />
+    </>
+  ),
+  checkout: (
+    <>
+      <path d="M5 21V10l7-6 7 6v11" strokeLinejoin="round" />
+      <path d="M12 19v-6m0 0l-2.5 2.5M12 13l2.5 2.5" strokeLinecap="round" strokeLinejoin="round" />
+    </>
+  ),
+  noPets: (
+    <>
+      <g fill="currentColor" stroke="none">
+        <circle cx="12" cy="15" r="3.2" />
+        <circle cx="7" cy="10" r="1.6" />
+        <circle cx="17" cy="10" r="1.6" />
+        <circle cx="9.5" cy="6.5" r="1.4" />
+        <circle cx="14.5" cy="6.5" r="1.4" />
+      </g>
+      <path d="M3 3l18 18" strokeLinecap="round" />
+    </>
+  ),
+  noSmoking: (
+    <>
+      <rect x="3" y="14" width="14" height="3.5" rx="0.5" />
+      <path d="M17 14.5h1.5a1.75 1.75 0 010 3.5H17" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6.5 11c0-1.6 1.5-1.6 1.5-3.2S6.5 6.4 6.5 4.8" strokeLinecap="round" />
+      <path d="M3 3l18 18" strokeLinecap="round" />
+    </>
+  ),
+  noParties: (
+    <>
+      <path d="M9 18.5V6l10-2v12.5" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="7" cy="18.5" r="2.2" />
+      <circle cx="17" cy="16.5" r="2.2" />
+      <path d="M3 3l18 18" strokeLinecap="round" />
+    </>
+  ),
 };
 
 export type IconName = keyof typeof paths;

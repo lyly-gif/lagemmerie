@@ -117,6 +117,36 @@ export function PracticalInfoTabs({ dict, locale }: { dict: Content; locale: Loc
           showPartnerNote={false}
         />
       </div>
+
+      <div className="border-t border-line pt-14">
+        <p className="mb-6 text-xs font-medium tracking-[0.14em] text-bronze-700 uppercase">
+          {p.tabs.rules}
+        </p>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+          {p.houseRules.items.map((item: { icon: string; label: string }) => (
+            <div
+              key={item.label}
+              className="flex items-center gap-3 border border-line/70 bg-sand-50/60 px-4 py-3.5 text-sm text-forest-800"
+            >
+              <LineIcon name={item.icon as IconName} className="h-5 w-5 shrink-0 text-bronze-600" />
+              {item.label}
+            </div>
+          ))}
+        </div>
+        <div className="mt-10 border-t border-line/70 pt-8">
+          <p className="mb-5 font-display text-xl text-forest-950 italic">
+            {p.houseRules.cancellationTitle}
+          </p>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {p.houseRules.cancellationItems.map((item: { title: string; description: string }) => (
+              <div key={item.title}>
+                <p className="font-display text-2xl text-bronze-700 italic">{item.title}</p>
+                <p className="mt-1 text-[13px] text-forest-800/70">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

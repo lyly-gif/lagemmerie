@@ -90,7 +90,8 @@
     "tabs": {
       "equip": "Ausstattung",
       "loc": "Lage",
-      "cal": "Verfügbarkeit"
+      "cal": "Verfügbarkeit",
+      "rules": "Hausregeln"
     },
     "equipment": {
       "items": [
@@ -174,6 +175,20 @@
     },
     "availability": {
       "intro": "Echte Verfügbarkeit, live aktualisiert."
+    },
+    "houseRules": {
+      "items": [
+        { "icon": "checkin", "label": "Anreise: 16 Uhr" },
+        { "icon": "checkout", "label": "Abreise: 10 Uhr" },
+        { "icon": "noPets", "label": "Haustiere nicht gestattet" },
+        { "icon": "noSmoking", "label": "Rauchen im Haus nicht gestattet" },
+        { "icon": "noParties", "label": "Feiern und Veranstaltungen nicht gestattet" }
+      ],
+      "cancellationTitle": "Stornierungsbedingungen",
+      "cancellationItems": [
+        { "title": "100 %", "description": "Erstattet bis 14 Tage vor Anreise" },
+        { "title": "50 %", "description": "Erstattet bis 7 Tage vor Anreise" }
+      ]
     }
   },
   "spaces": {

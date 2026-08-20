@@ -90,7 +90,8 @@
     "tabs": {
       "equip": "Voorzieningen",
       "loc": "Ligging",
-      "cal": "Beschikbaarheid"
+      "cal": "Beschikbaarheid",
+      "rules": "Huisregels"
     },
     "equipment": {
       "items": [
@@ -174,6 +175,20 @@
     },
     "availability": {
       "intro": "Actuele beschikbaarheid, live bijgewerkt."
+    },
+    "houseRules": {
+      "items": [
+        { "icon": "checkin", "label": "Aankomst: 16.00 uur" },
+        { "icon": "checkout", "label": "Vertrek: 10.00 uur" },
+        { "icon": "noPets", "label": "Huisdieren niet toegestaan" },
+        { "icon": "noSmoking", "label": "Niet roken binnenshuis" },
+        { "icon": "noParties", "label": "Feesten en evenementen niet toegestaan" }
+      ],
+      "cancellationTitle": "Annuleringsvoorwaarden",
+      "cancellationItems": [
+        { "title": "100%", "description": "Terugbetaald tot 14 dagen voor aankomst" },
+        { "title": "50%", "description": "Terugbetaald tot 7 dagen voor aankomst" }
+      ]
     }
   },
   "spaces": {

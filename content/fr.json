@@ -72,7 +72,8 @@
     "tabs": {
       "equip": "Équipements",
       "loc": "Localisation",
-      "cal": "Disponibilités"
+      "cal": "Disponibilités",
+      "rules": "Règles de la maison"
     },
     "equipment": {
       "items": [
@@ -135,6 +136,20 @@
     },
     "availability": {
       "intro": "Disponibilités réelles, mises à jour en direct."
+    },
+    "houseRules": {
+      "items": [
+        { "icon": "checkin", "label": "Arrivée : 16h" },
+        { "icon": "checkout", "label": "Départ : 10h" },
+        { "icon": "noPets", "label": "Animaux domestiques interdits" },
+        { "icon": "noSmoking", "label": "Interdit de fumer à l'intérieur" },
+        { "icon": "noParties", "label": "Fêtes et événements interdits" }
+      ],
+      "cancellationTitle": "Politique d'annulation",
+      "cancellationItems": [
+        { "title": "100 %", "description": "Remboursé jusqu'à 14 jours avant l'arrivée" },
+        { "title": "50 %", "description": "Remboursé jusqu'à 7 jours avant l'arrivée" }
+      ]
     }
   },
   "spaces": {
