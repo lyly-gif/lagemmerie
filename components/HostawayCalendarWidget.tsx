@@ -152,7 +152,7 @@ export function HostawayCalendarWidget({
         className={loaded ? undefined : "hidden"}
       />
       {showPartnerNote && (
-        <p className="mt-5 max-w-2xl text-xs leading-relaxed text-forest-800/65">{partnerNote}</p>
+        <p className="mt-5 max-w-2xl text-[13px] leading-relaxed text-forest-800/65">{partnerNote}</p>
       )}
     </div>
   );

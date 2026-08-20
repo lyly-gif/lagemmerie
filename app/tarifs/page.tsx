@@ -32,7 +32,7 @@ export default async function TarifsPage() {
       </Reveal>
 
       <Reveal delay={280} className="mt-10">
-        <p className="mb-6 max-w-md text-sm leading-relaxed text-forest-800/80">
+        <p className="mb-6 max-w-md text-base leading-relaxed text-forest-800/80">
           {r.calendarIntro}
         </p>
         <HostawayCalendarWidget
