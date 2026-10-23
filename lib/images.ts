@@ -11,7 +11,6 @@ export const featured = {
   "dortoir-enfants": "/images/featured/dortoir-enfants.jpg",
   "salle-de-bain": "/images/featured/salle-de-bain.jpg",
   "detail-cuisine": "/images/featured/detail-cuisine.jpg",
-  "rituel-accueil": "/images/featured/rituel-accueil.jpg",
   "facade-exterieure": "/images/featured/facade-exterieure.jpg",
   "labenne-ocean-plage-dunes": "/images/featured/labenne-ocean-plage-dunes.jpg",
   "labenne-ocean-plage-coucher-soleil-clotures":
@@ -22,10 +21,9 @@ export const featured = {
 
 export type FeaturedKey = keyof typeof featured;
 
-// Photo 25 (welcome-ritual flat-lay: kraft bag, "Bienvenue" card, Landes
-// towel) is deliberately absent from every group below — it's pulled out of
-// the generic grid and featured on /tarifs instead (brief §5: differentiator
-// worth surfacing, not burying in the gallery).
+// Photo 25 (welcome-ritual flat-lay) was removed in Oct. 2026: the kraft bag
+// carried the former concierge's branding (Première Vue). Number 25 is kept
+// out of every group below; reuse it only for a new, unbranded photo.
 
 // Real pixel dimensions (sips), needed for the masonry layout: <Image>
 // without `fill` sizes itself from width/height, which is what lets each

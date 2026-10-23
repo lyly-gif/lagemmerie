@@ -69,19 +69,26 @@
       "cta": "Explore the 5 spaces"
     },
     "ctaBand": {
-      "title": "Choose your dates, then continue to our concierge’s secure booking area.",
+      "title": "Choose your dates and send your request directly to our concierge.",
       "cta": "View availability"
     }
   },
   "calendar": {
-    "reserveButton": "View rates and continue",
-    "clearButton": "Clear dates",
+    "reserveButton": "Send my request",
+    "arrivalLabel": "Arrival",
+    "departureLabel": "Departure",
     "guestLabel": "Guests",
     "guestPlaceholder": "Select",
     "guestHelp": "1 to 8 guests",
     "guestError": "Please select the number of guests before continuing.",
-    "loadingText": "Loading availability…",
-    "partnerNote": "You will be redirected to the secure website of our concierge partner, Première Vue, to finalise your request.",
+    "nameLabel": "Your name",
+    "messageLabel": "Message (optional)",
+    "dateError": "Please enter an arrival date and a later departure date.",
+    "mailSubject": "Stay request at La Gemmerie",
+    "mailGreeting": "Hello,",
+    "mailIntro": "I would like to stay at La Gemmerie:",
+    "mailHint": "The button opens your email app with the request pre-filled. You can also write to",
+    "partnerNote": "Your request goes straight to our concierge partner, who will confirm availability and the rate.",
     "termsNote": "Cleaning fee, tourist tax, cancellation terms and refundable deposit are detailed before you confirm."
   },
   "practical": {
@@ -174,7 +181,7 @@
       "note": "The map shows the neighbourhood; the exact address is shared once your booking is confirmed."
     },
     "availability": {
-      "intro": "Real availability, updated live."
+      "intro": "Send your dates: our concierge will quickly confirm availability."
     },
     "houseRules": {
       "items": [
@@ -417,13 +424,13 @@
   "rates": {
     "kicker": "Stay",
     "title": "Plan your stay",
-    "intro": "Select your dates below to see the exact rate and send your stay request.",
-    "calendarIntro": "The calendar shows the house's real availability.",
+    "intro": "Enter your dates below: our concierge will confirm availability and the exact rate for your stay.",
+    "calendarIntro": "Your request goes directly to our concierge, with no intermediary.",
     "whyBookDirect": {
       "kicker": "Why start on our website",
       "title": "A request without major-platform commission, with:",
       "items": [
-        "availability synchronised with the concierge calendar",
+        "a direct reply from our concierge, based in Labenne",
         "a named contact for your request and arrival",
         "the La Gemmerie welcome ritual — a welcome tray on arrival, followed by a Landes pastry the next morning with a handwritten note"
       ]
@@ -445,7 +452,7 @@
     },
     "contactTitle": "Any questions?",
     "contactDescription": "Write to us directly; our concierge partner replies promptly.",
-    "contactEmail": "conciergerie@premiere-vue.fr"
+    "contactEmail": "serenconciergerie@gmail.com"
   },
   "shop": {
     "kicker": "Take the experience home",

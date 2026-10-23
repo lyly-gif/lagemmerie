@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { Kicker } from "@/components/Kicker";
-import { HostawayCalendarWidget } from "@/components/HostawayCalendarWidget";
+import { StayRequestForm } from "@/components/StayRequestForm";
 import { getCurrentLocale } from "@/lib/locale";
 import { getDictionary } from "@/lib/content";
 import { featured } from "@/lib/images";
@@ -35,13 +35,7 @@ export default async function TarifsPage() {
         <p className="mb-6 max-w-md text-base leading-relaxed text-forest-800/80">
           {r.calendarIntro}
         </p>
-        <HostawayCalendarWidget
-          locale={locale}
-          reserveButtonText={dict.calendar.reserveButton}
-          clearButtonText={dict.calendar.clearButton}
-          loadingText={dict.calendar.loadingText}
-          partnerNote={dict.calendar.partnerNote}
-        />
+        <StayRequestForm dict={dict} />
         <p className="mt-3 max-w-2xl text-xs leading-relaxed text-forest-800/60">
           {dict.calendar.termsNote}
         </p>
@@ -64,7 +58,7 @@ export default async function TarifsPage() {
         <Reveal delay={120}>
           <div className="relative aspect-[4/5] overflow-hidden bg-forest-900">
             <Image
-              src={featured["rituel-accueil"]}
+              src={featured["pool-house-dejeuner"]}
               alt={`${w.kicker} — ${dict.site.name}`}
               fill
               sizes="(min-width: 768px) 45vw, 100vw"

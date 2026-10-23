@@ -2,12 +2,12 @@ import Link from "next/link";
 import type { Content, Locale } from "@/lib/content";
 import { localizedPath } from "@/lib/i18n-routing";
 
-const bookingCopy: Record<Locale, { note: string; privacy: string; terms: string; path: string }> = {
-  fr: { note: "Réservation gérée par notre conciergerie partenaire.", privacy: "Confidentialité de la réservation", terms: "CGV de la réservation", path: "fr/" },
-  en: { note: "Booking managed by our concierge partner.", privacy: "Booking privacy", terms: "Booking terms", path: "" },
-  de: { note: "Buchung durch unseren Concierge-Partner.", privacy: "Datenschutz bei der Buchung", terms: "Buchungsbedingungen", path: "de/" },
-  nl: { note: "Boeking beheerd door onze conciërgepartner.", privacy: "Privacy bij boeken", terms: "Boekingsvoorwaarden", path: "" },
-  es: { note: "Reserva gestionada por nuestra conserjería colaboradora.", privacy: "Privacidad de la reserva", terms: "Condiciones de reserva", path: "es/" },
+const bookingCopy: Record<Locale, { note: string }> = {
+  fr: { note: "Réservation gérée par notre conciergerie partenaire." },
+  en: { note: "Booking managed by our concierge partner." },
+  de: { note: "Buchung durch unseren Concierge-Partner." },
+  nl: { note: "Boeking beheerd door onze conciërgepartner." },
+  es: { note: "Reserva gestionada por nuestra conserjería colaboradora." },
 };
 
 export function Footer({ dict, locale }: { dict: Content; locale: Locale }) {
@@ -75,20 +75,6 @@ export function Footer({ dict, locale }: { dict: Content; locale: Locale }) {
           <p>
             © {year} {dict.site.name} — {dict.footer.rights}
           </p>
-          <div className="flex flex-wrap gap-x-5 gap-y-2">
-            <a
-              href={`https://premierevue.holidayfuture.com/${booking.path}privacy-policy`}
-              className="transition-colors hover:text-bronze-400"
-            >
-              {booking.privacy}
-            </a>
-            <a
-              href={`https://premierevue.holidayfuture.com/${booking.path}pages/cgv`}
-              className="transition-colors hover:text-bronze-400"
-            >
-              {booking.terms}
-            </a>
-          </div>
         </div>
       </div>
     </footer>

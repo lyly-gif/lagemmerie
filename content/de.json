@@ -69,19 +69,26 @@
       "cta": "Die 5 Bereiche entdecken"
     },
     "ctaBand": {
-      "title": "Wählen Sie Ihre Reisedaten und wechseln Sie anschließend in den sicheren Buchungsbereich unseres Concierge-Partners.",
+      "title": "Wählen Sie Ihre Reisedaten und senden Sie Ihre Anfrage direkt an unseren Concierge-Partner.",
       "cta": "Verfügbarkeit ansehen"
     }
   },
   "calendar": {
-    "reserveButton": "Preis ansehen und fortfahren",
-    "clearButton": "Reisedaten löschen",
+    "reserveButton": "Anfrage senden",
+    "arrivalLabel": "Anreise",
+    "departureLabel": "Abreise",
     "guestLabel": "Gäste",
     "guestPlaceholder": "Auswählen",
     "guestHelp": "1 bis 8 Gäste",
     "guestError": "Bitte wählen Sie vor dem Fortfahren die Anzahl der Gäste.",
-    "loadingText": "Verfügbarkeit wird geladen…",
-    "partnerNote": "Sie werden zum sicheren Bereich unseres Concierge-Partners Première Vue weitergeleitet, um Ihre Anfrage abzuschließen.",
+    "nameLabel": "Ihr Name",
+    "messageLabel": "Nachricht (optional)",
+    "dateError": "Bitte geben Sie ein Anreisedatum und ein späteres Abreisedatum an.",
+    "mailSubject": "Aufenthaltsanfrage für La Gemmerie",
+    "mailGreeting": "Guten Tag,",
+    "mailIntro": "Ich möchte gerne in La Gemmerie übernachten:",
+    "mailHint": "Die Schaltfläche öffnet Ihr E-Mail-Programm mit der vorausgefüllten Anfrage. Sie können auch direkt schreiben an",
+    "partnerNote": "Ihre Anfrage geht direkt an unseren Concierge-Partner, der Ihnen Verfügbarkeit und Preis bestätigt.",
     "termsNote": "Reinigungsgebühr, Kurtaxe, Stornobedingungen und rückzahlbare Kaution werden vor der Bestätigung angezeigt."
   },
   "practical": {
@@ -174,7 +181,7 @@
       "note": "Die Karte zeigt die Lage im Viertel; die genaue Adresse erhalten Sie nach Bestätigung der Buchung."
     },
     "availability": {
-      "intro": "Echte Verfügbarkeit, live aktualisiert."
+      "intro": "Senden Sie uns Ihre Reisedaten: unser Concierge-Partner bestätigt Ihnen schnell die Verfügbarkeit."
     },
     "houseRules": {
       "items": [
@@ -417,13 +424,13 @@
   "rates": {
     "kicker": "Aufenthalt",
     "title": "Planen Sie Ihren Aufenthalt",
-    "intro": "Wählen Sie unten Ihre Reisedaten, um den genauen Preis zu sehen und Ihre Anfrage zu senden.",
-    "calendarIntro": "Der Kalender zeigt die echte Verfügbarkeit des Hauses.",
+    "intro": "Geben Sie unten Ihre Reisedaten an: unser Concierge-Partner bestätigt Ihnen Verfügbarkeit und genauen Preis.",
+    "calendarIntro": "Ihre Anfrage geht direkt an unseren Concierge-Partner, ohne Vermittler.",
     "whyBookDirect": {
       "kicker": "Warum über unsere Website",
       "title": "Eine Anfrage ohne Provision großer Plattformen, mit:",
       "items": [
-        "synchronisierter Verfügbarkeit",
+        "einer direkten Antwort unseres Concierge-Partners vor Ort in Labenne",
         "einem festen Ansprechpartner für Anfrage und Anreise",
         "dem Begrüßungsritual von La Gemmerie – Willkommenstablett bei Ankunft und am nächsten Morgen eine Spezialität der Landes mit handgeschriebener Karte"
       ]
@@ -445,7 +452,7 @@
     },
     "contactTitle": "Noch Fragen?",
     "contactDescription": "Schreiben Sie uns direkt – unser Concierge-Partner antwortet Ihnen zügig.",
-    "contactEmail": "conciergerie@premiere-vue.fr"
+    "contactEmail": "serenconciergerie@gmail.com"
   },
   "shop": {
     "kicker": "Das Erlebnis verlängern",

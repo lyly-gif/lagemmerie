@@ -69,19 +69,26 @@
       "cta": "Ontdek de 5 ruimtes"
     },
     "ctaBand": {
-      "title": "Kies uw data en ga verder in de beveiligde boekingsomgeving van onze conciërgepartner.",
+      "title": "Kies uw data en stuur uw aanvraag rechtstreeks naar onze conciërgepartner.",
       "cta": "Bekijk beschikbaarheid"
     }
   },
   "calendar": {
-    "reserveButton": "Bekijk prijs en ga verder",
-    "clearButton": "Data wissen",
+    "reserveButton": "Aanvraag versturen",
+    "arrivalLabel": "Aankomst",
+    "departureLabel": "Vertrek",
     "guestLabel": "Gasten",
     "guestPlaceholder": "Selecteren",
     "guestHelp": "1 tot 8 gasten",
     "guestError": "Kies het aantal gasten voordat u verdergaat.",
-    "loadingText": "Beschikbaarheid laden…",
-    "partnerNote": "U wordt doorgestuurd naar de beveiligde (Engelstalige) omgeving van onze conciërgepartner Première Vue om uw aanvraag af te ronden.",
+    "nameLabel": "Uw naam",
+    "messageLabel": "Bericht (optioneel)",
+    "dateError": "Vul een aankomstdatum en een latere vertrekdatum in.",
+    "mailSubject": "Verblijfsaanvraag La Gemmerie",
+    "mailGreeting": "Goedendag,",
+    "mailIntro": "Ik wil graag verblijven in La Gemmerie:",
+    "mailHint": "De knop opent uw e-mailprogramma met de aanvraag al ingevuld. U kunt ook schrijven naar",
+    "partnerNote": "Uw aanvraag gaat rechtstreeks naar onze conciërgepartner, die beschikbaarheid en prijs bevestigt.",
     "termsNote": "Schoonmaakkosten, toeristenbelasting, annuleringsvoorwaarden en terugbetaalbare borg worden getoond vóór bevestiging."
   },
   "practical": {
@@ -174,7 +181,7 @@
       "note": "De kaart toont de buurt; het exacte adres ontvangt u na bevestiging van de boeking."
     },
     "availability": {
-      "intro": "Actuele beschikbaarheid, live bijgewerkt."
+      "intro": "Stuur uw data: onze conciërgepartner bevestigt snel de beschikbaarheid."
     },
     "houseRules": {
       "items": [
@@ -417,13 +424,13 @@
   "rates": {
     "kicker": "Verblijven",
     "title": "Plan uw verblijf",
-    "intro": "Kies hieronder uw data om de exacte prijs te zien en uw aanvraag te versturen.",
-    "calendarIntro": "De kalender toont de echte beschikbaarheid van het huis.",
+    "intro": "Vul hieronder uw data in: onze conciërgepartner bevestigt beschikbaarheid en de exacte prijs van uw verblijf.",
+    "calendarIntro": "Uw aanvraag gaat rechtstreeks naar onze conciërgepartner, zonder tussenpersoon.",
     "whyBookDirect": {
       "kicker": "Waarom via onze site",
       "title": "Een aanvraag zonder commissie van grote platforms, met:",
       "items": [
-        "gesynchroniseerde beschikbaarheid",
+        "een direct antwoord van onze conciërgepartner in Labenne",
         "een vast contact voor aanvraag en aankomst",
         "het welkomstritueel van La Gemmerie — een welkomstplateau en de volgende ochtend een specialiteit uit de Landes met handgeschreven kaart"
       ]
@@ -445,7 +452,7 @@
     },
     "contactTitle": "Een vraag?",
     "contactDescription": "Schrijf ons direct; onze conciërgepartner reageert snel.",
-    "contactEmail": "conciergerie@premiere-vue.fr"
+    "contactEmail": "serenconciergerie@gmail.com"
   },
   "shop": {
     "kicker": "Neem de ervaring mee naar huis",

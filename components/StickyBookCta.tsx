@@ -8,7 +8,7 @@ import { localizedPath, stripLocalePrefix } from "@/lib/i18n-routing";
 
 // Mobile-only: the header's "Réserver" button is hidden behind the burger
 // menu below lg, so without this a mobile visitor has to hunt for the CTA.
-// Hidden on /tarifs itself since the real Hostaway widget is already there.
+// Hidden on /tarifs itself since the stay request form is already there.
 export function StickyBookCta({ dict, locale }: { dict: Content; locale: Locale }) {
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);

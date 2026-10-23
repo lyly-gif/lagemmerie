@@ -69,19 +69,26 @@
       "cta": "Descubrir los 5 espacios"
     },
     "ctaBand": {
-      "title": "Elija sus fechas y continúe en el espacio seguro de nuestra conserjería.",
+      "title": "Elija sus fechas y envíe su solicitud directamente a nuestra conserjería.",
       "cta": "Ver disponibilidad"
     }
   },
   "calendar": {
-    "reserveButton": "Ver tarifa y continuar",
-    "clearButton": "Borrar fechas",
+    "reserveButton": "Enviar mi solicitud",
+    "arrivalLabel": "Llegada",
+    "departureLabel": "Salida",
     "guestLabel": "Huéspedes",
     "guestPlaceholder": "Seleccionar",
     "guestHelp": "De 1 a 8 huéspedes",
     "guestError": "Seleccione el número de huéspedes antes de continuar.",
-    "loadingText": "Cargando disponibilidad…",
-    "partnerNote": "Será redirigido al espacio seguro de nuestra conserjería colaboradora, Première Vue, para finalizar su solicitud.",
+    "nameLabel": "Su nombre",
+    "messageLabel": "Mensaje (opcional)",
+    "dateError": "Indique una fecha de llegada y una fecha de salida posterior.",
+    "mailSubject": "Solicitud de estancia en La Gemmerie",
+    "mailGreeting": "Hola,",
+    "mailIntro": "Me gustaría alojarme en La Gemmerie:",
+    "mailHint": "El botón abre su correo con la solicitud ya rellenada. También puede escribir a",
+    "partnerNote": "Su solicitud llega directamente a nuestra conserjería colaboradora, que le confirmará la disponibilidad y la tarifa.",
     "termsNote": "Los gastos de limpieza, la tasa turística, las condiciones de cancelación y la fianza reembolsable se detallan antes de confirmar."
   },
   "practical": {
@@ -174,7 +181,7 @@
       "note": "El mapa indica la zona; la dirección exacta se comunica tras confirmar la reserva."
     },
     "availability": {
-      "intro": "Disponibilidad real, actualizada al instante."
+      "intro": "Envíenos sus fechas: nuestra conserjería le confirmará rápidamente la disponibilidad."
     },
     "houseRules": {
       "items": [
@@ -417,13 +424,13 @@
   "rates": {
     "kicker": "Alojarse",
     "title": "Prepare su estancia",
-    "intro": "Seleccione sus fechas a continuación para ver la tarifa exacta y enviar su solicitud de estancia.",
-    "calendarIntro": "El calendario muestra la disponibilidad real de la casa.",
+    "intro": "Indique sus fechas a continuación: nuestra conserjería le confirmará la disponibilidad y la tarifa exacta de su estancia.",
+    "calendarIntro": "Su solicitud llega directamente a nuestra conserjería, sin intermediarios.",
     "whyBookDirect": {
       "kicker": "Por qué empezar en nuestra web",
       "title": "Una solicitud sin comisión de grandes plataformas, con:",
       "items": [
-        "disponibilidad sincronizada",
+        "una respuesta directa de nuestra conserjería, ubicada en Labenne",
         "un contacto identificado para su solicitud y llegada",
         "el ritual de bienvenida de La Gemmerie: bandeja de bienvenida y, a la mañana siguiente, un dulce landés con una nota manuscrita"
       ]
@@ -445,7 +452,7 @@
     },
     "contactTitle": "¿Alguna pregunta?",
     "contactDescription": "Escríbanos directamente; nuestra conserjería colaboradora le responde con rapidez.",
-    "contactEmail": "conciergerie@premiere-vue.fr"
+    "contactEmail": "serenconciergerie@gmail.com"
   },
   "shop": {
     "kicker": "Prolongar la experiencia",

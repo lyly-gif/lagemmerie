@@ -51,19 +51,26 @@
       "cta": "Voir les 5 espaces"
     },
     "ctaBand": {
-      "title": "Choisissez vos dates, puis poursuivez sur l'espace sécurisé de notre conciergerie.",
+      "title": "Choisissez vos dates et envoyez votre demande directement à notre conciergerie.",
       "cta": "Voir les disponibilités"
     }
   },
   "calendar": {
-    "reserveButton": "Voir le tarif et poursuivre",
-    "clearButton": "Effacer les dates",
+    "reserveButton": "Envoyer ma demande",
+    "arrivalLabel": "Arrivée",
+    "departureLabel": "Départ",
     "guestLabel": "Voyageurs",
     "guestPlaceholder": "Sélectionner",
     "guestHelp": "De 1 à 8 personnes",
     "guestError": "Choisissez le nombre de voyageurs avant de poursuivre.",
-    "loadingText": "Chargement des disponibilités…",
-    "partnerNote": "Vous serez redirigé vers l'espace sécurisé de notre conciergerie partenaire, Première Vue, pour finaliser votre demande.",
+    "nameLabel": "Votre nom",
+    "messageLabel": "Message (facultatif)",
+    "dateError": "Indiquez une date d'arrivée et une date de départ postérieure.",
+    "mailSubject": "Demande de séjour à La Gemmerie",
+    "mailGreeting": "Bonjour,",
+    "mailIntro": "Je souhaiterais séjourner à La Gemmerie :",
+    "mailHint": "Le bouton ouvre votre messagerie avec la demande préremplie. Vous pouvez aussi écrire à",
+    "partnerNote": "Votre demande est transmise directement à notre conciergerie partenaire, qui vous confirme les disponibilités et le tarif.",
     "termsNote": "Frais de ménage, taxe de séjour, conditions d'annulation et dépôt de garantie sont détaillés avant validation."
   },
   "practical": {
@@ -135,7 +142,7 @@
       "note": "La carte indique la zone du quartier ; l'adresse exacte est communiquée après confirmation de réservation."
     },
     "availability": {
-      "intro": "Disponibilités réelles, mises à jour en direct."
+      "intro": "Envoyez vos dates : notre conciergerie vous confirme rapidement les disponibilités."
     },
     "houseRules": {
       "items": [
@@ -310,13 +317,13 @@
   "rates": {
     "kicker": "Séjourner",
     "title": "Préparez votre séjour",
-    "intro": "Sélectionnez vos dates ci-dessous pour voir le tarif exact et envoyer votre demande de séjour.",
-    "calendarIntro": "Le calendrier affiche les disponibilités réelles de la maison.",
+    "intro": "Indiquez vos dates ci-dessous : notre conciergerie vous confirme les disponibilités et le tarif exact de votre séjour.",
+    "calendarIntro": "Votre demande part directement chez notre conciergerie, sans intermédiaire.",
     "whyBookDirect": {
       "kicker": "Pourquoi passer par notre site",
       "title": "Une demande sans commission de grande plateforme, avec :",
       "items": [
-        "des disponibilités synchronisées avec le calendrier de la conciergerie",
+        "une réponse directe de notre conciergerie, installée à Labenne",
         "un contact identifié pour votre demande et votre arrivée",
         "le rituel d'accueil La Gemmerie — un plateau de bienvenue à votre arrivée, puis une pâtisserie landaise le lendemain matin, accompagnée d'un mot écrit à la main"
       ]
@@ -338,7 +345,7 @@
     },
     "contactTitle": "Une question ?",
     "contactDescription": "Écrivez-nous directement, notre conciergerie partenaire vous répond rapidement.",
-    "contactEmail": "conciergerie@premiere-vue.fr"
+    "contactEmail": "serenconciergerie@gmail.com"
   },
   "shop": {
     "kicker": "Prolonger l'expérience",

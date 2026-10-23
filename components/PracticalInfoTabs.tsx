@@ -1,12 +1,12 @@
 import { LineIcon, type IconName } from "@/components/icons/LineIcon";
-import { HostawayCalendarWidget } from "@/components/HostawayCalendarWidget";
+import { StayRequestForm } from "@/components/StayRequestForm";
 import type { Content, Locale } from "@/lib/content";
 
 // Renamed from the tabbed version it replaces, but kept as the default
 // export other files import — équipements, localisation et disponibilités
 // are now stacked and always visible instead of hidden behind clicks
 // (owner: "pour qu'ils soient directement visibles").
-export function PracticalInfoTabs({ dict, locale }: { dict: Content; locale: Locale }) {
+export function PracticalInfoTabs({ dict }: { dict: Content; locale: Locale }) {
   const p = dict.practical;
 
   return (
@@ -108,14 +108,7 @@ export function PracticalInfoTabs({ dict, locale }: { dict: Content; locale: Loc
         <p className="mb-6 max-w-md text-[13px] leading-relaxed text-forest-800/65">
           {dict.calendar.partnerNote}
         </p>
-        <HostawayCalendarWidget
-          locale={locale}
-          reserveButtonText={dict.calendar.reserveButton}
-          clearButtonText={dict.calendar.clearButton}
-          loadingText={dict.calendar.loadingText}
-          partnerNote={dict.calendar.partnerNote}
-          showPartnerNote={false}
-        />
+        <StayRequestForm dict={dict} showPartnerNote={false} />
       </div>
 
       <div className="border-t border-line pt-14">
