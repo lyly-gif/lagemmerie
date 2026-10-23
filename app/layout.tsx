@@ -77,7 +77,7 @@ const siteJsonLd = {
         "@type": "ImageObject",
         url: "https://lagemmerie.com/images/brand/la-gemmerie-alternative-gemme-horizontal.svg",
       },
-      email: "contact@lagemmerie.com",
+      email: "reservation@lagemmerie.com",
     },
     {
       "@type": "WebSite",

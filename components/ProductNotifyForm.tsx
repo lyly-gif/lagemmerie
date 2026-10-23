@@ -1,6 +1,6 @@
 import type { Content, Locale } from "@/lib/content";
 
-const NOTIFY_EMAIL = "contact@lagemmerie.com";
+const NOTIFY_EMAIL = "reservation@lagemmerie.com";
 const subjects: Record<Locale, string> = {
   fr: "Être averti·e — La Gemmerie côté produits",
   en: "Collection launch updates — La Gemmerie",
